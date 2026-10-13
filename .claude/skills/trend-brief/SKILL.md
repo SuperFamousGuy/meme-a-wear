@@ -99,8 +99,9 @@ first.
 
 Set `checked_against` to the URL of an image that someone looked at to confirm
 the traits. If you wrote the traits from text descriptions only, set it to
-`unverified`. Agents that can't view images always write `unverified`; the
-user or the main session can check the traits and set the URL. A brief with no
+`unverified`. The meme-expert checks traits with the browser or the watch
+plugin when they're available. When they aren't, the user or the main session
+can check the traits and set the URL. A brief with no
 traits at all uses `unknown`.
 
 ## Lifecycle stages
