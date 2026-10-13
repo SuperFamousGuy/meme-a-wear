@@ -3,7 +3,7 @@
 // NotebookEdit only inside trends/ and the agent's memory directory.
 // Fails closed: any error exits 2, which blocks the call. Other nonzero exit
 // codes would let the call proceed.
-import { readFileSync, realpathSync } from "node:fs";
+import { lstatSync, readFileSync, realpathSync } from "node:fs";
 import { dirname, basename, join, resolve, sep } from "node:path";
 
 function block(reason) {
@@ -20,6 +20,11 @@ function canonical(path) {
     try {
       return join(realpathSync(current), ...tail.reverse());
     } catch {
+      // Only a truly missing entry may be skipped. An entry that exists but
+      // won't resolve, such as a dangling symlink, could redirect the write.
+      if (lstatSync(current, { throwIfNoEntry: false })) {
+        throw new Error(`can't resolve ${current}`);
+      }
       const parent = dirname(current);
       if (parent === current) throw new Error(`can't resolve ${path}`);
       tail.push(basename(current));
