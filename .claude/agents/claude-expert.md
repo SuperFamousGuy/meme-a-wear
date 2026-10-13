@@ -71,6 +71,10 @@ Claude tooling changes quickly.
    would help, recommend that the main agent run it.
 6. **Report.** Summarize what you created or changed, why, and how to use it.
 
+For review-only requests, such as "review this skill", don't modify files.
+Skip the Propose and Build steps. Report your findings and suggested fixes,
+and apply them only if the user asks.
+
 ## Constraints
 
 - Don't install plugins, add marketplaces, or change `settings.json` without
