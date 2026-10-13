@@ -5,6 +5,8 @@
 //   options, or its setup.py --check. No shell syntax beyond quoting.
 // - The browser's computer tool may only take screenshots, zoom, scroll, and
 //   wait. No clicks or typing, because the pane may hold the user's sign-ins.
+// - The browser's navigate tool may only open public https:// URLs, so it
+//   can't reach local files, this machine, or a private network.
 // Fails closed: any error exits 2, which blocks the call.
 import { readFileSync, realpathSync } from "node:fs";
 import { homedir } from "node:os";
@@ -75,12 +77,25 @@ function checkBash(command) {
   }
 }
 
+function checkUrl(url) {
+  if (typeof url !== "string" || !url.startsWith("https://")) block("navigate needs a full https:// URL");
+  const host = new URL(url).hostname.toLowerCase().replace(/\.$/, "");
+  // shortcut: blocks every IP literal and local name, but not a public name
+  // that resolves to a private address; resolve and check it if that matters.
+  if (/^[\d.]+$/.test(host) || host.startsWith("[") || !host.includes(".") ||
+      /(^|\.)(localhost|local|internal|lan|home|test)$/.test(host)) {
+    block(`${host} isn't a public host name`);
+  }
+}
+
 try {
   const input = JSON.parse(readFileSync(0, "utf8"));
   const tool = input.tool_input ?? {};
   if (input.tool_name === "Bash") {
     if (typeof tool.command !== "string") block("no command in tool input");
     checkBash(tool.command.trim());
+  } else if (input.tool_name?.endsWith("__navigate")) {
+    checkUrl(tool.url);
   } else if (input.tool_name?.endsWith("__computer")) {
     if (!BROWSER_ACTIONS.has(tool.action)) block(`browser action ${tool.action} isn't allowed. Only screenshot, zoom, scroll, and wait are.`);
   } else {

@@ -37,7 +37,8 @@ format:
     traits:
       - The man looks back over his shoulder, mouth open, at the passerby.
       - The partner, beside him, glares at him with a disgusted frown.
-    checked_against: unverified   # URL of an image someone looked at, or unverified
+      - The passerby, in a red dress, walks away in the foreground.
+    checked_against: unverified   # URL of the image or video someone looked at, or unverified
 origin:
   date: 2017-08-01          # first known use; approximate dates are allowed in notes
   first_seen_url: https://…
@@ -97,8 +98,8 @@ the meme means. "Small human mouth with one flat row of square teeth" is a
 trait. "Smiles creepily" is not. List three to six traits, most important
 first.
 
-Set `checked_against` to the URL of an image that someone looked at to confirm
-the traits. If you wrote the traits from text descriptions only, set it to
+Set `checked_against` to the URL of the image or video that someone looked at
+to confirm the traits. If you wrote the traits from text descriptions only, set it to
 `unverified`. The meme-expert checks traits with the browser or the watch
 plugin when they're available. When they aren't, the user or the main session
 can check the traits and set the URL. A brief with no
