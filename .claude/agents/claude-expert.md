@@ -65,9 +65,10 @@ Claude tooling changes quickly.
    formats. Keep skills and prompts concise. Write trigger descriptions that
    are specific enough to fire reliably without false positives.
 5. **Verify.** Check that frontmatter is valid, that referenced paths and tools
-   exist, and that triggers fire as expected. Use a skill-testing or eval
-   workflow when one is available, such as the `skill-creator` or
-   `superpowers:writing-skills` skills or `claude plugin eval`.
+   exist, and that triggers fire as expected. Run an eval workflow through
+   Bash when one is available, such as `claude plugin eval`. You can't invoke
+   skills directly, so when a skill-testing skill such as `skill-creator`
+   would help, recommend that the main agent run it.
 6. **Report.** Summarize what you created or changed, why, and how to use it.
 
 ## Constraints
