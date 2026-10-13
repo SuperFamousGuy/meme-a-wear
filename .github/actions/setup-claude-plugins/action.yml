@@ -1,0 +1,48 @@
+name: Set up Claude Code plugins
+description: >-
+  Install Claude Code, the runtimes its project plugins need, and every
+  plugin enabled in .claude/settings.json. Runs on Linux and macOS runners.
+
+runs:
+  using: composite
+  steps:
+    # ponytail and claude-mem hooks run on Node.js 20+.
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+
+    # watch runs on Python 3.10+.
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    # claude-mem runs its worker on Bun and its vector search through uv.
+    - uses: oven-sh/setup-bun@v2
+    - uses: astral-sh/setup-uv@v6
+
+    # watch uses Deno as yt-dlp's JavaScript runtime for YouTube.
+    - uses: denoland/setup-deno@v2
+      with:
+        deno-version: v2.x
+
+    - name: Install ffmpeg
+      shell: bash
+      run: |
+        if [ "$RUNNER_OS" = macOS ]; then
+          brew install ffmpeg
+        else
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+        fi
+
+    # watch supports only the latest yt-dlp release.
+    - name: Install yt-dlp
+      shell: bash
+      run: python -m pip install --upgrade "yt-dlp[default,curl-cffi]"
+
+    - name: Install Claude Code
+      shell: bash
+      run: npm install --global @anthropic-ai/claude-code
+
+    - name: Install plugins
+      shell: bash
+      run: bash scripts/install-claude-plugins.sh

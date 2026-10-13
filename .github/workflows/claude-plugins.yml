@@ -1,0 +1,27 @@
+name: Claude plugins
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    paths:
+      - .claude/**
+      - .github/**
+      - scripts/*-claude-plugins.sh
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-claude-plugins
+      - name: Verify plugin dependencies
+        run: bash scripts/verify-claude-plugins.sh
