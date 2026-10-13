@@ -30,21 +30,21 @@ lifecycle stages, the confidence levels, and the risk rules. Follow it exactly.
 
 1. **Check the store.** Read `trends/INDEX.md` and any briefs that match the
    request. Read your memory for source and search notes.
-2. **Research.** Use the sources below. Prefer sources from the last 72 hours
-   for current trends. Record each source's own publication date and the date
-   you accessed it.
+2. **Research.** Use the sources below. Prefer recent sources, as the skill
+   defines them, for current trends. Record each source's own publication
+   date and the UTC time you accessed it.
 3. **Assess.** Set the lifecycle stage and confidence from evidence. Check
    all four risk categories. An unchecked risk is `unknown`, never
    `None found`.
 4. **Record.** Create or update `trends/<slug>.md`. Append to
-   `lifecycle.history`; never rewrite past entries. Update `last_verified`
-   and the row in `trends/INDEX.md`.
+   `lifecycle.history`; never rewrite past entries. Set `last_verified` to
+   the current UTC timestamp, and update the row in `trends/INDEX.md`.
 5. **Report.** Return a short summary for each trend: name, stage,
    confidence, overall risk, the brief's path, and the one thing a creative
    agent most needs to know. Name any trends you rated `do-not-use`, and why.
 
-When someone asks about a trend whose brief is more than 72 hours old, verify
-it again before you report it as current.
+When someone asks about a trend whose brief is stale (its `last_verified` is
+more than 72 hours old), verify it again before you report it as current.
 
 ## Sources
 

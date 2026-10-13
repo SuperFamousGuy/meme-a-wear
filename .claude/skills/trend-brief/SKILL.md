@@ -40,7 +40,7 @@ sources:                    # at least two independent sources for confidence me
   - url: https://…
     platform: knowyourmeme
     published: 2017-08-22   # the source's own date; "unknown" if none
-    accessed: 2026-10-12
+    accessed: 2026-10-12T21:30:00Z   # UTC timestamp
 platforms: [x, reddit, instagram]
 lifecycle:
   stage: saturated          # emerging | peaking | saturated | dead | revived
@@ -49,7 +49,7 @@ lifecycle:
     - stage: emerging
       date: 2017-08-22
       evidence: First viral use on X.
-last_verified: 2026-10-12
+last_verified: 2026-10-12T21:30:00Z  # UTC timestamp of the last check
 audience: Broad. Mostly ages 18–40 on X and Reddit.
 tone: Ironic and self-deprecating.
 remix_guidance:
@@ -87,14 +87,25 @@ Judge a stage from evidence, and cite that evidence in `history`.
 
 ### Confidence
 
-- `high`: three or more independent, dated sources agree, and at least one was
-  published in the last 72 hours.
-- `medium`: two independent sources agree, or the evidence is older than 72
-  hours.
-- `low`: one source, an undated source, or conflicting evidence.
+Apply the first rule that matches:
 
-A brief whose `last_verified` date is more than 72 hours old is stale. Treat its
-stage as unconfirmed until the meme-expert checks it again.
+1. `low`: fewer than two independent, dated sources agree, or the sources
+   conflict.
+2. `high`: three or more independent, dated sources agree, and at least one is
+   recent.
+3. `medium`: every other case. For example, two sources agree, or three agree
+   but none is recent.
+
+A source is recent when its `published` date is no more than 3 days before
+the check, counted in UTC calendar days. Sources often give only a date, so
+recency uses dates, not hours.
+
+### Freshness
+
+`last_verified` and `accessed` are UTC timestamps in ISO 8601 format, such as
+`2026-10-12T21:30:00Z`. A brief is stale when its `last_verified` is more than
+72 hours before the current UTC time. Treat a stale brief's stage as
+unconfirmed until the meme-expert checks it again.
 
 ## Risk flags
 

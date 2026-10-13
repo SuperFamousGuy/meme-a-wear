@@ -3,8 +3,8 @@
 This directory holds meme trend briefs. The `meme-expert` agent writes them.
 Creative agents read them to choose memes for designs.
 
-- `INDEX.md` lists every brief with its stage, confidence, risk, and the date
-  it was last verified.
+- `INDEX.md` lists every brief with its stage, confidence, risk, and the UTC
+  time it was last verified.
 - `<slug>.md` holds one brief. The schema, lifecycle stages, and risk rules
   are in `.claude/skills/trend-brief/SKILL.md`.
 
