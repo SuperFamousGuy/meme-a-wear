@@ -9,11 +9,22 @@ check() {
   if "$@" >/dev/null 2>&1; then echo "ok   $name"; else echo "FAIL $name"; failures=$((failures + 1)); fi
 }
 
-# Exit 0 if version $1 >= version $2 (dotted numeric, leading "v" ignored).
+# Exit 0 if version $1 >= version $2 by semver precedence (leading "v" ignored).
+# A prerelease ranks below its release, so 20.12.0-rc.1 < 20.12.0.
 version_at_least() {
-  node -e 'const p = v => v.replace(/^v/, "").split(/[.+-]/).slice(0, 3).map(Number);
-    const [a, b] = [p(process.argv[1]), p(process.argv[2])];
-    for (let i = 0; i < 3; i++) if ((a[i] || 0) !== (b[i] || 0)) process.exit(a[i] > b[i] ? 0 : 1);' "$1" "$2"
+  node -e 'const parse = v => { const [core, ...pre] = v.trim().replace(/^v/, "").split("+")[0].split("-");
+      return [core.split(".").map(Number), pre.length ? pre.join("-").split(".") : []]; };
+    const cmpId = (x, y) => { const [m, n] = [/^\d+$/.test(x), /^\d+$/.test(y)];
+      return m && n ? x - y : m ? -1 : n ? 1 : x < y ? -1 : x > y ? 1 : 0; };
+    const [[a, ap], [b, bp]] = [parse(process.argv[1]), parse(process.argv[2])];
+    let c = 0;
+    for (let i = 0; i < 3 && !c; i++) c = (a[i] || 0) - (b[i] || 0);
+    if (!c && (ap.length || bp.length)) {
+      if (!ap.length || !bp.length) c = ap.length ? -1 : 1;
+      for (let i = 0; i < Math.max(ap.length, bp.length) && !c; i++)
+        c = i >= ap.length ? -1 : i >= bp.length ? 1 : cmpId(ap[i], bp[i]);
+    }
+    process.exit(c >= 0 && !Number.isNaN(c) ? 0 : 1);' "$1" "$2"
 }
 
 plugin_root() {
