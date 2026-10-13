@@ -41,14 +41,24 @@ sources:                    # at least two independent sources for confidence me
     platform: knowyourmeme
     published: 2017-08-22   # the source's own date; "unknown" if none
     accessed: 2026-10-12T21:30:00Z   # UTC timestamp
+  - url: https://…
+    platform: news
+    published: 2017-08-29
+    accessed: 2026-10-12T21:34:00Z
 platforms: [x, reddit, instagram]
 lifecycle:
   stage: saturated          # emerging | peaking | saturated | dead | revived
-  confidence: high          # low | medium | high
+  confidence: medium        # low | medium | high; two sources agree, none recent
   history:                  # append only; never rewrite past entries
     - stage: emerging
       date: 2017-08-22
       evidence: First viral use on X.
+    - stage: peaking
+      date: 2017-08-29
+      evidence: News explainers covered it, and it spread to Reddit and Instagram.
+    - stage: saturated
+      date: 2017-10-15
+      evidence: Brands used it widely, and posts called it overdone.
 last_verified: 2026-10-12T21:30:00Z  # UTC timestamp of the last check
 audience: Broad. Mostly ages 18–40 on X and Reddit.
 tone: Ironic and self-deprecating.
