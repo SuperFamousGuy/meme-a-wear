@@ -11,10 +11,31 @@
         "source": "github",
         "repo": "DietrichGebert/ponytail"
       }
+    },
+    "taste-skill": {
+      "source": {
+        "source": "github",
+        "repo": "leonxlnx/taste-skill"
+      }
+    },
+    "impeccable": {
+      "source": {
+        "source": "github",
+        "repo": "pbakaus/impeccable"
+      }
+    },
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
     }
   },
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true,
-    "ponytail@ponytail": true
+    "ponytail@ponytail": true,
+    "taste-skill@taste-skill": true,
+    "impeccable@impeccable": true,
+    "claude-mem@thedotmack": true
   }
 }
