@@ -14,8 +14,8 @@ them.
 - `designs/<slug>/spec.md`: one spec per design. The slug is lowercase
   kebab-case and never changes.
 - `designs/<slug>/<variant>.svg`: one SVG file per artwork variant that the
-  spec lists, such as `light.svg` for light garments and `dark.svg` for dark
-  garments.
+  spec lists. Garments use `light.svg` and `dark.svg`. Other products use one
+  file per print surface, such as `wrap.svg` for a mug.
 - `brand/`: the brand guidelines, logo, and brand copy. Every design follows
   `brand/guidelines.md`.
 - `storefront/`: storefront specs and HTML mockups.
@@ -111,6 +111,8 @@ template's source in the notes when you use one.
 
 ### Light and dark garments
 
+- These rules apply to garments only. Mugs, stickers, and other products
+  need one variant per print surface, printed on a known background color.
 - Make a separate variant for each garment group. Don't rely on the garment
   color to fill shapes unless the notes say so.
 - Check that every text color has a contrast ratio of at least 4.5:1 against
