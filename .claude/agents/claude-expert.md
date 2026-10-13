@@ -28,9 +28,12 @@ this order, and stop when you find a good fit:
    (`anthropics/claude-plugins-official`).
 3. **Community sources.** Check GitHub repos, plugin directories, and
    well-maintained skill collections.
-4. **Official documentation.** Check Anthropic's docs for Claude Code, the
-   Agent SDK, and the Claude API. Treat these docs as the source of truth for
-   syntax, frontmatter fields, and model IDs.
+
+Always validate against official documentation, even when the search stops
+early. Anthropic's docs for Claude Code, the Agent SDK, and the Claude API are
+the source of truth for syntax, frontmatter fields, settings keys, hook events,
+and model IDs. Check any candidate you install or adapt against them, and
+consult them first when you build something new.
 
 For each candidate, report:
 
