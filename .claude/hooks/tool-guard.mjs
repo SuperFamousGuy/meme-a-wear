@@ -11,9 +11,11 @@
 // - The browser's navigate tool may only open public https:// URLs, so it
 //   can't reach local files, this machine, or a private network.
 // Fails closed: any error exits 2, which blocks the call.
-import { readFileSync, realpathSync } from "node:fs";
+import { lookup } from "node:dns/promises";
+import { existsSync, readFileSync, realpathSync } from "node:fs";
+import { isIP } from "node:net";
 import { homedir } from "node:os";
-import { join, resolve, sep } from "node:path";
+import { delimiter, join, resolve, sep } from "node:path";
 
 const profile = process.argv[2];
 
@@ -69,6 +71,25 @@ function checkDesignerBash(command, cwd) {
   }
 }
 
+// watch can't tell yt-dlp to ignore its config files, and a config file can
+// name a cookie jar or a browser profile. Watch runs only when none exists.
+function ytDlpConfigs() {
+  const home = homedir();
+  const xdg = process.env.XDG_CONFIG_HOME || join(home, ".config");
+  const files = [
+    join(xdg, "yt-dlp", "config"), join(xdg, "yt-dlp", "config.txt"),
+    join(xdg, "yt-dlp.conf"), join(xdg, "yt-dlp.conf.txt"),
+    join(home, "yt-dlp.conf"), join(home, "yt-dlp.conf.txt"),
+    join(home, ".yt-dlp", "config"), join(home, ".yt-dlp", "config.txt"),
+    "/etc/yt-dlp.conf", "/etc/yt-dlp/config", "/etc/yt-dlp/config.txt",
+  ];
+  // A portable config sits next to the yt-dlp program.
+  for (const dir of (process.env.PATH ?? "").split(delimiter)) {
+    if (dir && existsSync(join(dir, "yt-dlp"))) files.push(join(dir, "yt-dlp.conf"));
+  }
+  return files.filter((file) => existsSync(file));
+}
+
 function checkWatchBash(command) {
   const [program, script, ...args] = words(command);
   if (program !== "python3" || !script) block("only python3 with a watch script is allowed");
@@ -77,6 +98,9 @@ function checkWatchBash(command) {
   const path = realpathSync(script);
   const match = path.startsWith(scripts + sep) && path.match(/[/\\]skills[/\\]watch[/\\]scripts[/\\](watch|setup)\.py$/);
   if (!match) block(`${script} is not the watch plugin's watch.py or setup.py`);
+
+  const configs = ytDlpConfigs();
+  if (configs.length > 0) block(`yt-dlp config files could add sign-ins: ${configs.join(", ")}. Ask the user to remove them.`);
 
   if (match[1] === "setup") {
     if (args.length !== 1 || args[0] !== "--check") block("setup.py is allowed only with --check. Ask the user to run setup.");
@@ -90,15 +114,32 @@ function checkWatchBash(command) {
   }
 }
 
-function checkUrl(url) {
+// True for loopback, private, link-local, shared, and unspecified addresses.
+function isPrivate(address) {
+  const v4 = address.replace(/^::ffff:/i, "");
+  if (isIP(v4) === 4) {
+    const [a, b] = v4.split(".").map(Number);
+    return a === 0 || a === 10 || a === 127 || (a === 169 && b === 254) || (a === 172 && b >= 16 && b <= 31) ||
+      (a === 192 && b === 168) || (a === 100 && b >= 64 && b <= 127);
+  }
+  const v6 = address.toLowerCase();
+  return v6 === "::" || v6 === "::1" || /^f[cd]/.test(v6) || /^fe[89ab]/.test(v6);
+}
+
+// shortcut: a DNS check here can't stop rebinding, where a name resolves to a
+// public address now and a private one when the browser loads it. Enforce
+// public-only egress at the network layer if the browser can reach anything
+// sensitive.
+async function checkUrl(url) {
   if (typeof url !== "string" || !url.startsWith("https://")) block("navigate needs a full https:// URL");
   const host = new URL(url).hostname.toLowerCase().replace(/\.$/, "");
-  // shortcut: blocks every IP literal and local name, but not a public name
-  // that resolves to a private address; resolve and check it if that matters.
   if (/^[\d.]+$/.test(host) || host.startsWith("[") || !host.includes(".") ||
-      /(^|\.)(localhost|local|internal|lan|home|test)$/.test(host)) {
+      /(^|\.)(localhost|localdomain|local|internal|lan|home|test)$/.test(host)) {
     block(`${host} isn't a public host name`);
   }
+  const addresses = await lookup(host, { all: true });
+  const internal = addresses.find(({ address }) => isPrivate(address));
+  if (internal) block(`${host} resolves to ${internal.address}, a private address`);
 }
 
 try {
@@ -112,7 +153,7 @@ try {
   } else if (profile === "designer") {
     block(`${input.tool_name} isn't allowed for the designer`);
   } else if (input.tool_name?.endsWith("__navigate")) {
-    checkUrl(tool.url);
+    await checkUrl(tool.url);
   } else if (input.tool_name?.endsWith("__computer")) {
     if (!BROWSER_ACTIONS.has(tool.action)) block(`browser action ${tool.action} isn't allowed. Only screenshot, zoom, scroll, and wait are.`);
   } else {
