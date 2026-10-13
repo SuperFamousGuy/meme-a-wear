@@ -1,8 +1,11 @@
 #!/usr/bin/env node
-// PreToolUse hook that limits the tools an agent uses to view images and
-// video to viewing only:
-// - Bash may run only the watch plugin's watch.py, with an exact list of
-//   options, or its setup.py --check. No shell syntax beyond quoting.
+// PreToolUse hook that limits an agent's Bash and browser tools to one job.
+// Usage: tool-guard.mjs <profile>
+// - meme-expert: Bash may run only the watch plugin's watch.py, with an exact
+//   list of options, or its setup.py --check, to view video.
+// - designer: Bash may run only scripts/generate-image.mjs, which itself
+//   keeps every file it reads or writes inside designs/.
+// Neither profile allows shell syntax beyond quoting.
 // - The browser's computer tool may only take screenshots, zoom, scroll, and
 //   wait. No clicks or typing, because the pane may hold the user's sign-ins.
 // - The browser's navigate tool may only open public https:// URLs, so it
@@ -10,10 +13,12 @@
 // Fails closed: any error exits 2, which blocks the call.
 import { readFileSync, realpathSync } from "node:fs";
 import { homedir } from "node:os";
-import { join, sep } from "node:path";
+import { join, resolve, sep } from "node:path";
+
+const profile = process.argv[2];
 
 function block(reason) {
-  process.stderr.write(`view guard: ${reason}\n`);
+  process.stderr.write(`${profile ?? "unknown"} tool guard: ${reason}\n`);
   process.exit(2);
 }
 
@@ -56,7 +61,15 @@ function words(command) {
   return out;
 }
 
-function checkBash(command) {
+function checkDesignerBash(command, cwd) {
+  const [program, script] = words(command);
+  const root = realpathSync(process.env.CLAUDE_PROJECT_DIR || cwd);
+  if (program !== "node" || !script || realpathSync(resolve(cwd || root, script)) !== join(root, "scripts", "generate-image.mjs")) {
+    block("only node scripts/generate-image.mjs is allowed");
+  }
+}
+
+function checkWatchBash(command) {
   const [program, script, ...args] = words(command);
   if (program !== "python3" || !script) block("only python3 with a watch script is allowed");
 
@@ -91,9 +104,13 @@ function checkUrl(url) {
 try {
   const input = JSON.parse(readFileSync(0, "utf8"));
   const tool = input.tool_input ?? {};
+  if (profile !== "meme-expert" && profile !== "designer") block("usage: tool-guard.mjs meme-expert|designer");
   if (input.tool_name === "Bash") {
     if (typeof tool.command !== "string") block("no command in tool input");
-    checkBash(tool.command.trim());
+    if (profile === "designer") checkDesignerBash(tool.command.trim(), input.cwd);
+    else checkWatchBash(tool.command.trim());
+  } else if (profile === "designer") {
+    block(`${input.tool_name} isn't allowed for the designer`);
   } else if (input.tool_name?.endsWith("__navigate")) {
     checkUrl(tool.url);
   } else if (input.tool_name?.endsWith("__computer")) {

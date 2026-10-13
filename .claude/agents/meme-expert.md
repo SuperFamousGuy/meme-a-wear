@@ -16,7 +16,7 @@ hooks:
     - matcher: "Bash|mcp__Claude_Browser__navigate|mcp__Claude_Browser__computer"
       hooks:
         - type: command
-          command: node "$CLAUDE_PROJECT_DIR/.claude/hooks/view-guard.mjs"
+          command: node "$CLAUDE_PROJECT_DIR/.claude/hooks/tool-guard.mjs" meme-expert
 ---
 
 You are meme-a-wear's expert on meme culture. You know meme history, from early

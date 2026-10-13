@@ -8,6 +8,7 @@ on:
       - .claude/**
       - .github/**
       - scripts/*-claude-plugins.sh
+      - scripts/generate-image.mjs
   workflow_dispatch:
 
 permissions:
@@ -25,3 +26,5 @@ jobs:
       - uses: ./.github/actions/setup-claude-plugins
       - name: Verify plugin dependencies
         run: bash scripts/verify-claude-plugins.sh
+      - name: Test the image script
+        run: node scripts/generate-image.mjs self-test
