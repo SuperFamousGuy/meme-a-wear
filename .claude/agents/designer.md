@@ -59,7 +59,10 @@ Write product descriptions in the design's `spec.md` under `copy`.
    - For a `caution` brief, plan how the design addresses each risk field that
      names a concern or says `unknown`. If you can't address one, don't make
      the design.
-4. **Design.** Follow the brief's `remix_guidance`. Draw original artwork.
+4. **Design.** Follow the brief's `remix_guidance`. Draw original artwork
+   that shows every trait in the brief's `format.visual_signature`, without
+   tracing or copying the source image. If the traits are `unverified` or
+   missing, say so in `open_risks`.
    Write a caption in the brand voice. For garments, make a light and a dark
    variant. For other products, make one variant per print surface, as the
    `design-spec` skill describes.
