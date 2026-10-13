@@ -9,7 +9,6 @@ format:
     traits:
       - A text list is titled "Things to say to <person or situation>."
       - The list has several short, confident lines.
-      - The list often sits over an image of a cool or stern celebrity or character.
     checked_against: unverified
 origin:
   date: 2026-08-17

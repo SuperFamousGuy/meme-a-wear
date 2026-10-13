@@ -95,8 +95,10 @@ and explain why in the notes.
 the meme recognizable at a glance: pose, expression, proportions, color, and
 any feature that looks wrong on purpose. Describe what a viewer sees, not what
 the meme means. "Small human mouth with one flat row of square teeth" is a
-trait. "Smiles creepily" is not. List three to six traits, most important
-first.
+trait. "Smiles creepily" is not. List up to six traits, most important
+first. List only traits that every version of the meme shares, because a
+design must show all of them. Leave out optional elements and backgrounds
+that remixes replace.
 
 Set `checked_against` to the URL of the image or video that someone looked at
 to confirm the traits. If you wrote the traits from text descriptions only,

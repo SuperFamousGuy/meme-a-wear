@@ -8,7 +8,7 @@ format:
   visual_signature:
     traits:
       - A young man grins widely at the camera.
-      - He stands at a red-carpet event, in a 2015 press photo.
+      - He stands on a red carpet at a premiere.
       - A one-line caption above the photo states an oddly specific trait.
     checked_against: unverified
 origin:

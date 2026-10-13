@@ -8,7 +8,6 @@ format:
   visual_signature:
     traits:
       - An everyday object, such as a car, house, or soccer field, is stretched impossibly thin.
-      - A map of Chile often sits beside the object.
       - A caption reads "X in Chile be like" or "How I imagine Chile."
     checked_against: unverified
 origin:

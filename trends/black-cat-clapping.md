@@ -9,7 +9,6 @@ format:
     traits:
       - A black cat claps with human hands.
       - The cat wears a wide, human-like smile.
-      - The cat sits on a green-screen background that remixes replace.
     checked_against: unverified
 origin:
   date: 2026-09-25

@@ -9,7 +9,6 @@ format:
     traits:
       - A small fairy-tale imp, Rumpelstiltskin, dances in a barn.
       - A woman in the barn watches him dance.
-      - The footage looks like a 1980s fantasy film.
     checked_against: unverified
 origin:
   date: 2026-08-27
