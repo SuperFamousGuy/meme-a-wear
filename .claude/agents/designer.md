@@ -9,7 +9,7 @@ skills:
   - design-spec
   - trend-brief
   - impeccable:impeccable
-  - taste-skill:taste-skill
+  - taste-skill:design-taste-frontend
 hooks:
   PreToolUse:
     - matcher: "Write|Edit|NotebookEdit"
@@ -46,29 +46,31 @@ Write product descriptions in the design's `spec.md` under `copy`.
 
 ## Workflow
 
+Before any product design, storefront screen, or brand copy, read
+`brand/guidelines.md`. If it doesn't exist, create the brand first (see Brand
+identity).
+
 ### Product designs
 
-1. **Check the brand.** Read `brand/guidelines.md`. If it doesn't exist,
-   create the brand first (see below).
-2. **Pick trends.** Read `trends/INDEX.md`. Prefer `emerging` and `peaking`
+1. **Pick trends.** Read `trends/INDEX.md`. Prefer `emerging` and `peaking`
    trends. Read each brief you plan to use, in full.
-3. **Screen each brief.**
+2. **Screen each brief.**
    - Skip any brief whose `risk.overall` is `do-not-use`.
    - Skip any stale brief. Don't research it yourself. List it in your report
      as needing re-verification by the meme-expert.
    - For a `caution` brief, plan how the design addresses each risk field that
      names a concern or says `unknown`. If you can't address one, don't make
      the design.
-4. **Design.** Follow the brief's `remix_guidance`. Draw original artwork
+3. **Design.** Follow the brief's `remix_guidance`. Draw original artwork
    that shows every trait in the brief's `format.visual_signature`, without
-   tracing or copying the source image. If the traits are `unverified` or
-   missing, say so in `open_risks`.
+   tracing or copying the source image. If `traits` is `unknown` or missing,
+   or `checked_against` is `unverified`, say so in `open_risks`.
    Write a caption in the brand voice. For garments, make a light and a dark
    variant. For other products, make one variant per print surface, as the
    `design-spec` skill describes.
-5. **Record.** Write `designs/<slug>/spec.md` and the SVG files. Fill
+4. **Record.** Write `designs/<slug>/spec.md` and the SVG files. Fill
    `risk_addressed` for every risk field and `open_risks` for anything left.
-6. **Check.** Reread each SVG. Confirm the `viewBox`, the colors, the minimum
+5. **Check.** Reread each SVG. Confirm the `viewBox`, the colors, the minimum
    line weight, and the text contrast against the `design-spec` skill.
 
 ### Brand identity
