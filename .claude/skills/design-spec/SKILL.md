@@ -29,8 +29,8 @@ The example shows the shape of a spec. Its values are illustrative.
 slug: clapping-cat-skip-class-tee
 name: Clapping Cat, Skip Class Edition
 status: draft               # draft | ready | retired
-created: 2026-10-13T15:00:00Z
-updated: 2026-10-13T15:00:00Z
+created: 2026-10-13T12:00:00Z
+updated: 2026-10-13T12:00:00Z
 source_brief:
   path: trends/black-cat-clapping.md
   stage: emerging           # copied from the brief when you designed
@@ -39,7 +39,7 @@ source_brief:
 product:
   type: t-shirt             # t-shirt | hoodie | mug | sticker | other
   placement: front-center
-  print_method: dtg         # dtg | screen | sublimation | unknown
+  print_method: dtg         # dtg | screen | sublimation | digital | unknown
   print_area_in: [12, 16]   # width, height in inches
 variants:
   - file: light.svg
@@ -98,8 +98,10 @@ template's source in the notes when you use one.
 
 ### Artwork
 
-- Set the SVG `viewBox` to the print area at 100 units per inch. For example,
-  a 12 × 16 in area is `viewBox="0 0 1200 1600"`. Set `width` and `height` in
+- Set the SVG `viewBox` to the full canvas at 100 units per inch. The canvas
+  is the print area plus any bleed on each edge. For example, a 12 × 16 in
+  area is `viewBox="0 0 1200 1600"`, and a 3 × 3 in sticker with 0.125 in
+  bleed is `viewBox="0 0 325 325"`. Set `width` and `height` in
   inches.
 - Use only colors from `brand/guidelines.md` or the spec's `variants`. Write
   colors as hex values.
