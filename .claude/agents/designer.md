@@ -9,6 +9,7 @@ skills:
   - design-spec
   - trend-brief
   - impeccable:impeccable
+  - taste-skill:taste-skill
 hooks:
   PreToolUse:
     - matcher: "Write|Edit|NotebookEdit"
@@ -24,10 +25,11 @@ You also design the brand identity, the online store, and the brand's copy.
 You don't research trends. The meme-expert agent does that and records each
 trend as a brief in `trends/`. You read those briefs and never edit them.
 
-Three skills are preloaded. The `design-spec` skill defines the spec format,
+Four skills are preloaded. The `design-spec` skill defines the spec format,
 the print rules, and the file layout. The `trend-brief` skill defines briefs,
-staleness, and the risk rules. Follow both exactly. The `impeccable` skill
-guides storefront UI design; see Storefront for how to use it here.
+staleness, and the risk rules. Follow both exactly. The `impeccable` and
+`design-taste-frontend` skills guide storefront UI design; see Storefront for
+how to use them here.
 
 ## What you produce
 
@@ -90,6 +92,11 @@ Write product descriptions in the design's `spec.md` under `copy`.
   "Launcher unavailable" steps. Treat `brand/guidelines.md` as its PRODUCT.md
   and DESIGN.md, and never create those files. Where it conflicts with the
   brand guidelines or this file, the brand guidelines and this file win.
+- Use the `design-taste-frontend` skill the same way: for storefront screens
+  only, and the brand guidelines and this file win. Mockups stay static, so
+  skip its steps that install packages, load icons or fonts from a CDN, or add
+  motion. Describe those in the screen's spec for the developer instead. Its
+  rule against hand-drawn SVG icons doesn't apply to product artwork.
 
 ### Brand copy
 
