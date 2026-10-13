@@ -30,7 +30,7 @@ audience: Young. Mostly teens and students on TikTok and Instagram Reels, based 
 tone: Ironic and mischievous.
 remix_guidance:
   lands:
-    - Captions about being cheered on for something small or bad: skipping class, a late-night snack, a bad decision.
+    - "Captions about being cheered on for something small or bad: skipping class, a late-night snack, a bad decision."
     - An original drawing of a black cat clapping with an unsettling human smile.
   falls_flat:
     - Copying frames from the original reel.
