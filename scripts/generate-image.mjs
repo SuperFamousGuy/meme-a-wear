@@ -103,13 +103,14 @@ async function generateGoogle({ prompt, aspect, size, reference }) {
   return googleImages(interaction);
 }
 
-async function generateRecraft({ prompt, aspect }) {
+async function generateRecraft({ prompt, aspect, reference }) {
+  if (reference) fail("--reference works only with --provider google");
   const result = await post(
     "https://external.api.recraft.ai/v1/images/generations",
     { Authorization: `Bearer ${key("RECRAFT_API_TOKEN")}`, "Content-Type": "application/json" },
-    JSON.stringify({ prompt, model: process.env.RECRAFT_MODEL || "recraftv4_1", size: aspect, n: 1, response_format: "b64_json" }),
+    JSON.stringify({ prompt, model: process.env.RECRAFT_MODEL || "recraftv4_1", size: aspect, n: 1, image_format: "png", response_format: "b64_json" }),
   );
-  return (result.data ?? []).map((image) => ({ data: image.b64_json, mime: "image/png" }));
+  return (result.data ?? []).map((image) => ({ data: image.b64_json }));
 }
 
 // shortcut: the multipart field name ("file") and response shape come from
@@ -130,6 +131,15 @@ async function prepareRecraft(op, input) {
   if (image.b64_json) return Buffer.from(image.b64_json, "base64");
   if (image.url) return Buffer.from(await (await fetch(image.url)).arrayBuffer());
   fail(`Recraft returned no image: ${JSON.stringify(result).slice(0, 500)}`);
+}
+
+// Names a file's extension from its first bytes, so a provider that returns
+// another format than requested never writes it under the wrong name.
+export function extensionOf(buffer) {
+  if (buffer.toString("latin1", 1, 4) === "PNG") return ".png";
+  if (buffer[0] === 0xff && buffer[1] === 0xd8) return ".jpg";
+  if (buffer.toString("ascii", 0, 4) === "RIFF" && buffer.toString("ascii", 8, 12) === "WEBP") return ".webp";
+  return fail("the provider returned an image in an unknown format");
 }
 
 // Reads width and height from a PNG's IHDR chunk.
@@ -167,9 +177,9 @@ async function generate(args) {
   for (let i = 1; i <= count; i++) {
     const images = await run(options);
     if (images.length === 0) fail(`${provider} returned no image for candidate ${i}`);
-    const { data, mime } = images.at(-1);
-    const file = join(out, `${stamp}-${provider}-${i}${mime === "image/jpeg" ? ".jpg" : ".png"}`);
-    writeFileSync(file, Buffer.from(data, "base64"));
+    const bytes = Buffer.from(images.at(-1).data, "base64");
+    const file = join(out, `${stamp}-${provider}-${i}${extensionOf(bytes)}`);
+    writeFileSync(file, bytes);
     report(file);
   }
 }
@@ -211,6 +221,9 @@ function selfTest() {
   png.writeUInt32BE(4800, 20);
   assert.equal(pngSize(png), " 3600x4800");
   assert.equal(pngSize(Buffer.from("<svg/>")), "");
+  assert.equal(extensionOf(png), ".png");
+  assert.equal(extensionOf(Buffer.from([0xff, 0xd8, 0xff, 0xe0])), ".jpg");
+  assert.equal(extensionOf(Buffer.from("RIFF\0\0\0\0WEBPVP8 ", "latin1")), ".webp");
   console.log("self-test passed");
 }
 
