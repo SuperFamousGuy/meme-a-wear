@@ -5,6 +5,12 @@ summary: An ironic hustle-culture format that lists deliberately terrible things
 format:
   template: A text list titled "Things to say to <person or situation>," often over a stereotypically cool or stern celebrity or character image.
   remix_pattern: Swap the target, such as an Uber driver, your mom, a puppy, or a fandom setting, and list confident lines that would obviously backfire.
+  visual_signature:
+    traits:
+      - A text list is titled "Things to say to <person or situation>."
+      - The list has several short, confident lines.
+      - The list often sits over an image of a cool or stern celebrity or character.
+    checked_against: unverified
 origin:
   date: 2026-08-17
   first_seen_url: unknown

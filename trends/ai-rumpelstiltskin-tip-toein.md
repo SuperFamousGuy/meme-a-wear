@@ -5,6 +5,12 @@ summary: An AI-generated clip, styled like a 1980s fantasy film, of Rumpelstilts
 format:
   template: Short video of the dancing Rumpelstiltskin character, set to Riff Raff's "Tip Toe Wing In My Jawwdinz," with a caption on top.
   remix_pattern: Caption the clip with a situation that makes someone dance smugly or absurdly, such as dreams after cheap melatonin. Or use AI to swap Rumpelstiltskin for another character or person.
+  visual_signature:
+    traits:
+      - A small fairy-tale imp, Rumpelstiltskin, dances in a barn.
+      - A woman in the barn watches him dance.
+      - The footage looks like a 1980s fantasy film.
+    checked_against: unverified
 origin:
   date: 2026-08-27
   first_seen_url: https://www.instagram.com/p/DcjC4hHCb0C/

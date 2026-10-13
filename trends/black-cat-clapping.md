@@ -5,6 +5,12 @@ summary: An AI-generated black cat with a human-like smile and human hands that 
 format:
   template: Green-screen clip of a smiling black cat clapping, placed over a new background with a caption.
   remix_pattern: The cat stands for someone who applauds something they shouldn't, such as a friend clapping while you skip class, or a teacher clapping when you finally answer correctly.
+  visual_signature:
+    traits:
+      - A black cat claps with human hands.
+      - The cat wears a wide, human-like smile.
+      - The cat sits on a green-screen background that remixes replace.
+    checked_against: unverified
 origin:
   date: 2026-09-25
   first_seen_url: https://www.instagram.com/reel/DdtWc0qIbdH/
