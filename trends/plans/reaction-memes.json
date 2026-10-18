@@ -1,0 +1,9 @@
+{
+  "intent": "Find reaction images and reaction memes trending in the last 30 days, and measure the spread of known candidates.",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "auto",
+  "subqueries": [
+    {"label": "reactions", "search_query": "new reaction meme image trend", "ranking_query": "which reaction images and reaction memes are trending now", "sources": ["reddit", "youtube", "grounding"], "weight": 1.0},
+    {"label": "cat-tom-rumpel", "search_query": "clapping cat fat talking angela rumpelstiltskin tip toe meme", "ranking_query": "spread of clapping cat, fat talking tom and angela, and rumpelstiltskin tip toe memes", "sources": ["reddit", "youtube"], "weight": 0.9}
+  ]
+}

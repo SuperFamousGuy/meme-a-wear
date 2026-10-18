@@ -1,0 +1,9 @@
+{
+  "intent": "Find meme formats and templates trending in the last 30 days, and measure the spread of known candidates.",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "auto",
+  "subqueries": [
+    {"label": "formats", "search_query": "new meme format template trend", "ranking_query": "which meme templates and formats are trending now", "sources": ["reddit", "youtube", "grounding"], "weight": 1.0},
+    {"label": "randy-spongebob", "search_query": "randy marsh whats up brah tra la la spongebob meme", "ranking_query": "spread and engagement of randy marsh whats up brah and tra la la spongebob memes", "sources": ["reddit", "youtube"], "weight": 0.9}
+  ]
+}

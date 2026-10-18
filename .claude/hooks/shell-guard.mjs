@@ -34,12 +34,12 @@ const allowlists = {
     `ffmpeg -loglevel error -y -i ${ref} -vf crop=${px}:${px}:${px}:${px} ${ref}`,
     `rm ${ref}`,
     "node \\.claude/scripts/last30days\\.mjs diagnose",
-    `node \\.claude/scripts/last30days\\.mjs research ${topic}`,
+    `node \\.claude/scripts/last30days\\.mjs research ${topic}( trends/plans/[a-z0-9-]+\\.json)?`,
   ],
 };
 
 // Each file operand and the directory it must stay inside.
-const operand = /(?:^|\s)((designs|trends\/refs)\/[a-z0-9./-]+)/g;
+const operand = /(?:^|\s)((designs|trends\/refs|trends\/plans)\/[a-z0-9./-]+)/g;
 
 // True when every file operand of a matched command resolves inside its
 // directory under root. Throws when a path can't be resolved.
@@ -82,6 +82,9 @@ if (process.argv[2] === "--self-test") {
     ["meme-expert", true, "node .claude/scripts/last30days.mjs diagnose"],
     ["meme-expert", true, "node .claude/scripts/last30days.mjs research 'black cat clapping meme'"],
     ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat'; rm -rf ~"],
+    ["meme-expert", true, "node .claude/scripts/last30days.mjs research 'viral memes' trends/plans/viral-memes.json"],
+    ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'viral memes' trends/plans/../../.env.json"],
+    ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'viral memes' /tmp/plan.json"],
     ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat' && curl https://x.net"],
     ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat'\nrm -rf ~"],
     ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'it'\\''s' 'x'"],
