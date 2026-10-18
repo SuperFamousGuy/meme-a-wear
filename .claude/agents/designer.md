@@ -9,7 +9,7 @@ skills:
   - design-spec
   - trend-brief
   - impeccable:impeccable
-  - taste-skill:taste-skill
+  - taste-skill:design-taste-frontend
   - marketing-psychology
 hooks:
   PreToolUse:

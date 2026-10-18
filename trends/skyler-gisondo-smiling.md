@@ -5,6 +5,12 @@ summary: A 2015 red-carpet photo of actor Skyler Gisondo grinning. Captions assi
 format:
   template: The smiling photo with a one-line caption describing what this guy is definitely like.
   remix_pattern: Write an oddly specific claim about the person in the photo, such as recess, ICEE, or trampoline jokes. Edits include a version with the smile removed.
+  visual_signature:
+    traits:
+      - A young man grins widely at the camera.
+      - He stands on a red carpet at a premiere.
+      - A one-line caption above the photo states an oddly specific trait.
+    checked_against: unverified
 origin:
   date: 2022-02-23
   first_seen_url: unknown

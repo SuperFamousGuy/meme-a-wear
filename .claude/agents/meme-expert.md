@@ -39,7 +39,10 @@ lifecycle stages, the confidence levels, and the risk rules. Follow it exactly.
    date and the UTC time you accessed it.
 3. **Assess.** Set the lifecycle stage and confidence from evidence. Check
    all four risk categories. An unchecked risk is `unknown`, never
-   `None found`.
+   `None found`. Write `format.visual_signature` from descriptions of the
+   meme, and set `checked_against` to `unverified`. When you update a
+   brief, keep its existing `checked_against` URL unless you change the
+   traits.
 4. **Save reference stills.** Designers can't draw a meme from text, so
    every `emerging` or `peaking` brief needs at least one still. See
    Reference stills below.
