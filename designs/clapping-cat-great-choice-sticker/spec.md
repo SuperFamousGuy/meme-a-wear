@@ -61,6 +61,25 @@ variants:
     reference: trends/refs/black-cat-clapping.jpg
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_182425_e4baaf9d-3bae-43e6-a30d-8574fdda8cff.png
     size_px: [2880, 2880]
+mockups:
+  - file: mockup-sticker.png
+    variant: sticker.png
+    shows: die-cut white vinyl sticker on a light oak desk beside a kraft notebook and a pencil
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo for an online store: one 3 inch die-cut white vinyl sticker lying
+      flat on a light oak desk next to a plain closed kraft-paper notebook and a plain pencil, soft
+      natural window light, slight realistic vinyl sheen, shallow depth of field. The supplied image
+      is the exact sticker artwork. Reproduce it faithfully as the printed sticker: the same black cat
+      with round amber eyes, a human grin with one row of square teeth, and clapping human-like hands,
+      the same near-black banner with yellow lettering exactly as in the artwork, the same colors, cut
+      along the thick off-white border so the sticker has the same outline shape. Do not redraw,
+      restyle, recolor, or add anything to the art. The sticker sits at a realistic small size
+      relative to the notebook. No people, no real hands, no faces, no other text, no logos, no brand
+      names, no labels on the notebook or pencil. (quality high, resolution 2k, aspect 1:1;
+      sticker.png passed as image_references)
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184805_848bdcec-5ffa-4952-9e66-ab8df1f0715f.png
+    size_px: [2048, 2048]
 fonts: []
 risk_addressed:
   ip: >-

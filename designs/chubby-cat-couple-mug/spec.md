@@ -40,6 +40,25 @@ variants:
     reference: trends/refs/fat-talking-tom-and-angela.jpg
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_182155_f9f94164-2574-4fed-91ab-1085476b68f4.png
     size_px: [3840, 1648]
+mockups:
+  - file: mockup-wrap.png
+    variant: wrap.png
+    shows: white 11 oz mug on a light oak table beside a linen napkin, caption and both cats facing the camera
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo for an online store: one plain white glossy ceramic 11 oz coffee
+      mug standing on a light oak tabletop beside a folded off-white linen napkin, soft natural window
+      light, shallow depth of field, plain softly blurred light background. The supplied image is the
+      exact full-wrap artwork printed around the mug by sublimation. Reproduce it faithfully, wrapping
+      around the curved mug surface: the same two chubby cats (one near-black, one off-white) with the
+      same huge round eyes and blank stare, the same colors, and the same caption lettering spelled
+      exactly TOO COZY / TO REPLY. Rotate the mug so the caption and both cats face the camera, with
+      the handle on the far right edge. Do not redraw, restyle, recolor, or add anything to the art.
+      The flat off-white background of the artwork blends into the white mug, so no rectangle or box
+      edge shows. No people, no hands, no faces, no other text, no logos, no brand names, no labels.
+      (quality high, resolution 2k, aspect 4:3; wrap.png passed as image_references)
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184617_0cfb7c52-96b3-4d66-9ee5-ea70870ac494.png
+    size_px: [2336, 1744]
 fonts: []
 risk_addressed:
   ip: >-

@@ -3,7 +3,7 @@ slug: whats-up-brah-alarm-clock-tee
 name: What's Up Brah Alarm Clock Tee
 status: draft
 created: 2026-10-18T02:58:00Z
-updated: 2026-10-18T03:04:00Z
+updated: 2026-10-18T18:50:00Z
 source_brief:
   path: trends/randy-marsh-vs-whats-up-brah.md
   stage: revived
@@ -92,6 +92,53 @@ variants:
     reference: designs/whats-up-brah-alarm-clock-tee/light.png (Higgsfield job 57568e65-97ce-4f9a-83a2-727efea2fcb7), recolored; the brief's still was not passed for this variant
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_030222_3e8719bf-0bcc-4a46-8409-8c7bfc51eb6a.png
     size_px: [2480, 3312]
+mockups:
+  - file: mockup-light.png
+    variant: light.png
+    shows: >-
+      White tee, flat lay on pale grey linen, seen from above. The caption
+      prints in a slightly lighter, less condensed weight than the art.
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic flat lay product photo of a plain white cotton crew-neck
+      t-shirt, neatly laid flat on a pale grey linen surface, soft even
+      daylight, seen from directly above. The supplied artwork is printed
+      front-center on the chest at realistic DTG size, about 12 inches wide,
+      exactly as supplied: the same bald cartoon man in a yellow hooded
+      bathrobe with a yellow sleep mask on his head, the same wide black
+      mustache, the same wide-armed stance, the same angry wind-up alarm
+      clock, and the caption "WHAT'S UP BRAH?" with the same spelling,
+      apostrophe, question mark, colors, and shapes. The artwork's flat
+      off-white background is removed, so the print sits directly on the
+      white fabric. Natural fabric texture and slight wrinkles. Do not
+      change, redraw, or add any text or shapes. No other text, no logos, no
+      labels, no brand names, no people, no hands, no faces other than the
+      printed cartoon, no mannequin.
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184450_0a463703-1ded-4c70-97d6-d604f58fa691.png
+    size_px: [2048, 2048]
+  - file: mockup-dark.png
+    variant: dark.png
+    shows: >-
+      Black tee on a wooden hanger, warm white plaster wall. The caption
+      prints in a slightly lighter, less condensed weight than the art.
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo of a plain black cotton crew-neck t-shirt
+      hanging on a simple wooden hanger against a warm white plaster wall,
+      soft studio light. The supplied artwork is printed front-center on the
+      chest at realistic DTG size, about 12 inches wide, exactly as supplied:
+      the same bald cartoon man in a yellow hooded bathrobe with a yellow
+      sleep mask on his head, the same wide black mustache with an off-white
+      outline, the same wide-armed stance, the same angry wind-up alarm
+      clock, and the off-white caption "WHAT'S UP BRAH?" with the same
+      spelling, apostrophe, question mark, colors, and shapes. The artwork's
+      flat near-black background is removed, so the print sits directly on
+      the black fabric. Natural fabric drape and texture. Do not change,
+      redraw, or add any text or shapes. No other text, no logos, no labels,
+      no brand names, no people, no hands, no faces other than the printed
+      cartoon, no mannequin.
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184657_37dc674f-a27c-4d0a-923c-828667aaf4e9.png
+    size_px: [2048, 2048]
 fonts: []
 risk_addressed:
   ip: >-

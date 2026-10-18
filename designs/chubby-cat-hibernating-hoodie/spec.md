@@ -53,6 +53,46 @@ variants:
     reference: light.png (Higgsfield job 137bab52-ac9b-4c55-b7b4-b08c785d5add), recolor only
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_182259_8a0e37e7-ecba-49fd-b989-88398deabf45.png
     size_px: [2880, 2880]
+mockups:
+  - file: mockup-light.png
+    variant: light.png
+    shows: heather ash-grey pullover hoodie, flat lay on pale concrete, print above the pocket
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo for an online store: one plain heather ash-grey pullover hoodie
+      with a kangaroo pocket and drawstrings, laid flat on a pale concrete floor with the sleeves
+      folded neatly at the sides, shot from directly above in soft daylight. The supplied image is the
+      exact artwork, printed front-center on the chest at a realistic 12 inch wide DTG print size,
+      above the kangaroo pocket and clear of the drawstrings. Reproduce it faithfully on the fabric:
+      the same single round near-black cat with no neck, huge round yellow-ringed eyes, flat pursed
+      mouth, and blank stare, the same colors, and the same caption spelled exactly CURRENTLY
+      HIBERNATING. Do not redraw, restyle, recolor, or add anything to the art. Print only the artwork
+      itself: the flat off-white background of the supplied image is not printed, so no rectangle or
+      box shows on the hoodie. The print follows the fleece texture. No people, no hands, no faces, no
+      mannequin, no other text, no logos, no brand names, no labels or tags. (quality high, resolution
+      2k, aspect 4:5; light.png passed as image_references)
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184617_e4c418df-d94f-414f-8ebc-2fc687dc6863.png
+    size_px: [1792, 2240]
+  - file: mockup-dark.png
+    variant: dark.png
+    shows: black pullover hoodie, ghost mannequin on a light grey studio background
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic ghost-mannequin product photo for an online store: one plain black pullover
+      hoodie with a kangaroo pocket and drawstrings, shown with an invisible mannequin so it holds a
+      natural three-dimensional shape, hood up behind the neck, on a plain light grey studio
+      background, soft even light. The supplied image is the exact artwork, printed front-center on
+      the chest at a realistic 12 inch wide DTG print size, above the kangaroo pocket and clear of the
+      drawstrings. Reproduce it faithfully on the fabric: the same single round near-black cat with a
+      thick off-white outline, huge round yellow-ringed eyes, flat pursed mouth, and blank stare, the
+      same colors, and the same off-white caption spelled exactly CURRENTLY HIBERNATING. Do not
+      redraw, restyle, recolor, or add anything to the art. Print only the artwork itself: the
+      near-black background of the supplied image is not printed and the black hoodie shows through,
+      so no rectangle or box shows. No people, no hands, no faces, no visible mannequin, no other
+      text, no logos, no brand names, no labels or tags. (quality high, resolution 2k, aspect 4:5;
+      dark.png passed as image_references)
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184709_7bd729a5-5261-4564-bf40-13df9df2f823.png
+    size_px: [1792, 2240]
 fonts: []
 risk_addressed:
   ip: >-

@@ -3,7 +3,7 @@ slug: tra-la-la-7am-mug
 name: Tra La La, 7 AM Mug
 status: draft
 created: 2026-10-18T18:20:00Z
-updated: 2026-10-18T18:25:00Z
+updated: 2026-10-18T18:50:00Z
 source_brief:
   path: trends/tra-la-la-spongebob.md
   stage: peaking
@@ -53,6 +53,30 @@ variants:
     reference: trends/refs/tra-la-la-spongebob.png
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_182059_5f5f549a-fe27-4b9b-bc20-fbba336b0244.png
     size_px: [3840, 1648]
+mockups:
+  - file: mockup-wrap.png
+    variant: wrap.png
+    shows: >-
+      White 11 oz mug on a light oak table, handle at right. The model fit the
+      whole wrap onto the visible face, so the art reads smaller and flatter
+      than it would on a real mug.
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo of a plain glossy white 11 oz ceramic
+      coffee mug on a light oak tabletop, soft natural window light, simple
+      blurred neutral background. The supplied artwork is printed as a full
+      wrap around the mug body by sublimation, exactly as supplied: same
+      yellow blob shape, same googly eyes, same teeth and tongue, same
+      lettering "TRA LA LA." and "IT IS 7 AM." with the same spelling,
+      colors, and layout. Angle the mug three-quarter so the handle sits at
+      the right edge and the viewer sees the right part of the wrap with the
+      caption fully readable and the blob's tail curving around the side. The
+      off-white background of the artwork blends into the white mug. Print
+      follows the mug's curve realistically. Do not change, redraw, or add
+      any text or shapes. No other text, no logos, no brand names, no people,
+      no hands, no faces.
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184450_242069aa-3f9e-41fe-933b-e1f355644654.png
+    size_px: [2048, 2048]
 fonts: []
 risk_addressed:
   ip: >-

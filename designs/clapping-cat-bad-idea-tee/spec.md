@@ -68,6 +68,43 @@ variants:
       look.
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_012439_2be25bc1-0c8a-4e37-aed3-1985e7ba6d1f.png
     size_px: 2480x3312
+mockups:
+  - file: mockup-light.png
+    variant: light.png
+    shows: white tee on a wooden hanger, warm-white painted wall
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo for an online store: one plain white crew-neck cotton t-shirt
+      hanging on a simple wooden hanger against a plain warm-white painted wall, soft natural light.
+      The supplied image is the exact artwork, printed front-center on the chest at a realistic 12
+      inch wide DTG print size. Reproduce it faithfully on the fabric: the same slim black cat sitting
+      upright with half-closed yellow eyes, a human grin with one row of square teeth, and clapping
+      human-like hands, the same colors, and the same near-black caption lettering exactly as in the
+      artwork. Do not redraw, restyle, recolor, or add anything to the art. Print only the artwork
+      itself: the flat off-white background of the supplied image is not printed, so no rectangle or
+      box shows on the shirt. The print follows the fabric folds. No people, no real hands, no faces,
+      no mannequin, no other text, no logos, no brand names, no neck labels or tags. (quality high,
+      resolution 2k, aspect 4:5; light.png passed as image_references)
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184709_1047f3bb-9d48-4d43-9bb6-ec959b73bf5a.png
+    size_px: 1792x2240
+  - file: mockup-dark.png
+    variant: dark.png
+    shows: black tee, flat lay on dark grey slate
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo for an online store: one plain black crew-neck cotton t-shirt laid
+      flat on a dark grey slate surface, neatly smoothed with natural soft folds, shot from directly
+      above in soft daylight. The supplied image is the exact artwork, printed front-center on the
+      chest at a realistic 12 inch wide DTG print size. Reproduce it faithfully on the fabric: the
+      same slim black cat with a thick off-white outline, half-closed yellow eyes, a human grin with
+      one row of square teeth, and clapping human-like hands, the same colors, and the same caption
+      lettering and colors exactly as in the artwork. Do not redraw, restyle, recolor, or add anything
+      to the art. Print only the artwork itself: the near-black background of the supplied image is
+      not printed and the black shirt shows through, so no rectangle or box shows. No people, no real
+      hands, no faces, no mannequin, no other text, no logos, no brand names, no neck labels or tags.
+      (quality high, resolution 2k, aspect 4:5; dark.png passed as image_references)
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184738_8aa566c9-a28b-44b1-8b1e-604ba01d859d.png
+    size_px: 1792x2240
 fonts: []
 risk_addressed:
   ip: >-

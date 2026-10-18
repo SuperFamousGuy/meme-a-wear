@@ -18,6 +18,9 @@ them.
   `dark.png`. Other products use one file per print surface, such as
   `wrap.png` for a mug. The designer downloads each result to this path to
   review it. Older designs use SVG.
+- `designs/<slug>/mockup-<variant>.png`: one sales mockup per variant, such
+  as `mockup-light.png`. It shows the printed product for sales and
+  marketing. Printers never print from it. Older designs may have none.
 - `brand/`: the brand guidelines, logo, and brand copy. Every design follows
   `brand/guidelines.md`.
 - `storefront/`: storefront specs and HTML mockups.
@@ -59,6 +62,21 @@ variants:
     prompt: Flat vector-style illustration of a black cat clapping...
     url: https://...
     size_px: [2048, 2731]
+mockups:                    # one per variant; for marketing, never for print
+  - file: mockup-light.png
+    variant: light.png
+    shows: white tee, flat lay on light wood
+    model: gpt_image_2_5
+    prompt: Photorealistic flat lay of a white crew-neck t-shirt with the supplied artwork printed front-center...
+    url: https://...
+    size_px: [2048, 2048]
+  - file: mockup-dark.png
+    variant: dark.png
+    shows: black tee on a wooden hanger, concrete wall
+    model: gpt_image_2_5
+    prompt: Photorealistic black crew-neck t-shirt on a wooden hanger with the supplied artwork...
+    url: https://...
+    size_px: [2048, 2048]
 fonts: []                   # only for SVG designs; generated text has no font file
 risk_addressed:             # one entry for each risk field in the brief
   ip: Original drawing. No frames from the source reel.
@@ -129,6 +147,21 @@ template's source in the notes when you use one.
 - Generated art must not resemble a real person, a character, or a logo.
   Record how you checked this, and which reference you used, in
   `risk_addressed.ip`.
+
+### Mockups
+
+- Make one mockup per variant. Generate it with Higgsfield, and pass the
+  variant image in `medias` so the print matches the artwork.
+- Show the product only: a flat lay, a hanger, or a ghost mannequin for
+  garments, and a tabletop scene for mugs and stickers. Never show a person,
+  hands, or a face.
+- Put the art on a product color that the variant's `for` names, in its
+  `placement`, at a realistic print size.
+- The printed art must match the variant: same text, spelling, colors, and
+  shapes. Regenerate the mockup if it doesn't.
+- Add no logos, brand names, or text other than the art's own, except the
+  meme-a-wear logo if `brand/guidelines.md` allows it.
+- A missing or failed mockup doesn't block `ready`. List it in `open_risks`.
 
 ### Light and dark garments
 
