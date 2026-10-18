@@ -1,0 +1,1 @@
+- [Source notes](reference_source_notes.md) — which sources work (KYM roundups, TikTok oEmbed), Bluesky 403, Yahoo = KYM syndication, UTC time lookup
