@@ -23,8 +23,13 @@ const allowlists = {
   ],
 };
 
+// The last30days skill runs multi-line scripts that no exact pattern can cover.
+// shortcut: any command naming the installed skill passes, so it could chain other commands; replace with a wrapper script if that matters.
+const last30days = /\.claude\/plugins\/(cache|marketplaces)\/last30days-skill\//;
+
 export function check(agent, command) {
   const patterns = allowlists[agent] ?? [];
+  if (agent === "meme-expert" && typeof command === "string" && last30days.test(command)) return true;
   return typeof command === "string" && patterns.some((p) => new RegExp(`^${p}$`).test(command.trim()));
 }
 
@@ -48,6 +53,9 @@ if (process.argv[2] === "--self-test") {
     ["meme-expert", false, "rm trends/refs/a.jpg trends/INDEX.md"],
     ["meme-expert", false, "ffmpeg -i trends/refs/a.jpg -vf crop=1:1:0:0 /tmp/x.jpg"],
     ["unknown", false, "rm trends/refs/a.jpg"],
+    ["meme-expert", true, "SKILL_DIR='/Users/u/.claude/plugins/marketplaces/last30days-skill/skills/last30days'; python3 \"$SKILL_DIR/scripts/last30days.py\" 'cat memes'"],
+    ["designer", false, "python3 /Users/u/.claude/plugins/cache/last30days-skill/last30days/3.28.0/scripts/last30days.py x"],
+    ["meme-expert", false, "python3 last30days.py x"],
   ];
   const fails = cases.filter(([agent, want, cmd]) => check(agent, cmd) !== want);
   if (fails.length) { console.error("self-test failed:", fails); process.exit(1); }

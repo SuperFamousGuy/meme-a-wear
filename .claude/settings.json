@@ -35,6 +35,12 @@
         "source": "github",
         "repo": "bradautomates/claude-video"
       }
+    },
+    "last30days-skill": {
+      "source": {
+        "source": "github",
+        "repo": "mvanhorn/last30days-skill"
+      }
     }
   },
   "enabledPlugins": {
@@ -43,6 +49,7 @@
     "taste-skill@taste-skill": true,
     "impeccable@impeccable": true,
     "claude-mem@thedotmack": true,
-    "watch@claude-video": true
+    "watch@claude-video": true,
+    "last30days@last30days-skill": true
   }
 }
