@@ -7,8 +7,8 @@ format:
   remix_pattern: The cat stands for someone who applauds something they shouldn't, such as a friend clapping while you skip class, or a teacher clapping when you finally answer correctly.
   visual_signature:
     traits:
-      - A black cat claps with human hands.
-      - The cat wears a wide, human-like smile.
+      - A black cat stands upright on its hind legs and claps its front paws. They are cat paws, not human hands.
+      - An edited-in wide human grin with a full row of white teeth covers the cat's mouth.
     checked_against: unverified
 origin:
   date: 2026-09-25
