@@ -10,6 +10,7 @@ skills:
   - trend-brief
   - impeccable:impeccable
   - taste-skill:taste-skill
+  - marketing-psychology
 hooks:
   PreToolUse:
     - matcher: "Write|Edit|NotebookEdit"
