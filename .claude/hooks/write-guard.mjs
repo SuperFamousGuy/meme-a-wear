@@ -4,36 +4,15 @@
 // directory. Usage: write-guard.mjs <agent> <dir> [<dir>...]
 // Fails closed: any error exits 2, which blocks the call. Other nonzero exit
 // codes would let the call proceed.
-import { lstatSync, readFileSync, realpathSync } from "node:fs";
-import { dirname, basename, join, resolve, sep } from "node:path";
+import { readFileSync } from "node:fs";
+import { join, resolve, sep } from "node:path";
+import { canonical } from "./paths.mjs";
 
 const [agent, ...dirs] = process.argv.slice(2);
 
 function block(reason) {
   process.stderr.write(`${agent ?? "unknown agent"} write guard: ${reason}\n`);
   process.exit(2);
-}
-
-// Resolves symlinks in the longest existing prefix, so a new file in an
-// existing directory, or a new directory, still resolves correctly.
-function canonical(path) {
-  const tail = [];
-  let current = path;
-  for (;;) {
-    try {
-      return join(realpathSync(current), ...tail.reverse());
-    } catch {
-      // Only a truly missing entry may be skipped. An entry that exists but
-      // won't resolve, such as a dangling symlink, could redirect the write.
-      if (lstatSync(current, { throwIfNoEntry: false })) {
-        throw new Error(`can't resolve ${current}`);
-      }
-      const parent = dirname(current);
-      if (parent === current) throw new Error(`can't resolve ${path}`);
-      tail.push(basename(current));
-      current = parent;
-    }
-  }
 }
 
 try {

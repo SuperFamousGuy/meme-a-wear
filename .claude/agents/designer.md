@@ -9,7 +9,7 @@ skills:
   - design-spec
   - trend-brief
   - impeccable:impeccable
-  - taste-skill:taste-skill
+  - taste-skill:design-taste-frontend
   - marketing-psychology
 hooks:
   PreToolUse:
@@ -79,7 +79,10 @@ Write product descriptions in the design's `spec.md` under `copy`.
    the meme-expert.
 5. **Upload the reference.** Call `media_upload` for the still, then upload
    it with exactly this command, and call `media_confirm`:
-   `curl -sf -X PUT -H 'Content-Type: image/jpeg' --upload-file trends/refs/<file> '<upload_url>'`
+   `curl -sf -X PUT -H 'Content-Type: <type>' --upload-file trends/refs/<file> '<upload_url>'`
+   Use the still's own type, in both `media_upload` and the command:
+   `image/jpeg` for `.jpg`, `image/png` for `.png`, or `image/webp` for
+   `.webp`.
    Check the model's reference roles with `models_explore`.
 6. **Design.** Follow the brief's `remix_guidance`. Write a caption in the
    brand voice. Generate each variant with Higgsfield, passing the reference
@@ -89,15 +92,17 @@ Write product descriptions in the design's `spec.md` under `copy`.
    too. Never name a real person, character, brand, or artist in a prompt.
    For garments, make a light and a dark variant. For other products, make
    one variant per print surface, as the `design-spec` skill describes.
-7. **Review.** Download every result into its spec path with exactly this
-   command, then view it with Read:
+7. **Review.** If `designs/<slug>/spec.md` doesn't exist yet, Write a draft
+   of it now with `status: draft`, so that the directory exists. The
+   download command can't create it. Then download every result into its
+   spec path with exactly this command, and view it with Read:
    `curl -sfL -o designs/<slug>/<variant>.png '<result URL>'`
    Compare it with the reference side by side. Regenerate it if a viewer
    wouldn't recognize the meme at a glance, if it shows anything from step 4
    wrongly (for example, human hands where the meme has paws), or if it
    breaks a print or brand rule. Stop after three attempts per variant and
    report what still fails.
-8. **Record.** Write `designs/<slug>/spec.md` with each variant's prompt,
+8. **Record.** Complete `designs/<slug>/spec.md` with each variant's prompt,
    model, reference, image URL, and pixel size. Fill `risk_addressed` for
    every risk field and `open_risks` for anything left. Confirm resolution,
    background, spelling, and text contrast against the `design-spec` skill.
