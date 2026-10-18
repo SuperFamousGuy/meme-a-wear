@@ -1,14 +1,14 @@
 ---
 slug: black-cat-clapping
 name: Black Cat Clapping
-summary: An AI-generated black cat with a human-like smile and human hands that applauds. People use it as a green-screen reaction to someone cheering on bad behavior.
+summary: A real black cat stands upright on its hind legs on a tile floor and claps its front paws, with a wide, edited-in human grin. People use it as a green-screen reaction to someone cheering on bad behavior.
 format:
   template: Green-screen clip of a smiling black cat clapping, placed over a new background with a caption.
   remix_pattern: The cat stands for someone who applauds something they shouldn't, such as a friend clapping while you skip class, or a teacher clapping when you finally answer correctly.
   visual_signature:
     traits:
-      - A black cat claps with human hands.
-      - The cat wears a wide, human-like smile.
+      - A black cat stands upright on its hind legs and claps its front paws. They are cat paws, not human hands.
+      - An edited-in wide human grin with a full row of white teeth covers the cat's mouth.
     checked_against: unverified
 origin:
   date: 2026-09-25
@@ -22,6 +22,10 @@ sources:
     platform: knowyourmeme
     published: 2026-10-09
     accessed: 2026-10-13T11:12:00Z
+references:               # local stills of the meme; the person in the frame is cropped out
+  - path: trends/refs/black-cat-clapping.jpg
+    source_url: user-supplied
+    shows: Round-faced black short-hair cat with round yellow-green eyes, standing upright on its hind legs, front paws raised and spread mid-clap (cat paws, not human hands), a wide human grin with a full row of white teeth pasted over its mouth.
 platforms: [instagram, tiktok]
 lifecycle:
   stage: emerging
@@ -43,7 +47,7 @@ remix_guidance:
 risk:
   overall: caution
   ip: The original reel belongs to Instagram user merkurianin (credited by KYM as Aleksandr Kim). Don't reproduce frames. A redrawn clapping black cat is a generic concept.
-  likeness: unknown. KYM says the original reel shows the uploader feeding his cat, but it doesn't say whether he appears on screen. He is a private individual. Never use any frame that shows him.
+  likeness: The source frame shows part of a person (a leg and foot) at the bottom left. The stored reference crops it out. The person is a private individual. Never show any part of them.
   extremist_or_coded: None found. Checked the KYM entry and roundup.
   tragedy_harassment_danger: None found. Checked the KYM entry and roundup.
 ---
@@ -57,8 +61,9 @@ risk:
   coverage, which fits `emerging`. It started about 18 days ago, which is
   longer than the usual emerging window. Re-check it soon. If press or X
   coverage appears, it has likely moved to `peaking`.
-- **Video evidence is secondhand.** I couldn't watch the clip. The description
-  comes from KYM.
+- **Visual check.** The user supplied a still on 2026-10-18. It corrects the
+  KYM-based description: the cat has paws, not human hands, and stands on its
+  hind legs. The grin is an edited-in human mouth. See `references`.
 - Don't confuse it with "Black Cat Zoning Out"
   (https://knowyourmeme.com/memes/black-cat-zoning-out), a separate 2023
   green-screen meme.

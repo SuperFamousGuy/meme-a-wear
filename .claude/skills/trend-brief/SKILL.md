@@ -51,6 +51,10 @@ sources:                    # at least two independent sources for confidence me
     platform: news
     published: 2017-08-29
     accessed: 2026-10-12T21:34:00Z
+references:                 # local stills that show what the meme looks like
+  - path: trends/refs/distracted-boyfriend.jpg
+    source_url: https://…   # where the still came from, or "user-supplied"
+    shows: The three people mid-glance, on a city street.
 platforms: [x, reddit, instagram]
 lifecycle:
   stage: saturated          # emerging | peaking | saturated | dead | revived
@@ -86,7 +90,14 @@ risk:
 Evidence, notable examples with links, and anything that doesn't fit a field.
 ```
 
-All fields are required. Write `unknown` when you can't determine a value,
+All fields are required. `references` may be empty only for a `saturated`,
+`dead`, or `revived` brief, or when no still could be found. Then say why in
+the notes. Designers can't draw a meme from text alone, so they don't design
+from an `emerging` or `peaking` brief without a still. Crop out any real
+person and record that in `risk.likeness`. Stills are internal references and
+never go to print.
+
+Write `unknown` when you can't determine a value,
 and explain why in the notes.
 
 ### Visual signature
