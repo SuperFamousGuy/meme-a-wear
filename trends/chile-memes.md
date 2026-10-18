@@ -5,6 +5,11 @@ summary: Jokes about Chile's long, narrow shape that imagine everything in Chile
 format:
   template: A photo or render of an extremely narrow everyday object, often beside a map of Chile, captioned "X in Chile be like" or "How I imagine Chile."
   remix_pattern: Pick an everyday thing and make it Chile-shaped. Variants include map jokes about Chile squeezed between neighbors, and "it's long enough to bridge Spain and Canada, and yet it refuses to do so."
+  visual_signature:
+    traits:
+      - An everyday object, such as a car, house, or soccer field, is stretched impossibly thin.
+      - A caption reads "X in Chile be like" or "How I imagine Chile."
+    checked_against: unverified
 origin:
   date: 2020-09-13
   first_seen_url: unknown
