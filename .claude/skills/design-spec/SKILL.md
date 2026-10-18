@@ -39,7 +39,7 @@ source_brief:
 product:
   type: t-shirt             # t-shirt | hoodie | mug | sticker | other
   placement: front-center
-  print_method: dtg         # dtg | screen | sublimation | unknown
+  print_method: dtg         # dtg | screen | sublimation | digital | unknown
   print_area_in: [12, 16]   # width, height in inches
 variants:
   - file: light.svg
