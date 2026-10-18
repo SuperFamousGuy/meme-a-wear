@@ -12,7 +12,7 @@ hooks:
     - matcher: "Write|Edit|NotebookEdit"
       hooks:
         - type: command
-          command: node "$CLAUDE_PROJECT_DIR/.claude/hooks/meme-expert-write-guard.mjs"
+          command: node "$CLAUDE_PROJECT_DIR/.claude/hooks/write-guard.mjs" meme-expert trends
 ---
 
 You are meme-a-wear's expert on meme culture. You know meme history, from early
