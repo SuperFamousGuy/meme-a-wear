@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="12in" height="16in">
+  <!-- Light garments: white, ash, sand. Transparent background: no garment-color fill. -->
+  <!-- Colors: Ink #141414, Chalk #F2F2EE, Yolk #F2C14E, Smoke #6B6B66. Font: Archivo Black (SIL OFL 1.1). -->
+  <!-- Original drawing. Not traced from any frame. -->
+
+  <!-- Silhouette: slim upright torso with neck, then angular head -->
+  <g fill="#141414">
+    <path d="M480 600 C470 680 430 730 400 790 C370 860 360 1000 375 1120 C385 1190 400 1230 420 1240 L780 1240 C800 1230 815 1190 825 1120 C840 1000 830 860 800 790 C770 730 730 680 720 600 Z"/>
+    <path d="M395 370 L430 130 L530 265 Q600 245 670 265 L770 130 L805 370 C825 420 825 500 790 560 C750 620 680 655 600 660 C520 655 450 620 410 560 C375 500 375 420 395 370 Z"/>
+  </g>
+
+  <!-- Inner ears -->
+  <g fill="#6B6B66">
+    <path d="M440 185 L422 340 L512 272 Z"/>
+    <path d="M760 185 L778 340 L688 272 Z"/>
+  </g>
+  <g stroke="#141414" stroke-width="4" stroke-linecap="round">
+    <line x1="430" y1="330" x2="445" y2="230"/>
+    <line x1="450" y1="320" x2="470" y2="250"/>
+    <line x1="770" y1="330" x2="755" y2="230"/>
+    <line x1="750" y1="320" x2="730" y2="250"/>
+  </g>
+
+  <!-- Fur highlights: forehead, cheeks, nose bridge, chest, shoulders -->
+  <g fill="none" stroke="#6B6B66" stroke-width="5" stroke-linecap="round">
+    <path d="M560 300 Q565 340 575 360"/>
+    <path d="M600 290 L600 345"/>
+    <path d="M640 300 Q635 340 625 360"/>
+    <path d="M404 385 C388 430 388 495 418 548"/>
+    <path d="M796 385 C812 430 812 495 782 548"/>
+    <path d="M585 470 Q580 495 578 516"/>
+    <path d="M615 470 Q620 495 622 516"/>
+    <path d="M560 690 L570 720"/>
+    <path d="M600 685 L600 722"/>
+    <path d="M640 690 L630 720"/>
+    <path d="M580 730 L588 758"/>
+    <path d="M620 730 L612 758"/>
+    <path d="M412 805 C388 870 380 980 388 1100"/>
+    <path d="M788 805 C812 870 820 980 812 1100"/>
+  </g>
+
+  <!-- Eyes: half-closed, lids lowered -->
+  <g fill="#F2C14E">
+    <path d="M440 432 Q500 428 562 450 Q505 478 440 432 Z"/>
+    <path d="M760 432 Q700 428 638 450 Q695 478 760 432 Z"/>
+  </g>
+  <g fill="#141414">
+    <path d="M508 440 Q515 452 508 466 Q501 452 508 440 Z"/>
+    <path d="M692 440 Q699 452 692 466 Q685 452 692 440 Z"/>
+  </g>
+  <g fill="none" stroke="#141414" stroke-width="10" stroke-linecap="round">
+    <path d="M434 430 Q500 424 568 452"/>
+    <path d="M766 430 Q700 424 632 452"/>
+  </g>
+  <g fill="none" stroke="#6B6B66" stroke-width="4" stroke-linecap="round">
+    <path d="M444 414 Q505 408 560 432"/>
+    <path d="M756 414 Q695 408 640 432"/>
+  </g>
+
+  <!-- Nose and philtrum -->
+  <path d="M578 520 L622 520 Q612 540 600 546 Q588 540 578 520 Z" fill="#141414" stroke="#6B6B66" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="600" y1="546" x2="600" y2="584" stroke="#6B6B66" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <g fill="none" stroke="#6B6B66" stroke-width="4" stroke-linecap="round">
+    <path d="M530 560 Q460 548 340 538"/>
+    <path d="M530 570 Q460 572 342 590"/>
+    <path d="M532 580 Q470 595 360 632"/>
+    <path d="M670 560 Q740 548 860 538"/>
+    <path d="M670 570 Q740 572 858 590"/>
+    <path d="M668 580 Q730 595 840 632"/>
+  </g>
+
+  <!-- Small human mouth: tight smug grin, one flat row of square teeth -->
+  <path d="M540 578 Q600 600 660 578 Q648 622 600 624 Q552 622 540 578 Z" fill="#141414" stroke="#6B6B66" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M552 588 Q600 604 648 588 L645 607 Q600 616 555 607 Z" fill="#F2F2EE"/>
+  <g stroke="#141414" stroke-width="4">
+    <line x1="568" y1="590" x2="568" y2="613"/>
+    <line x1="584" y1="592" x2="584" y2="615"/>
+    <line x1="600" y1="593" x2="600" y2="616"/>
+    <line x1="616" y1="592" x2="616" y2="615"/>
+    <line x1="632" y1="590" x2="632" y2="613"/>
+  </g>
+
+  <!-- Forelegs: Smoke edges only -->
+  <g fill="none" stroke="#6B6B66" stroke-width="6" stroke-linecap="round">
+    <path d="M430 840 C420 940 440 1030 470 1070"/>
+    <path d="M500 860 C495 950 500 1020 515 1078"/>
+    <path d="M770 840 C780 940 760 1030 705 1070"/>
+    <path d="M700 860 C705 950 690 1020 660 1078"/>
+  </g>
+
+  <!-- Left hand (behind): fur-black, Smoke edge, fingers spread -->
+  <g stroke-linecap="round">
+    <line x1="548" y1="888" x2="515" y2="800" stroke="#6B6B66" stroke-width="30"/>
+    <line x1="548" y1="888" x2="515" y2="800" stroke="#141414" stroke-width="22"/>
+    <line x1="565" y1="890" x2="545" y2="778" stroke="#6B6B66" stroke-width="30"/>
+    <line x1="565" y1="890" x2="545" y2="778" stroke="#141414" stroke-width="22"/>
+    <line x1="582" y1="895" x2="575" y2="770" stroke="#6B6B66" stroke-width="30"/>
+    <line x1="582" y1="895" x2="575" y2="770" stroke="#141414" stroke-width="22"/>
+    <line x1="598" y1="902" x2="606" y2="790" stroke="#6B6B66" stroke-width="30"/>
+    <line x1="598" y1="902" x2="606" y2="790" stroke="#141414" stroke-width="22"/>
+  </g>
+  <path d="M470 1070 L520 1080 C555 1050 580 1030 590 1005 L602 905 L540 882 C505 930 480 1000 470 1070 Z" fill="#141414" stroke="#6B6B66" stroke-width="6" stroke-linejoin="round"/>
+  <g stroke-linecap="round">
+    <line x1="592" y1="990" x2="628" y2="930" stroke="#6B6B66" stroke-width="32"/>
+    <line x1="592" y1="990" x2="628" y2="930" stroke="#141414" stroke-width="24"/>
+  </g>
+
+  <!-- Right hand (front): overlaps the left hand mid-clap -->
+  <g stroke-linecap="round">
+    <line x1="627" y1="888" x2="660" y2="800" stroke="#6B6B66" stroke-width="30"/>
+    <line x1="627" y1="888" x2="660" y2="800" stroke="#141414" stroke-width="22"/>
+    <line x1="610" y1="890" x2="630" y2="778" stroke="#6B6B66" stroke-width="30"/>
+    <line x1="610" y1="890" x2="630" y2="778" stroke="#141414" stroke-width="22"/>
+    <line x1="593" y1="895" x2="600" y2="770" stroke="#6B6B66" stroke-width="30"/>
+    <line x1="593" y1="895" x2="600" y2="770" stroke="#141414" stroke-width="22"/>
+    <line x1="577" y1="902" x2="569" y2="790" stroke="#6B6B66" stroke-width="30"/>
+    <line x1="577" y1="902" x2="569" y2="790" stroke="#141414" stroke-width="22"/>
+  </g>
+  <path d="M705 1070 L655 1080 C620 1050 595 1030 585 1005 L573 905 L635 882 C670 930 695 1000 705 1070 Z" fill="#141414" stroke="#6B6B66" stroke-width="6" stroke-linejoin="round"/>
+  <g stroke-linecap="round">
+    <line x1="583" y1="990" x2="547" y2="930" stroke="#6B6B66" stroke-width="32"/>
+    <line x1="583" y1="990" x2="547" y2="930" stroke="#141414" stroke-width="24"/>
+  </g>
+
+  <!-- Caption -->
+  <g font-family="Archivo Black" font-size="140" text-anchor="middle" fill="#141414">
+    <text x="600" y="1400">BAD IDEA.</text>
+    <text x="600" y="1550">LOVE IT.</text>
+  </g>
+</svg>
