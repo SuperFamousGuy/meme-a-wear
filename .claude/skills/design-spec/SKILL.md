@@ -13,9 +13,11 @@ them.
 
 - `designs/<slug>/spec.md`: one spec per design. The slug is lowercase
   kebab-case and never changes.
-- `designs/<slug>/<variant>.svg`: one SVG file per artwork variant that the
-  spec lists. Garments use `light.svg` and `dark.svg`. Other products use one
-  file per print surface, such as `wrap.svg` for a mug.
+- `designs/<slug>/<variant>.png`: one image per artwork variant that the
+  spec lists, generated with Higgsfield. Garments use `light.png` and
+  `dark.png`. Other products use one file per print surface, such as
+  `wrap.png` for a mug. The designer downloads each result to this path to
+  review it. Older designs use SVG.
 - `brand/`: the brand guidelines, logo, and brand copy. Every design follows
   `brand/guidelines.md`.
 - `storefront/`: storefront specs and HTML mockups.
@@ -42,16 +44,22 @@ product:
   print_method: dtg         # dtg | screen | sublimation | unknown
   print_area_in: [12, 16]   # width, height in inches
 variants:
-  - file: light.svg
+  - file: light.png
     for: light garments (white, ash, sand)
     colors: ["#111111", "#F2C14E"]
-  - file: dark.svg
+    model: gpt_image_2_5       # the Higgsfield model you used
+    prompt: Flat vector-style illustration of a black cat clapping...
+    reference: trends/refs/black-cat-clapping.jpg   # the brief's still, or none
+    url: https://...           # the Higgsfield result URL
+    size_px: [2048, 2731]
+  - file: dark.png
     for: dark garments (black, navy, charcoal)
     colors: ["#F5F5F5", "#F2C14E"]
-fonts:
-  - name: Archivo Black
-    license: SIL OFL 1.1
-    source: https://fonts.google.com/specimen/Archivo+Black
+    model: gpt_image_2_5
+    prompt: Flat vector-style illustration of a black cat clapping...
+    url: https://...
+    size_px: [2048, 2731]
+fonts: []                   # only for SVG designs; generated text has no font file
 risk_addressed:             # one entry for each risk field in the brief
   ip: Original drawing. No frames from the source reel.
   likeness: No people shown. The cat is not the uploader's cat.
@@ -98,16 +106,29 @@ template's source in the notes when you use one.
 
 ### Artwork
 
-- Set the SVG `viewBox` to the print area at 100 units per inch. For example,
-  a 12 × 16 in area is `viewBox="0 0 1200 1600"`. Set `width` and `height` in
-  inches.
-- Use only colors from `brand/guidelines.md` or the spec's `variants`. Write
-  colors as hex values.
-- Use no raster images, filters, or blurs. Some printers drop them.
-- Make lines and text at least 0.03 in (3 units) thick, so they survive
-  printing on fabric.
-- Use only fonts with a license that allows commercial use, such as SIL OFL.
-  Name each font in `fonts`. The printer converts text to outlines.
+- Generate each variant with Higgsfield. Pick an aspect ratio that matches
+  the print area, such as 3:4 for a 12 × 16 in t-shirt.
+- Use hand-written SVG only as a last resort, when Higgsfield is out of
+  credits or can't be reached. Record that reason in `open_risks` and keep
+  the spec `draft`.
+- Ask for a flat, isolated illustration on a solid background that the
+  printer can remove. Avoid photographic backgrounds, soft shadows, and
+  fine gradients near edges.
+- Name the brand colors as hex values in the prompt, and list the colors the
+  result uses in `colors`.
+- Keep captions short. Check every generated letter for spelling. Regenerate
+  the image if any letter is wrong or malformed.
+- Record the effective resolution: `size_px` divided by `print_area_in`.
+  DTG prints best at 300 DPI. Below 150 DPI, upscale the image with
+  Higgsfield's `upscale_image` and record the upscaled URL and size. If it
+  is still below 150 DPI, add that to `open_risks` and keep the spec `draft`.
+- The design must look like the meme. Pass the brief's reference still to
+  Higgsfield for pose, face, and expression, and redraw it as an original
+  illustration. Don't copy the frame itself: no photo pixels, no background
+  from the frame, and no people.
+- Generated art must not resemble a real person, a character, or a logo.
+  Record how you checked this, and which reference you used, in
+  `risk_addressed.ip`.
 
 ### Light and dark garments
 
