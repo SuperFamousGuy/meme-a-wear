@@ -15,6 +15,9 @@ const url = "'https://[A-Za-z0-9._~:/?#\\[\\]@!$&()*+,;=%-]+'";
 const ref = "trends/refs/[a-z0-9-]+\\.(jpg|png|webp)";
 // A crop value is a pixel count, or the input width or height minus pixels.
 const px = "([0-9]+|iw|ih|iw-[0-9]+|ih-[0-9]+)";
+// A research topic: single-quoted, so the shell treats it as one literal
+// argument. The wrapper rejects a leading dash.
+const topic = "'[^'\\n]{1,200}'";
 
 // The upload's Content-Type must match the file's extension.
 const mimes = { jpg: "jpeg", png: "png", webp: "webp" };
@@ -30,12 +33,10 @@ const allowlists = {
     `curl -sfL --max-filesize 5000000 -o ${ref} ${url}`,
     `ffmpeg -loglevel error -y -i ${ref} -vf crop=${px}:${px}:${px}:${px} ${ref}`,
     `rm ${ref}`,
+    "node \\.claude/scripts/last30days\\.mjs diagnose",
+    `node \\.claude/scripts/last30days\\.mjs research ${topic}`,
   ],
 };
-
-// The last30days skill runs multi-line scripts that no exact pattern can cover.
-// shortcut: any command naming the installed skill passes, so it could chain other commands; replace with a wrapper script if that matters.
-const last30days = /\.claude\/plugins\/(cache|marketplaces)\/last30days-skill\//;
 
 // Each file operand and the directory it must stay inside.
 const operand = /(?:^|\s)((designs|trends\/refs)\/[a-z0-9./-]+)/g;
@@ -52,7 +53,6 @@ function contained(command, cwd, root) {
 export function check(agent, command, cwd, root = cwd) {
   const patterns = allowlists[agent] ?? [];
   if (typeof command !== "string") return false;
-  if (agent === "meme-expert" && last30days.test(command)) return true;
   const trimmed = command.trim();
   return patterns.some((p) => new RegExp(`^${p}$`).test(trimmed)) && contained(trimmed, cwd, root);
 }
@@ -79,9 +79,18 @@ if (process.argv[2] === "--self-test") {
     ["meme-expert", false, "rm trends/refs/a.jpg trends/INDEX.md"],
     ["meme-expert", false, "ffmpeg -i trends/refs/a.jpg -vf crop=1:1:0:0 /tmp/x.jpg"],
     ["unknown", false, "rm trends/refs/a.jpg"],
-    ["meme-expert", true, "SKILL_DIR='/Users/u/.claude/plugins/marketplaces/last30days-skill/skills/last30days'; python3 \"$SKILL_DIR/scripts/last30days.py\" 'cat memes'"],
-    ["designer", false, "python3 /Users/u/.claude/plugins/cache/last30days-skill/last30days/3.28.0/scripts/last30days.py x"],
-    ["meme-expert", false, "python3 last30days.py x"],
+    ["meme-expert", true, "node .claude/scripts/last30days.mjs diagnose"],
+    ["meme-expert", true, "node .claude/scripts/last30days.mjs research 'black cat clapping meme'"],
+    ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat'; rm -rf ~"],
+    ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat' && curl https://x.net"],
+    ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat'\nrm -rf ~"],
+    ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'it'\\''s' 'x'"],
+    ["meme-expert", false, "node .claude/scripts/last30days.mjs research cat"],
+    ["meme-expert", false, "node .claude/scripts/last30days.mjs diagnose # x"],
+    ["designer", false, "node .claude/scripts/last30days.mjs diagnose"],
+    ["meme-expert", false, "printf probe > brand/probe.txt # .claude/plugins/cache/last30days-skill/"],
+    ["meme-expert", false, "SKILL_DIR='/Users/u/.claude/plugins/marketplaces/last30days-skill/skills/last30days'; python3 \"$SKILL_DIR/scripts/last30days.py\" 'cat memes'"],
+    ["meme-expert", false, "python3 /Users/u/.claude/plugins/cache/last30days-skill/last30days/3.28.0/scripts/last30days.py x; touch brand/x"],
   ];
   const root = mkdtempSync(join(tmpdir(), "shell-guard-"));
   const outside = mkdtempSync(join(tmpdir(), "shell-guard-out-"));
