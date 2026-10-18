@@ -1,0 +1,10 @@
+{
+  "intent": "Find which internet memes went viral in the last 30 days (mid-September to mid-October 2026), with names and engagement.",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "auto",
+  "subqueries": [
+    {"label": "viral-memes", "search_query": "viral meme this week", "ranking_query": "which new memes are going viral right now", "sources": ["reddit", "youtube", "hackernews", "grounding"], "weight": 1.0},
+    {"label": "meme-explained", "search_query": "meme explained origin October 2026", "ranking_query": "explainers for new viral memes in October 2026", "sources": ["youtube", "grounding"], "weight": 0.8},
+    {"label": "named-candidates", "search_query": "clapping cat OR tra la la spongebob OR scrib doon OR randy marsh whats up brah OR rumpelstiltskin tip toe", "ranking_query": "engagement and spread of clapping cat, tra la la spongebob, scrib doon, randy marsh whats up brah, rumpelstiltskin memes", "sources": ["reddit", "youtube"], "weight": 0.9}
+  ]
+}

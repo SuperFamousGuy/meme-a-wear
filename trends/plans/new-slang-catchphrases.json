@@ -1,0 +1,9 @@
+{
+  "intent": "Find new slang and meme catchphrases spreading in the last 30 days, and measure the spread of known candidate phrases.",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "auto",
+  "subqueries": [
+    {"label": "slang", "search_query": "new slang catchphrase meme everyone saying", "ranking_query": "which new slang words and meme catchphrases are spreading now", "sources": ["reddit", "youtube", "grounding"], "weight": 1.0},
+    {"label": "nan-scrib", "search_query": "blatantly just not me nan scrib doon biddy blas", "ranking_query": "spread of you're blatantly just not me nan and scrib doon catchphrases", "sources": ["reddit", "youtube"], "weight": 0.9}
+  ]
+}
