@@ -33,6 +33,10 @@ const allowlists = {
   ],
 };
 
+// The last30days skill runs multi-line scripts that no exact pattern can cover.
+// shortcut: any command naming the installed skill passes, so it could chain other commands; replace with a wrapper script if that matters.
+const last30days = /\.claude\/plugins\/(cache|marketplaces)\/last30days-skill\//;
+
 // Each file operand and the directory it must stay inside.
 const operand = /(?:^|\s)((designs|trends\/refs)\/[a-z0-9./-]+)/g;
 
@@ -48,6 +52,7 @@ function contained(command, cwd, root) {
 export function check(agent, command, cwd, root = cwd) {
   const patterns = allowlists[agent] ?? [];
   if (typeof command !== "string") return false;
+  if (agent === "meme-expert" && last30days.test(command)) return true;
   const trimmed = command.trim();
   return patterns.some((p) => new RegExp(`^${p}$`).test(trimmed)) && contained(trimmed, cwd, root);
 }
@@ -74,6 +79,9 @@ if (process.argv[2] === "--self-test") {
     ["meme-expert", false, "rm trends/refs/a.jpg trends/INDEX.md"],
     ["meme-expert", false, "ffmpeg -i trends/refs/a.jpg -vf crop=1:1:0:0 /tmp/x.jpg"],
     ["unknown", false, "rm trends/refs/a.jpg"],
+    ["meme-expert", true, "SKILL_DIR='/Users/u/.claude/plugins/marketplaces/last30days-skill/skills/last30days'; python3 \"$SKILL_DIR/scripts/last30days.py\" 'cat memes'"],
+    ["designer", false, "python3 /Users/u/.claude/plugins/cache/last30days-skill/last30days/3.28.0/scripts/last30days.py x"],
+    ["meme-expert", false, "python3 last30days.py x"],
   ];
   const root = mkdtempSync(join(tmpdir(), "shell-guard-"));
   const outside = mkdtempSync(join(tmpdir(), "shell-guard-out-"));
