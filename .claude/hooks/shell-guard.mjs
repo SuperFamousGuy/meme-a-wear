@@ -26,7 +26,7 @@ const allowlists = {
   designer: [
     `curl -sfL -o designs/[a-z0-9-]+/[a-z0-9-]+\\.(png|jpg|webp) ${url}`,
     ...Object.entries(mimes).map(
-      ([ext, mime]) => `curl -sf -X PUT -H 'Content-Type: image/${mime}' --upload-file trends/refs/[a-z0-9-]+\\.${ext} ${url}`,
+      ([ext, mime]) => `curl -sf -X PUT -H 'Content-Type: image/${mime}' --upload-file (trends/refs|designs/[a-z0-9-]+)/[a-z0-9-]+\\.${ext} ${url}`,
     ),
   ],
   "meme-expert": [
@@ -63,6 +63,9 @@ if (process.argv[2] === "--self-test") {
     ["designer", true, "curl -sf -X PUT -H 'Content-Type: image/jpeg' --upload-file trends/refs/black-cat-clapping.jpg 'https://s3.amazonaws.com/b/k?X-Amz-Signature=ab%2F&x=1'"],
     ["designer", true, "curl -sf -X PUT -H 'Content-Type: image/png' --upload-file trends/refs/cat.png 'https://s3.amazonaws.com/b/k'"],
     ["designer", false, "curl -sf -X PUT -H 'Content-Type: image/jpeg' --upload-file trends/refs/cat.png 'https://s3.amazonaws.com/b/k'"],
+    ["designer", true, "curl -sf -X PUT -H 'Content-Type: image/png' --upload-file designs/cat-tee/light.png 'https://s3.amazonaws.com/b/k'"],
+    ["designer", false, "curl -sf -X PUT -H 'Content-Type: image/png' --upload-file designs/cat-tee/spec.md 'https://s3.amazonaws.com/b/k'"],
+    ["designer", false, "curl -sf -X PUT -H 'Content-Type: image/png' --upload-file designs/escape/x.png 'https://s3.amazonaws.com/b/k'"],
     ["meme-expert", true, "curl -sfL --max-filesize 5000000 -o trends/refs/cat-1.jpg 'https://i.kym-cdn.com/photos/images/original/1/2.jpg'"],
     ["meme-expert", true, "ffmpeg -loglevel error -y -i trends/refs/cat-raw.jpg -vf crop=164:218:0:0 trends/refs/cat.jpg"],
     ["meme-expert", true, "ffmpeg -loglevel error -y -i trends/refs/cat-raw.jpg -vf crop=iw:ih-60:0:0 trends/refs/cat.jpg"],

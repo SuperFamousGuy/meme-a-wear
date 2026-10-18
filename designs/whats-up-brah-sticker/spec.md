@@ -3,7 +3,7 @@ slug: whats-up-brah-sticker
 name: What's Up Brah Sticker
 status: draft
 created: 2026-10-18T18:25:00Z
-updated: 2026-10-18T18:35:00Z
+updated: 2026-10-18T18:50:00Z
 source_brief:
   path: trends/randy-marsh-vs-whats-up-brah.md
   stage: peaking
@@ -57,6 +57,29 @@ variants:
       Higgsfield job 57568e65-97ce-4f9a-83a2-727efea2fcb7)
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_182110_91cc4e17-0f88-48a9-89ef-b7726e9a12f3.png
     size_px: [2880, 2880]
+mockups:
+  - file: mockup-sticker.png
+    variant: sticker.png
+    shows: >-
+      Die-cut sticker on the lid of a plain grey laptop on a wood desk. The
+      sticker looks larger than 3 in relative to the lid.
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo of a single die-cut vinyl sticker, about 3
+      inches tall, stuck on the closed lid of a plain matte grey laptop with
+      no logo, lying on a light wood desk, soft daylight, shallow depth of
+      field. The sticker is the supplied artwork cut along the outer edge of
+      its off-white border, exactly as supplied: the same bald cartoon man in
+      a yellow hooded bathrobe with a yellow sleep mask on his head, the same
+      wide black mustache, the same wide-armed stance, and the caption
+      "WHAT'S UP BRAH?" with the same spelling, apostrophe, question mark,
+      colors, and shapes. The near-black area outside the off-white border is
+      NOT part of the sticker and does not appear. Slight vinyl sheen. Do not
+      change, redraw, or add any text or shapes. No other stickers, no other
+      text, no logos, no brand names, no people, no hands, no faces other
+      than the printed cartoon.
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184450_65b09842-ade4-42e7-ad4e-ce35f3183c80.png
+    size_px: [2048, 2048]
 fonts: []
 risk_addressed:
   ip: >-

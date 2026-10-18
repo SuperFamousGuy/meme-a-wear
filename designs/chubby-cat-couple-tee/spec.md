@@ -50,6 +50,44 @@ variants:
     reference: light.png (Higgsfield job 224ed781-f06b-42a7-a179-80d3087b8f15), recolor only
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_182543_058b2de9-eee3-4a62-b4ac-2b9694d7ffd9.png
     size_px: [2480, 3312]
+mockups:
+  - file: mockup-light.png
+    variant: light.png
+    shows: white tee, flat lay on light oak floor
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo for an online store: one plain white crew-neck cotton t-shirt laid
+      flat on a light oak floor, neatly smoothed with natural soft folds, shot from directly above in
+      soft daylight. The supplied image is the exact artwork, printed front-center on the chest at a
+      realistic 12 inch wide DTG print size. Reproduce it faithfully on the fabric: the same two chubby
+      cats side by side (near-black cat on the left, off-white cat with black outline on the right)
+      with the same huge round yellow-ringed eyes and blank stare, the same colors, and the same
+      caption spelled exactly STAYING IN. FOREVER. Do not redraw, restyle, recolor, or add anything to
+      the art. Print only the artwork itself: the flat off-white background of the supplied image is
+      not printed, so no rectangle or box shows on the shirt. The print follows the fabric texture. No
+      people, no hands, no faces, no mannequin, no other text, no logos, no brand names, no neck labels
+      or tags. (quality high, resolution 2k, aspect 4:5; light.png passed as image_references)
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184616_30caa9b3-dec6-43af-9395-22ce361e6920.png
+    size_px: [1792, 2240]
+  - file: mockup-dark.png
+    variant: dark.png
+    shows: black tee on a wooden hanger, light grey concrete wall
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo for an online store: one plain black crew-neck cotton t-shirt
+      hanging on a simple wooden hanger against a plain light grey concrete wall, soft natural light.
+      The supplied image is the exact artwork, printed front-center on the chest at a realistic 12
+      inch wide DTG print size. Reproduce it faithfully on the fabric: the same two chubby cats side
+      by side (near-black cat with off-white outline on the left, off-white cat on the right) with the
+      same huge round yellow-ringed eyes and blank stare, the same colors, and the same off-white
+      caption spelled exactly STAYING IN. FOREVER. Do not redraw, restyle, recolor, or add anything to
+      the art. Print only the artwork itself: the near-black background of the supplied image is not
+      printed and the black shirt shows through, so no rectangle or box shows. The print follows the
+      fabric folds. No people, no hands, no faces, no mannequin, no other text, no logos, no brand
+      names, no neck labels or tags. (quality high, resolution 2k, aspect 4:5; dark.png passed as
+      image_references)
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184617_3e96071d-e97d-48e5-8823-b5bcac9ca0f2.png
+    size_px: [1792, 2240]
 fonts: []
 risk_addressed:
   ip: >-

@@ -3,7 +3,7 @@ slug: tra-la-la-blob-tee
 name: Tra La La Blob Tee
 status: draft
 created: 2026-10-18T02:50:00Z
-updated: 2026-10-18T02:50:00Z
+updated: 2026-10-18T18:50:00Z
 source_brief:
   path: trends/tra-la-la-spongebob.md
   stage: peaking
@@ -88,6 +88,43 @@ variants:
     reference: trends/refs/tra-la-la-spongebob.jpg
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_024538_45b034eb-45a7-4987-9ae8-e4b03dba8bd3.png
     size_px: [2480, 3312]
+mockups:
+  - file: mockup-light.png
+    variant: light.png
+    shows: white tee, flat lay on light wood floor, seen from above
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic flat lay product photo of a plain white cotton crew-neck
+      t-shirt, neatly laid flat on a light wood floor, soft even daylight,
+      seen from directly above. The supplied artwork is printed front-center
+      on the chest at realistic DTG size, about 12 inches wide, exactly as
+      supplied: the same yellow stretched blob with the same open mouth,
+      teeth, tongue, googly eyes, motion lines, and the caption "TRA LA LA"
+      with the same spelling, colors, and shapes. The artwork's flat
+      off-white background is removed, so the print sits directly on the
+      white fabric. Natural fabric texture and slight wrinkles. Do not
+      change, redraw, or add any text or shapes. No other text, no logos, no
+      labels, no brand names, no people, no hands, no faces, no mannequin.
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184656_37c92af5-e85d-4077-9462-134ba3acbdcc.png
+    size_px: [2048, 2048]
+  - file: mockup-dark.png
+    variant: dark.png
+    shows: black tee on a wooden hanger, light grey concrete wall
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo of a plain black cotton crew-neck t-shirt
+      hanging on a simple wooden hanger against a light grey concrete wall,
+      soft studio light. The supplied artwork is printed front-center on the
+      chest at realistic DTG size, about 12 inches wide, exactly as supplied:
+      the same yellow stretched blob with the same off-white outline, open
+      mouth, teeth, tongue, googly eyes, motion lines, and the off-white
+      caption "TRA LA LA" with the same spelling, colors, and shapes. The
+      artwork's flat near-black background is removed, so the print sits
+      directly on the black fabric. Natural fabric drape and texture. Do not
+      change, redraw, or add any text or shapes. No other text, no logos, no
+      labels, no brand names, no people, no hands, no faces, no mannequin.
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184450_975df022-97bb-4d6b-999d-209554538774.png
+    size_px: [2048, 2048]
 fonts: []
 risk_addressed:
   ip: >-

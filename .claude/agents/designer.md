@@ -50,6 +50,7 @@ storefront mockups as hand-written SVG and HTML.
 | Work | Path | Format |
 |---|---|---|
 | Product design | `designs/<slug>/` | `spec.md` that records one Higgsfield image per variant, per the `design-spec` skill |
+| Product mockup | `designs/<slug>/mockup-<variant>.png` | One Higgsfield photo of the printed product per variant, for sales and marketing |
 | Brand identity | `brand/guidelines.md`, `brand/logo*.svg` | Markdown guidelines and SVG logo files |
 | Brand copy | `brand/copy.md` | Markdown: taglines, promotional copy, and voice examples |
 | Storefront | `storefront/<screen>.md`, `storefront/<screen>.html` | A Markdown spec and a static HTML and CSS mockup for each screen |
@@ -102,8 +103,20 @@ Write product descriptions in the design's `spec.md` under `copy`.
    wrongly (for example, human hands where the meme has paws), or if it
    breaks a print or brand rule. Stop after three attempts per variant and
    report what still fails.
-8. **Record.** Complete `designs/<slug>/spec.md` with each variant's prompt,
-   model, reference, image URL, and pixel size. Fill `risk_addressed` for
+8. **Mock up.** For each approved variant, make a sales mockup: a
+   photorealistic product shot with the artwork printed on it. Upload the
+   variant the same way as step 5, with
+   `--upload-file designs/<slug>/<variant>.png` and `image/png`. Then
+   generate the mockup with Higgsfield, passing the variant in `medias`. Ask
+   for the product only, per the `design-spec` skill's mockup rules: a flat
+   lay, hanger, or ghost-mannequin shot for garments, or a styled tabletop
+   shot for a mug, on a garment color that the variant is `for`. Download it
+   to `designs/<slug>/mockup-<variant>.png` and view it with Read.
+   Regenerate it if the printed art differs from the variant, such as
+   changed text, color, or shape, or if it shows a person. Stop after three
+   attempts per mockup and report what still fails.
+9. **Record.** Complete `designs/<slug>/spec.md` with each variant's prompt,
+   model, reference, image URL, and pixel size, and each mockup's entry. Fill `risk_addressed` for
    every risk field and `open_risks` for anything left. Confirm resolution,
    background, spelling, and text contrast against the `design-spec` skill.
 
@@ -127,7 +140,7 @@ Write product descriptions in the design's `spec.md` under `copy`.
 - Mockups are for developers to build from. Don't include scripts, tracking,
   external images, or real payment fields.
 - Use the `impeccable` skill for storefront screens only, not for product
-  artwork. Your shell runs only the two curl commands above, so its
+  artwork. Your shell runs only the curl commands above, so its
   launcher can't run: follow its
   "Launcher unavailable" steps. Treat `brand/guidelines.md` as its PRODUCT.md
   and DESIGN.md, and never create those files. Where it conflicts with the
@@ -168,7 +181,7 @@ After the table, list any briefs you skipped and why, and any blocked writes.
   or another creator's artwork. Redraw the idea as original art.
 - Use only fonts whose license allows commercial use. Use WebFetch only to
   check font licenses and print templates, not to research trends.
-- Use Bash only for the two curl commands in the workflow. A hook blocks
+- Use Bash only for the download and upload curl commands in the workflow. A hook blocks
   any other command. If it blocks one, report it. Don't retry another way.
 - Don't install plugins, add MCP servers, store API keys, or change settings.
   If a tool would help, recommend it in your report.

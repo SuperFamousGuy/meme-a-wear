@@ -3,7 +3,7 @@ slug: whats-up-monday-mug
 name: What's Up, Monday? Mug
 status: draft
 created: 2026-10-18T18:25:00Z
-updated: 2026-10-18T18:35:00Z
+updated: 2026-10-18T18:50:00Z
 source_brief:
   path: trends/randy-marsh-vs-whats-up-brah.md
   stage: peaking
@@ -64,6 +64,32 @@ variants:
       Higgsfield job 57568e65-97ce-4f9a-83a2-727efea2fcb7)
     url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_182254_f000663a-3332-437d-b5af-7071b32201fb.png
     size_px: [3840, 1648]
+mockups:
+  - file: mockup-wrap.png
+    variant: wrap.png
+    shows: >-
+      White 11 oz mug straight on, handle hidden behind, on a light oak
+      table. The caption faces the camera, and the man and the calendar curve
+      away at the sides.
+    model: gpt_image_2_5
+    prompt: >-
+      Photorealistic product photo of a plain glossy white 11 oz ceramic
+      coffee mug on a light oak tabletop, soft natural morning window light,
+      simple blurred neutral background. The supplied artwork is printed as a
+      full wrap around the mug body by sublimation, exactly as supplied: the
+      same bald cartoon man in a yellow bathrobe, the same angry
+      desk-calendar monster with MONDAY on its top strip, and the two-line
+      caption "WHAT'S UP," "MONDAY?" with the same spelling, apostrophe,
+      comma, question mark, colors, and layout. Show the mug straight on with
+      the handle hidden behind it, so the center of the wrap faces the
+      camera: the caption fully readable in the middle, with the man and the
+      calendar curving away at the left and right sides. The off-white
+      background of the artwork blends into the white mug. Print follows the
+      mug's curve realistically. Do not change, redraw, or add any text or
+      shapes. No other text, no logos, no brand names, no people, no hands,
+      no faces other than the printed cartoons.
+    url: https://d8j0ntlcm91z4.cloudfront.net/user_3KqUF1Fx3q7qTVh7yvexPxRBYgz/hf_20261018_184539_6cc01ddc-921b-4228-a98e-0220c8fbc40f.png
+    size_px: [2048, 2048]
 fonts: []
 risk_addressed:
   ip: >-
