@@ -1,0 +1,46 @@
+name: Product development
+
+on:
+  schedule:
+    - cron: "0 13 * * 1" # Mondays 13:00 UTC
+  workflow_dispatch:
+    inputs:
+      focus:
+        description: Optional trend focus
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: product-development
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/setup-claude-plugins
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      # The skill grants its own git and gh commands. The subagents' Bash
+      # calls must also pass their shell-guard hooks, which allow less.
+      - name: Run /product-development
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+          FOCUS: ${{ inputs.focus }}
+        run: |
+          claude -p "/product-development $FOCUS" \
+            --permission-mode acceptEdits \
+            --allowedTools "Agent" "Skill" "WebSearch" "WebFetch" \
+              "Bash(node .claude/scripts/last30days.mjs *)" \
+              "Bash(curl -sfL *)" "Bash(ffmpeg *)" "Bash(rm trends/refs/*)" \
+              "Bash(mv trends/*)" "Bash(mv designs/*)" "Bash(mv marketing/*)" \
+              "Bash(mkdir -p designs/no-go)" "Bash(grep -r *)"
