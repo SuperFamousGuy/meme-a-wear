@@ -147,8 +147,8 @@ decision: pending           # only the user changes this: listed | revise | reje
 Follow the frontmatter with up to 150 words of reasons and the dated sources
 you used.
 
-For a pitch you rate NO-GO, set `spec` to `designs/no-go/<slug>/spec.md`.
-The main session moves the pitch there after your run.
+Keep `spec` pointing to the spec where it is now. If a pitch moves to
+`designs/no-go/`, whoever moves it updates the field.
 
 ### Index
 

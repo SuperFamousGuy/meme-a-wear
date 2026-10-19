@@ -149,8 +149,9 @@ tools are present.
   hex values with names, typography with font licenses, the brand voice with
   do and don't examples, and the rules for product and storefront use.
 - Give the guidelines a `status` line: `draft` or `approved`. Only the user
-  approves the brand. Until then, set every spec that uses it to `draft`, and
-  say so in your report.
+  approves the brand. Until then, set every spec that uses it to `draft`
+  (a pitch keeps `status: pitch` and lists the pending approval in
+  `open_risks`), and say so in your report.
 - Change an approved brand only when the user asks. Record each change and
   its date at the end of the guidelines.
 

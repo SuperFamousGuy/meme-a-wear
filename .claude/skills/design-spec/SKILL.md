@@ -126,6 +126,8 @@ makes artwork. It uses the same `spec.md` and schema, with these changes:
   the caption, the art direction (the brief traits it keeps and what it
   changes), the buyer and why they buy it, and why the timing works now.
   `## Design notes` follows it.
+- A pitch keeps `status: pitch` while the brand guidelines are a draft. Add
+  "Brand guidelines not yet approved" to `open_risks` instead.
 
 When the pitch gets artwork, the designer adds the variants and mockups and
 changes the status to `draft`.

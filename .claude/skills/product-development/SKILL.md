@@ -62,18 +62,22 @@ before it.
 2. **Retire NO-GO pitches.** Read `recommendation` in
    `marketing/viability/<slug>.md`. For each NO-GO, run
    `mkdir -p designs/no-go`, then `mv designs/<slug> designs/no-go/<slug>`.
-   Confirm that the report's `spec` field is now
-   `designs/no-go/<slug>/spec.md`. Fix the field if it isn't.
+   After the move succeeds, set the report's `spec` field to
+   `designs/no-go/<slug>/spec.md`.
 3. **Revise.** For each REVISE pitch, hand its `revise_actions` to their
    owners. Send meme-expert actions first, because a re-verified brief can
    change the pitch: ask the `meme-expert` agent to re-verify the named
    briefs. Then ask the `designer` agent to revise each pitch with its
    designer actions, as its Product pitches workflow defines. The revised
    pitches form the next round. Skip this substep in round 4.
+4. **Recheck GO pitches.** If the meme-expert re-verified a brief, add every
+   GO pitch from this run that uses that brief to the next round, because a
+   changed stage or risk can make it NO-GO. A recheck doesn't count as a
+   revision.
 
 After round 4, treat each pitch that is still REVISE as NO-GO. In its
 viability report, set `recommendation: NO-GO` and add a note that it was
-still REVISE after 3 revisions. Update its row in `marketing/INDEX.md` to
+still REVISE when the review rounds ran out. Update its row in `marketing/INDEX.md` to
 match. Then retire it as in substep 2.
 
 ## 4. Marketing pages: marketing-expert
