@@ -1,9 +1,9 @@
 ---
 slug: tip-toein-inbox-mug
 name: Tip Toein' Past My Inbox Mug
-status: draft
+status: retired
 created: 2026-10-18T18:25:00Z
-updated: 2026-10-18T18:25:00Z
+updated: 2026-10-18T23:00:00Z
 source_brief:
   path: trends/ai-rumpelstiltskin-tip-toein.md
   stage: peaking
@@ -91,3 +91,5 @@ Printing: the Chalk (#F2F2EE) background prints as near-white on a white
 sublimation mug. The printer may drop it to white. Key content sits well over
 0.25 in from each edge. The caption was checked letter by letter: T-I-P
 T-O-E-I-N-' / P-A-S-T M-Y I-N-B-O-X.
+
+**Retired 2026-10-18.** The user rejected this design after a NO-GO viability review (marketing/viability/tip-toein-inbox-mug.md): the trend is fading, and no change lifts the score to GO.

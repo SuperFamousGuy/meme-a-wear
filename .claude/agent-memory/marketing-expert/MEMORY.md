@@ -1,1 +1,4 @@
+- [User decisions](user-decisions.md) — 4 clapping-cat designs listed 2026-10-18; no shop or social accounts yet; $0 ad budget
+- [Launch context](project_launch_context.md) — $0 ad budget, no shop or social accounts as of 2026-10-18; What's Up Brah family listed
 - [Comparable prices and source access](reference_comparable_prices.md) — Etsy/Printify prices (tee, mug, sticker, bandana), fees, TikTok sound limits, as of 2026-10-18; Etsy, Redbubble, and TeePublic block WebFetch
+- [Launch status](project_launch_status.md) — 2026-10-18: no Etsy shop, no social accounts, $0 ads; 3 designs listed

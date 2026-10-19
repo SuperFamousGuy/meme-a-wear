@@ -20,7 +20,7 @@ assumptions:
   - "Cost: Printify 3 x 3 in kiss-cut sticker base about $1.20-1.52 (podvector.ai, checked 2026-10-18). Shipping is charged to the buyer."
   - "Etsy fees: $0.20 listing, 6.5% transaction, 3% + $0.25 processing (checkoutpage.com, checked 2026-10-18). Offsite Ads excluded."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: listed
 ---
 
 The sticker fits this audience best and costs the least to test. Its weak

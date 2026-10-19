@@ -22,7 +22,7 @@ assumptions:
   - "Margin at $36.99: cost $28.08, fees $3.96, net about $4.95."
   - "The hoodie price range comes from one vendor guide with no sources. Treat it as weak."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: listed
 ---
 
 The caption comes straight from the brief's list of captions that land, and

@@ -21,7 +21,7 @@ assumptions:
   - "Etsy fees: $0.20 listing, 6.5% transaction, 3% + $0.25 payment processing on item plus shipping (checkoutpage.com, checked 2026-10-18). Offsite Ads excluded."
   - "Margin at $4.50 plus $3.99 shipping: revenue $8.49, cost $5.51, fees $1.26, net about $1.72. At $4.50 with free shipping: net about -$1.89."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: listed
 ---
 
 The art is strong and the caption is open-ended, so buyers supply their own

@@ -21,7 +21,7 @@ assumptions:
   - "Etsy fees: $0.20 listing, 6.5% transaction, 3% + $0.25 processing (checkoutpage.com, checked 2026-10-18). Offsite Ads excluded."
   - "Free shipping is built into the price. The audience leans UK, so check Printify's UK provider costs if UK sales dominate."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: listed
 ---
 
 The tee is the strongest of the Nan set. It shows every trait, keeps the

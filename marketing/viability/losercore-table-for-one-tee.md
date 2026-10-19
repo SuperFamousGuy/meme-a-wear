@@ -21,7 +21,7 @@ assumptions:
   - "Etsy fees: $0.20 listing, 6.5% transaction, 3% + $0.25 processing (checkoutpage.com, checked 2026-10-18). Offsite Ads (15% when attributed) excluded."
   - "Free shipping is built into the price."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: listed
 ---
 
 The tee clears the GO bar with no low scores. It uses the brief's two

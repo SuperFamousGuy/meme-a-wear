@@ -21,7 +21,7 @@ assumptions:
   - "Etsy fees: $0.20 listing, 6.5% transaction, 3% + $0.25 payment processing (checkoutpage.com, checked 2026-10-18). Offsite Ads excluded."
   - "Margin at $16.99: fees $2.06; low-cost provider net about $5.85; high-cost provider net about -$1.56."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: rejected
 ---
 
 The total of 12 misses the new 14 minimum. The gap is structural. Safety is

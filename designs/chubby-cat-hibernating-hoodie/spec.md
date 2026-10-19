@@ -1,9 +1,9 @@
 ---
 slug: chubby-cat-hibernating-hoodie
 name: Chubby Cat, Hibernation Edition
-status: draft
+status: retired
 created: 2026-10-18T18:20:00Z
-updated: 2026-10-18T18:30:00Z
+updated: 2026-10-18T23:00:00Z
 source_brief:
   path: trends/fat-talking-tom-and-angela.md
   stage: emerging
@@ -144,3 +144,5 @@ the tee and mug.
   white underbase. Knock out the Ink background and let the garment show through.
 - Keep the print clear of the pouch pocket and drawstrings. The art is square and fills the
   12 x 12 in area.
+
+**Retired 2026-10-18.** The user rejected this design after a NO-GO viability review (marketing/viability/chubby-cat-hibernating-hoodie.md): the IP-safe cats don't read as the meme, so fans won't recognize it.

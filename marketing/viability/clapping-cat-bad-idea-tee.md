@@ -21,7 +21,7 @@ assumptions:
   - "Etsy fees: $0.20 listing, 6.5% transaction, 3% + $0.25 payment processing (checkoutpage.com, checked 2026-10-18). Offsite Ads excluded."
   - "Margin at $21.99: cost $15.75, fees $2.54, net about $3.70."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: listed
 ---
 
 The tee is the flagship of the clapping-cat line and clears the bar easily.

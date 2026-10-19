@@ -20,7 +20,7 @@ assumptions:
   - "Cost: Printify Bella+Canvas 3001 base about $10.50-11 (third-party, 2026, via memory checked 2026-10-18) plus about $4.75 US shipping absorbed by the store. Not confirmed in the Printify editor."
   - "Etsy fees: $0.20 listing, 6.5% transaction, 3% + $0.25 processing (third-party, checked 2026-10-18). Offsite Ads excluded."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: rejected
 ---
 
 The total of 12 misses the new 14 minimum. The art reads as the meme and

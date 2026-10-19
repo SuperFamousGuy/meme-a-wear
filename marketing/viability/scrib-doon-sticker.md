@@ -20,7 +20,7 @@ assumptions:
   - "Printify 3 x 3 in kiss-cut sticker base about $1.21-1.52; Printify's catalog lists from EUR 1.24 (ecommerce-platforms.com and podvector.ai, checked 2026-10-18). Shipping charged to the buyer."
   - "Etsy US fees: $0.20 listing, 6.5% transaction on item and shipping, 3% + $0.25 processing; Offsite Ads 15% when attributed, excluded here (checkoutpage.com and crosslist.com, checked 2026-10-18)."
   - "The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: rejected
 ---
 
 The new Market fit rule raises the sticker from 1 to 3. It fits the brief's

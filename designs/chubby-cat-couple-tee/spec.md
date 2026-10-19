@@ -1,9 +1,9 @@
 ---
 slug: chubby-cat-couple-tee
 name: Chubby Cat Couple Tee
-status: draft
+status: retired
 created: 2026-10-18T18:20:00Z
-updated: 2026-10-18T18:30:00Z
+updated: 2026-10-18T23:00:00Z
 source_brief:
   path: trends/fat-talking-tom-and-angela.md
   stage: emerging
@@ -139,3 +139,5 @@ sell as a set. The caption is self-directed laziness.
   chest.
 - The matching-couple angle sells two of one design. A one-cat-per-shirt split, such as a black-cat
   tee and a white-cat tee, is a possible follow-up if marketing wants true his-and-hers items.
+
+**Retired 2026-10-18.** The user rejected this design after a NO-GO viability review (marketing/viability/chubby-cat-couple-tee.md): the IP-safe cats don't read as the meme, so fans won't recognize it.

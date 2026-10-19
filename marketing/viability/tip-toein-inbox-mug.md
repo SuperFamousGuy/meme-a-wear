@@ -20,7 +20,7 @@ assumptions:
   - "Cost: Printify 11 oz white mug base about $4.69-8.50 by provider, plus about $4.39-7.99 US shipping (third-party and Printify catalog, 2026, via memory checked 2026-10-18). Midpoint landed cost about $11."
   - "Etsy fees: $0.20 listing, 6.5% transaction, 3% + $0.25 processing (third-party, checked 2026-10-18). Offsite Ads excluded."
   - "The evaluated time is approximate. The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: rejected
 ---
 
 The total of 12 misses the new 14 minimum. The inbox caption gives office

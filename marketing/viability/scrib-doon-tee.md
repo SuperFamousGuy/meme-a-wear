@@ -21,7 +21,7 @@ assumptions:
   - "Etsy US fees: $0.20 listing, 6.5% transaction on item and shipping, 3% + $0.25 processing; Offsite Ads 15% when attributed, excluded here (checkoutpage.com and crosslist.com, checked 2026-10-18)."
   - "Price assumes shipping is built into the item price."
   - "The brief goes stale at 2026-10-21T03:44:00Z."
-decision: pending
+decision: rejected
 ---
 
 The new Market fit rule raises this tee from 1 to 3. Fans of the clip read
