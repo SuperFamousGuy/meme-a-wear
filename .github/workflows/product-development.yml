@@ -29,8 +29,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      # The skill grants its own git and gh commands. The subagents' Bash
-      # calls must also pass their shell-guard hooks, which allow less.
+      # A CI run was blocked at the skill's step 5 git add despite the
+      # skill's own grants, so grant its git and gh commands here too. The
+      # subagents' Bash calls must also pass their shell-guard hooks.
       - name: Run /product-development
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -43,4 +44,16 @@ jobs:
               "Bash(node .claude/scripts/last30days.mjs *)" \
               "Bash(curl -sfL *)" "Bash(ffmpeg *)" "Bash(rm trends/refs/*)" \
               "Bash(mv trends/*)" "Bash(mv designs/*)" "Bash(mv marketing/*)" \
-              "Bash(mkdir -p designs/no-go)" "Bash(grep -r *)"
+              "Bash(mkdir -p designs/no-go)" "Bash(grep -r *)" \
+              "Bash(git status *)" "Bash(git fetch *)" "Bash(git switch *)" \
+              "Bash(git add *)" "Bash(git commit *)" "Bash(git push *)" \
+              "Bash(gh auth status)" "Bash(gh pr create *)" "Bash(date *)" \
+            < /dev/null
+      # claude -p exits 0 even when the skill stops before its PR.
+      - name: Check the run committed its work
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --short
+            echo "::error::The run left uncommitted changes and opened no PR."
+            exit 1
+          fi
