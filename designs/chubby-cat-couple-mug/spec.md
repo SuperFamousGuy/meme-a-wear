@@ -1,9 +1,9 @@
 ---
 slug: chubby-cat-couple-mug
 name: Chubby Cat Couple Mug
-status: draft
+status: retired
 created: 2026-10-18T18:20:00Z
-updated: 2026-10-18T18:30:00Z
+updated: 2026-10-18T23:00:00Z
 source_brief:
   path: trends/fat-talking-tom-and-angela.md
   stage: emerging
@@ -108,3 +108,5 @@ the spread, without either Outfit7 character. The caption is self-directed lazin
   right-handed drinker sees the cats, and a left-handed drinker sees the caption.
 - Ink caption on a white mug is about 16:1. Yolk appears only in the eyes, never as text.
 - The Chalk background can print as is on a white mug or drop out to the mug's white.
+
+**Retired 2026-10-18.** The user rejected this design after a NO-GO viability review (marketing/viability/chubby-cat-couple-mug.md): the IP-safe cats don't read as the meme, so fans won't recognize it.

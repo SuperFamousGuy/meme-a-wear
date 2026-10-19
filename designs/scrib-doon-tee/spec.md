@@ -1,9 +1,9 @@
 ---
 slug: scrib-doon-tee
 name: Scrib Doon Tee
-status: draft
+status: retired
 created: 2026-10-18T18:30:00Z
-updated: 2026-10-18T18:30:00Z
+updated: 2026-10-18T23:00:00Z
 source_brief:
   path: trends/biddy-blas-scrib-doon.md
   stage: peaking
@@ -98,3 +98,5 @@ purpose, per the user's text-only direction.
 - **Spelling.** Checked both variants letter by letter: S-C-R-I-B D-O-O-N, period.
 - **Process.** I approved light.png first and then recolored it for dark.png,
   so both variants show the same lettering.
+
+**Retired 2026-10-18.** The user rejected this design after a NO-GO viability review (marketing/viability/scrib-doon-tee.md): Lucasfilm owns the phrase, so the IP risk can't be fixed without a license.

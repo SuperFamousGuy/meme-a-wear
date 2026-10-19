@@ -1,9 +1,9 @@
 ---
 slug: scrib-doon-sticker
 name: Scrib Doon Sticker
-status: draft
+status: retired
 created: 2026-10-18T18:30:00Z
-updated: 2026-10-18T18:30:00Z
+updated: 2026-10-18T23:00:00Z
 source_brief:
   path: trends/biddy-blas-scrib-doon.md
   stage: peaking
@@ -69,3 +69,5 @@ it down" gag, and a sticker goes on the notebook.
   the 0.125 in bleed from it. The text keeps about 0.3 in clear of each edge.
 - **Contrast.** Ink on Chalk is about 16:1. Yolk is a non-text shape only.
 - **Spelling.** Checked letter by letter: S-C-R-I-B D-O-O-N, period.
+
+**Retired 2026-10-18.** The user rejected this design after a NO-GO viability review (marketing/viability/scrib-doon-sticker.md): Lucasfilm owns the phrase, so the IP risk can't be fixed without a license.

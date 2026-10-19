@@ -1,9 +1,9 @@
 ---
 slug: scrib-doon-mug
 name: Scrib Doon Mug
-status: draft
+status: retired
 created: 2026-10-18T18:30:00Z
-updated: 2026-10-18T18:30:00Z
+updated: 2026-10-18T23:00:00Z
 source_brief:
   path: trends/biddy-blas-scrib-doon.md
   stage: peaking
@@ -76,3 +76,5 @@ brief's "write it down" gag. That's the only use of the phrase, which
   it to unprinted white before sublimation so the mug doesn't get a gray tint.
 - **Contrast.** Ink text on a white mug is above 16:1. Yolk is a non-text shape only.
 - **Spelling.** Checked both copies letter by letter: S-C-R-I-B D-O-O-N, period.
+
+**Retired 2026-10-18.** The user rejected this design after a NO-GO viability review (marketing/viability/scrib-doon-mug.md): Lucasfilm owns the phrase, so the IP risk can't be fixed without a license.

@@ -1,9 +1,9 @@
 ---
 slug: tip-toein-imp-tee
 name: Tip Toein' Imp Tee
-status: draft
+status: retired
 created: 2026-10-18T18:25:00Z
-updated: 2026-10-18T18:25:00Z
+updated: 2026-10-18T23:00:00Z
 source_brief:
   path: trends/ai-rumpelstiltskin-tip-toein.md
   stage: peaking
@@ -106,3 +106,5 @@ only reference), so both variants show the same drawing. Chalk caption on Ink is
 Chalk outline, but it is thinner than the brand's 0.12 in minimum (see
 open_risks). DTG needs a white
 underbase. The velvet sheen in Smoke is flat-filled, with no gradients.
+
+**Retired 2026-10-18.** The user rejected this design after a NO-GO viability review (marketing/viability/tip-toein-imp-tee.md): the trend is fading, and no change lifts the score to GO.

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 140" width="6.4in" height="1.4in" role="img" aria-label="meme-a-wear">
+  <!-- Font: Archivo Black (SIL OFL 1.1). Convert text to outlines before print. -->
+  <rect width="640" height="140" fill="#F2F2EE"/>
+  <text x="320" y="92" text-anchor="middle" font-family="Archivo Black" font-size="80" fill="#141414">meme-a-wear</text>
+  <!-- Yolk bar under the middle "a" -->
+  <rect x="304" y="104" width="38" height="10" fill="#F2C14E"/>
+</svg>
