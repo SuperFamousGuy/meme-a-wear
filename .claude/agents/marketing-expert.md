@@ -100,14 +100,15 @@ Apply the first rule that matches:
 1. **NO-GO** if the brief's `risk.overall` is `do-not-use`, the spec is
    `retired`, or the trend is `dead`.
 2. **REVISE** if the brief is stale.
-3. **GO** if Safety scores 2 or 3, no criterion scores 0, and at most one other
-   criterion scores 1.
+3. **GO** if Safety scores 2 or 3, no criterion scores 0, at most one other
+   criterion scores 1, and the total is 14 or more.
 4. **REVISE** if a specific change could raise the low scores enough to
    meet rule 3.
 5. **NO-GO** in every other case.
 
 The GO bar is low because print-on-demand has no inventory cost, and Etsy
-listings are cheap to test. Safety stays strict. A REVISE lists each fix and
+listings are cheap to test. Safety stays strict. The minimum total keeps
+GO for designs that are strong overall, not only free of problems. A REVISE lists each fix and
 who makes it. Note any design that still needs the user's brand approval,
 but don't count it against viability.
 

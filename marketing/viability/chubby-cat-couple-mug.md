@@ -12,8 +12,8 @@ scores:
   price_margin: {score: 2, reason: "$16.99 sits under the $17.81 Etsy POD mug average (Listadum, July 2026). It clears about $5.85 with a low-cost Printify provider, but loses money with the highest-cost one."}
   channel_fit: {score: 2, reason: "Brief puts the audience on X and TikTok, where the meme spreads as couple PFPs. A cozy mug suits Pinterest and TikTok, but posts can't show the original characters."}
 total: 12
-gates: "Rule 3: Safety is 3, no criterion is 0, and only market fit scores 1."
-recommendation: GO
+gates: "Rule 5: total 12 is below 14. Market fit can't rise without the Outfit7 traits the brief forbids, and timing 3 depends on a second source that may not exist, so no specific change meets rule 3."
+recommendation: NO-GO
 suggested_price: "$16.99 with free shipping. Comparable Etsy POD mugs average $17.81 (Listadum, July 2026)."
 revise_actions: []
 assumptions:
@@ -24,17 +24,17 @@ assumptions:
 decision: pending
 ---
 
-The mug is a cheap test of a young, fast meme. The art is clean, and the
-caption "TOO COZY TO REPLY." reads without the meme. Safety is strong, because
-the designer removed every Outfit7 identifier. That same choice weakens
-recognition. Fans of the meme know a gray Tom and a white Angela in clothes,
-and this pair shows neither. Treat the listing as a generic cozy-cat mug that
-fans of the meme may also buy.
+The total of 12 misses the new 14 minimum. The gap is structural. Safety is
+strong because the designer removed every Outfit7 identifier, and the brief
+says only an original pair is safe. That same choice caps market fit at 1,
+because fans know the meme by Tom's and Angela's colors and clothes. Pinning
+a low-cost Printify provider could lift price and margin to 3. That still
+leaves 13 unless timing also reaches 3. Timing needs a second source, which
+is evidence, not a change anyone can make.
 
-The brief has one source. Ask the meme-expert to re-verify it before
-2026-10-21T03:44Z. The spec waits on brand approval, which doesn't count
-against viability. Production notes: confirm the wrap pad against the
-printer's template.
+If the meme-expert's re-verification, due before 2026-10-21T03:44Z, raises the
+brief to medium confidence, re-score this mug. With a pinned provider it
+could then reach 14. Brand approval is still pending.
 
 Sources, all checked 2026-10-18:
 - https://knowyourmeme.com/memes/fat-talking-tom-and-angela

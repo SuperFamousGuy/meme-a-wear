@@ -12,10 +12,13 @@ scores:
   price_margin: {score: 1, reason: "Etsy puppy bandanas have a median near $15, with 63% at $10-25 (RankHero, May 2026). An estimated $18.40-19.40 landed cost clears only at about $22.99, near the top of that range."}
   channel_fit: {score: 3, reason: "The dog-granny videos carried the spread on TikTok and Instagram (brief). Owners film their own dog in the bandana, so the product produces the meme's own format without needing the creator's audio."}
 total: 13
-gates: "Rule 3: Safety scores 2, no criterion scores 0, and only one criterion (price and margin) scores 1."
-recommendation: GO
-suggested_price: "$22.99 (Etsy puppy bandanas: median about $15, 63% at $10-25)"
-revise_actions: []
+gates: "Rule 4: total 13 is below 14. A lower-cost bandana at $17.99 would raise price and margin from 1 to at least 2 and the total to 14 or more."
+recommendation: REVISE
+suggested_price: "$17.99 after the fix (Etsy puppy bandanas: median about $15, 63% at $10-25). $22.99 on the current Evergreen blank."
+revise_actions:
+  - {owner: designer, action: "Re-spec the bandana on Printify's clip-on pet bandana (from EUR 7.60), with the print area from its template. Raises price and margin from 1 to 2 or 3, because $17.99 sits mid-range and clears about $2.50."}
+  - {owner: user, action: "Alternative to the designer fix: choose Printify Premium, which lists the Evergreen bandana from EUR 8.99. Same score effect."}
+  - {owner: user, action: "Confirm shipping for the chosen blank in the Printify editor. The $4-5 figure is an assumption, and the score lift depends on it."}
 assumptions:
   - "Cost: Printify Pet Bandana (Evergreen) from EUR 12.40, about $14.40 at an assumed 1.16 USD per EUR (Printify catalog, checked 2026-10-18; listing undated). Shipping not found; assumed $4-5. Landed cost about $18.40-19.40. Confirm in the Printify editor."
   - "Printify Premium lists the same bandana from EUR 8.99, and a clip-on bandana from EUR 7.60. Either would allow about $17.99."
@@ -25,11 +28,13 @@ assumptions:
 decision: pending
 ---
 
-The bandana has the best channel fit in the batch. Each buyer can post a
-dog-granny video, which is how the meme spread. Its weak point is cost. On
-Printify's free plan, it clears about $1-2 at $22.99, above the typical $15.
-Two optional fixes would raise margin: Printify Premium (the user's call), or
-a clip-on version (the designer's call). Neither is needed for GO.
+The total of 13 misses the new 14 minimum. The bandana has the best channel
+fit in the batch. Each buyer can post a dog-granny video, which is how the
+meme spread. Its weak point is cost. On Printify's free plan, it clears about
+$1-2 only at $22.99, above the typical $15. A clip-on blank (the designer's
+call) or Printify Premium (the user's call) cuts the base cost by about
+$4-6. That allows $17.99 with a small margin, if shipping matches the
+estimate.
 
 The listing needs a photo of a dog wearing it, which the user would supply.
 It must not claim any safety rating. The spec has no print area yet, so the
