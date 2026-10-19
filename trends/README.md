@@ -7,6 +7,8 @@ Creative agents read them to choose memes for designs.
   time it was last verified.
 - `<slug>.md` holds one brief. The schema, lifecycle stages, and risk rules
   are in `.claude/skills/trend-brief/SKILL.md`.
+- `stale/` holds briefs whose `last_verified` is more than 72 hours old and
+  that the meme-expert didn't verify again. Designers ignore them.
 - `refs/` holds reference stills that show what each meme looks like, with
   any real person cropped out. Designers use them for pose and expression.
   They never go to print.

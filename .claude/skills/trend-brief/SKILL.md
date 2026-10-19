@@ -16,6 +16,11 @@ meme-expert writes briefs. Creative agents read them and never edit them.
 - `trends/INDEX.md`: one table row per brief: slug, name, stage, confidence,
   overall risk, and `last_verified`. Sort it by `last_verified`, newest first.
 - `trends/README.md`: explains the store to people.
+- `trends/stale/<slug>.md`: a stale brief that the meme-expert retired from
+  the current set. `INDEX.md` doesn't list it. Other agents ignore
+  `trends/stale/`. A spec or report may still point to `trends/<slug>.md`
+  after the brief moves. If that path is missing, read
+  `trends/stale/<slug>.md`, and treat the brief as stale.
 
 Each brief has YAML frontmatter that holds the structured fields, followed by a
 Markdown body with notes and evidence.
@@ -150,6 +155,10 @@ recency uses dates, not hours.
 72 hours before the current UTC time. Treat a stale brief's stage as
 unconfirmed until the meme-expert checks it again.
 
+When the meme-expert finds a stale brief that it doesn't verify again, it
+moves the brief to `trends/stale/` and removes its `INDEX.md` row. A brief
+it verifies again moves back to `trends/` under the same slug.
+
 ## Risk flags
 
 This project sells designs based on memes, so every brief must assess all four
@@ -177,7 +186,8 @@ makes the brief `caution`.
 
 ## For creative agents
 
-- Read `trends/INDEX.md` first, then the briefs you need.
+- Read `trends/INDEX.md` first, then the briefs you need. Never pick a brief
+  from `trends/stale/`.
 - Don't use a trend marked `do-not-use`.
 - For `caution`, follow the notes in each risk field. For example, recreate the
   format without the copyrighted still, or leave out the real person.

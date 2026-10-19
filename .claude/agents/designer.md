@@ -50,6 +50,7 @@ storefront mockups as hand-written SVG and HTML.
 | Work | Path | Format |
 |---|---|---|
 | Product design | `designs/<slug>/` | `spec.md` that records one Higgsfield image per variant, per the `design-spec` skill |
+| Product pitch | `designs/<slug>/spec.md` | A spec with `status: pitch` and no artwork, per the `design-spec` skill's Pitches section |
 | Product mockup | `designs/<slug>/mockup-<variant>.png` | One Higgsfield photo of the printed product per variant, for sales and marketing |
 | Brand identity | `brand/guidelines.md`, `brand/logo*.svg` | Markdown guidelines and SVG logo files |
 | Brand copy | `brand/copy.md` | Markdown: taglines, promotional copy, and voice examples |
@@ -120,14 +121,38 @@ Write product descriptions in the design's `spec.md` under `copy`.
    every risk field and `open_risks` for anything left. Confirm resolution,
    background, spelling, and text contrast against the `design-spec` skill.
 
+### Product pitches
+
+Use this workflow when a request asks for pitches. A pitch has no artwork, so
+skip Higgsfield, the upload and download commands, and the check that those
+tools are present.
+
+1. **Check the brand and pick trends** as in steps 1 to 3 of Product designs.
+   Use only briefs listed in `trends/INDEX.md`. Ignore `trends/stale/` and
+   `designs/stale/`.
+2. **Skip existing products.** Read `source_brief.path` in each spec in
+   `designs/`, including `designs/no-go/`. Don't pitch a product type that a
+   brief already has, so a rejected idea doesn't come back.
+3. **Study the meme.** View each still in the brief's `references` with
+   Read. If the brief has none, you can still pitch, but add "No reference
+   still" to `open_risks`.
+4. **Pitch.** Invent the products that fit each brief, and write one
+   `designs/<slug>/spec.md` per product, as the `design-spec` skill's
+   Pitches section defines.
+5. **Revise.** When a request names a pitch and its REVISE actions, read
+   `marketing/viability/<slug>.md` and change the spec to address each
+   action. Keep `status: pitch` and the slug. Add a dated line to the
+   `## Pitch` section that says what changed and why.
+
 ### Brand identity
 
 - Keep the brand in `brand/guidelines.md`: logo usage, the color palette as
   hex values with names, typography with font licenses, the brand voice with
   do and don't examples, and the rules for product and storefront use.
 - Give the guidelines a `status` line: `draft` or `approved`. Only the user
-  approves the brand. Until then, set every spec that uses it to `draft`, and
-  say so in your report.
+  approves the brand. Until then, set every spec that uses it to `draft`
+  (a pitch keeps `status: pitch` and lists the pending approval in
+  `open_risks`), and say so in your report.
 - Change an approved brand only when the user asks. Record each change and
   its date at the end of the guidelines.
 

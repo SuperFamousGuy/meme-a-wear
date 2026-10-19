@@ -4,7 +4,8 @@ status: draft
 
 These guidelines are a minimal first draft. They cover the core identity and
 the rules the first product design needs. The user has not approved them yet.
-Every spec that uses them stays `draft` until approval.
+Every spec that uses them stays `draft` until approval. A pitch stays
+`pitch` and lists the pending approval in `open_risks`.
 
 ## Logo
 
