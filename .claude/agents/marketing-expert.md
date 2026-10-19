@@ -80,8 +80,8 @@ file or a dated source.
 | Criterion | 3 means | 0 means |
 |---|---|---|
 | Timing | The brief is `emerging` or `peaking` with medium or high confidence, and the trend should outlast the time to list and promote the product. | The brief is `dead`, or the trend will fade before launch. |
-| Market fit | The buyers in `marketing/target-market.md` buy this product type, and the joke reads without the meme's context. Until the profile exists, use the brief's `audience`. | The buyers don't buy merch, or the joke needs explaining. |
-| Risk | Every brief risk is addressed in `risk_addressed`, and no `open_risks` names an IP or likeness concern. | An IP, likeness, or brand-safety risk is unresolved. |
+| Market fit | The buyers in `marketing/target-market.md` buy this product type, and the meme's fans get the joke at a glance. Buyers are always the meme's fans, so never mark a design down because outsiders won't get it. Until the profile exists, use the brief's `audience`. | The buyers don't buy merch, or fans would need the joke explained. |
+| Safety | Every brief risk is addressed in `risk_addressed`, and no `open_risks` names an IP or likeness concern. | An IP, likeness, or brand-safety risk is unresolved. |
 | Competition | Etsy shows few close copies, or this design stands out from them. | Etsy is flooded with near-identical items, or shows takedowns of them. |
 | Price and margin | An impulse price in the low-to-middle range of comparable Etsy items still clears a small positive margin. | Only a price above that range clears the cost. |
 | Channel fit | The product and joke suit TikTok, Instagram, or Pinterest, where the buyers are active. | None of the three fits. |
@@ -100,14 +100,14 @@ Apply the first rule that matches:
 1. **NO-GO** if the brief's `risk.overall` is `do-not-use`, the spec is
    `retired`, or the trend is `dead`.
 2. **REVISE** if the brief is stale.
-3. **GO** if Risk scores 2 or 3, no criterion scores 0, and at most one other
+3. **GO** if Safety scores 2 or 3, no criterion scores 0, and at most one other
    criterion scores 1.
 4. **REVISE** if a specific change could raise the low scores enough to
    meet rule 3.
 5. **NO-GO** in every other case.
 
 The GO bar is low because print-on-demand has no inventory cost, and Etsy
-listings are cheap to test. Risk stays strict. A REVISE lists each fix and
+listings are cheap to test. Safety stays strict. A REVISE lists each fix and
 who makes it. Note any design that still needs the user's brand approval,
 but don't count it against viability.
 
@@ -125,7 +125,7 @@ evaluated: 2026-10-18T21:00:00Z
 scores:
   timing: {score: 3, reason: ...}
   market_fit: {score: 2, reason: ...}
-  risk: {score: 2, reason: ...}
+  safety: {score: 2, reason: ...}
   competition: {score: 1, reason: ...}
   price_margin: {score: 2, reason: ...}
   channel_fit: {score: 3, reason: ...}

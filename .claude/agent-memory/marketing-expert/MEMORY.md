@@ -1,0 +1,1 @@
+- [Comparable prices and source access](reference_comparable_prices.md) — Etsy/Printify prices and fees as of 2026-10-18; Etsy, Redbubble, and TeePublic block WebFetch
