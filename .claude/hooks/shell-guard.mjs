@@ -22,14 +22,20 @@ const topic = "'[^'\\n]{1,200}'";
 // The upload's Content-Type must match the file's extension.
 const mimes = { jpg: "jpeg", png: "png", webp: "webp" };
 
+// Lists each spec's source brief and product type, read-only, so agents
+// can find a brief's products without Glob or Grep.
+const specs = "grep -r --include=spec\\.md -e '\\^  path: trends/' -e '\\^  type: ' designs";
+
 const allowlists = {
   designer: [
+    specs,
     `curl -sfL -o designs/[a-z0-9-]+/[a-z0-9-]+\\.(png|jpg|webp) ${url}`,
     ...Object.entries(mimes).map(
       ([ext, mime]) => `curl -sf -X PUT -H 'Content-Type: image/${mime}' --upload-file (trends/refs|designs/[a-z0-9-]+)/[a-z0-9-]+\\.${ext} ${url}`,
     ),
   ],
   "meme-expert": [
+    specs,
     `curl -sfL --max-filesize 5000000 -o ${ref} ${url}`,
     `ffmpeg -loglevel error -y -i ${ref} -vf crop=${px}:${px}:${px}:${px} ${ref}`,
     `rm ${ref}`,
@@ -110,6 +116,10 @@ if (process.argv[2] === "--self-test") {
     ["meme-expert", false, "mv marketing/launch/cat-tee.md marketing/stale/viability/cat-tee.md"],
     ["meme-expert", false, "mv marketing/INDEX.md marketing/stale/INDEX.md"],
     ["designer", false, "mv designs/cat-tee designs/stale/cat-tee"],
+    ["designer", true, "grep -r --include=spec.md -e '^  path: trends/' -e '^  type: ' designs"],
+    ["meme-expert", true, "grep -r --include=spec.md -e '^  path: trends/' -e '^  type: ' designs"],
+    ["meme-expert", false, "grep -r --include=spec.md -e '^  path: trends/' -e '^  type: ' ."],
+    ["designer", false, "grep -r --include=spec.md -e '^  path: trends/' -e '^  type: ' designs /Users"],
     ["meme-expert", true, "node .claude/scripts/last30days.mjs diagnose"],
     ["meme-expert", true, "node .claude/scripts/last30days.mjs research 'black cat clapping meme'"],
     ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat'; rm -rf ~"],
