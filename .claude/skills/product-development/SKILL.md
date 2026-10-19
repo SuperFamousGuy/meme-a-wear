@@ -87,8 +87,11 @@ match. Then retire it as in substep 2.
 
 ## 4. Marketing pages: marketing-expert
 
-Ask the `marketing-expert` agent for a marketing page for each GO pitch, by
-slug: one `marketing/launch/<slug>.md` per product, never a combined page.
+Ask the `marketing-expert` agent to write a marketing page for each GO
+pitch, by slug: one `marketing/launch/<slug>.md` per product, never a
+combined page. Say plainly in the request that this step asks for marketing
+pages, not viability reviews, and that the pitches are already rated GO.
+Without that, the agent skips the pages.
 Use the same batches of up to 8. The `decision` stays `pending`. Only the
 user decides.
 

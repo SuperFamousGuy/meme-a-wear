@@ -130,8 +130,12 @@ tools are present.
 1. **Check the brand and pick trends** as in steps 1 to 3 of Product designs.
    Use only briefs listed in `trends/INDEX.md`. Ignore `trends/stale/` and
    `designs/stale/`.
-2. **Skip existing products.** Read `source_brief.path` in each spec in
-   `designs/`, including `designs/no-go/`. Don't pitch a product type that a
+2. **Skip existing products.** Read `source_brief.path` and `product.type`
+   in each spec in `designs/`, including `designs/no-go/`. To list them all,
+   run exactly
+   `grep -r --include=spec.md -e '^  path: trends/' -e '^  type: ' designs`.
+   Glob and Grep may be unavailable, so use this command, not
+   `marketing/INDEX.md`, which misses specs without a row. Don't pitch a product type that a
    brief already has, so a rejected idea doesn't come back.
 3. **Study the meme.** View each still in the brief's `references` with
    Read. If the brief has none, you can still pitch, but add "No reference
@@ -165,7 +169,7 @@ tools are present.
 - Mockups are for developers to build from. Don't include scripts, tracking,
   external images, or real payment fields.
 - Use the `impeccable` skill for storefront screens only, not for product
-  artwork. Your shell runs only the curl commands above, so its
+  artwork. Your shell runs only the commands above, so its
   launcher can't run: follow its
   "Launcher unavailable" steps. Treat `brand/guidelines.md` as its PRODUCT.md
   and DESIGN.md, and never create those files. Where it conflicts with the
@@ -206,7 +210,8 @@ After the table, list any briefs you skipped and why, and any blocked writes.
   or another creator's artwork. Redraw the idea as original art.
 - Use only fonts whose license allows commercial use. Use WebFetch only to
   check font licenses and print templates, not to research trends.
-- Use Bash only for the download and upload curl commands in the workflow. A hook blocks
+- Use Bash only for the download and upload curl commands and the spec
+  `grep` command in the workflow. A hook blocks
   any other command. If it blocks one, report it. Don't retry another way.
 - Don't install plugins, add MCP servers, store API keys, or change settings.
   If a tool would help, recommend it in your report.
