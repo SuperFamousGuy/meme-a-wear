@@ -21,6 +21,9 @@ them.
 - `designs/<slug>/mockup-<variant>.png`: one sales mockup per variant, such
   as `mockup-light.png`. It shows the printed product for sales and
   marketing. Printers never print from it. Older designs may have none.
+- `designs/no-go/<slug>/`: a pitch or design that marketing rated NO-GO,
+  moved here whole. Agents skip `designs/no-go/` unless the user asks for
+  it.
 - `brand/`: the brand guidelines, logo, and brand copy. Every design follows
   `brand/guidelines.md`.
 - `storefront/`: storefront specs and HTML mockups.
@@ -33,7 +36,7 @@ The example shows the shape of a spec. Its values are illustrative.
 ---
 slug: clapping-cat-skip-class-tee
 name: Clapping Cat, Skip Class Edition
-status: draft               # draft | ready | retired
+status: draft               # pitch | draft | ready | retired
 created: 2026-10-13T15:00:00Z
 updated: 2026-10-13T15:00:00Z
 source_brief:
@@ -103,12 +106,29 @@ field that the brief marks as a concern or `unknown`.
 
 ## Status
 
+- `pitch`: a product idea with no artwork yet. See Pitches.
 - `draft`: the artwork or copy is incomplete, the brand guidelines are still a
   draft, or an open risk needs a decision from the user.
 - `ready`: the artwork, copy, and risk notes are complete, and the brand
   guidelines are approved.
 - `retired`: don't print it. Say why in the notes. For example, the trend
   became `do-not-use`.
+
+## Pitches
+
+A pitch proposes a product so that marketing can judge it before anyone
+makes artwork. It uses the same `spec.md` and schema, with these changes:
+
+- `status: pitch`, and `variants`, `mockups`, and `fonts` are `[]`.
+- `product`, `source_brief`, `risk_addressed`, `open_risks`, and `copy` are
+  complete. `open_risks` includes "No artwork yet."
+- The body starts with a `## Pitch` section of up to 200 words: the product,
+  the caption, the art direction (the brief traits it keeps and what it
+  changes), the buyer and why they buy it, and why the timing works now.
+  `## Design notes` follows it.
+
+When the pitch gets artwork, the designer adds the variants and mockups and
+changes the status to `draft`.
 
 ## Print rules
 

@@ -33,13 +33,16 @@ const allowlists = {
     `curl -sfL --max-filesize 5000000 -o ${ref} ${url}`,
     `ffmpeg -loglevel error -y -i ${ref} -vf crop=${px}:${px}:${px}:${px} ${ref}`,
     `rm ${ref}`,
+    // Moves a brief into trends/stale/ or back, under the same slug.
+    "mv trends/([a-z0-9-]+)\\.md trends/stale/\\1\\.md",
+    "mv trends/stale/([a-z0-9-]+)\\.md trends/\\1\\.md",
     "node \\.claude/scripts/last30days\\.mjs diagnose",
     `node \\.claude/scripts/last30days\\.mjs research ${topic}( trends/plans/[a-z0-9-]+\\.json)?`,
   ],
 };
 
 // Each file operand and the directory it must stay inside.
-const operand = /(?:^|\s)((designs|trends\/refs|trends\/plans)\/[a-z0-9./-]+)/g;
+const operand = /(?:^|\s)((designs|trends\/refs|trends\/plans|trends)\/[a-z0-9./-]+)/g;
 
 // True when every file operand of a matched command resolves inside its
 // directory under root. Throws when a path can't be resolved.
@@ -82,6 +85,13 @@ if (process.argv[2] === "--self-test") {
     ["meme-expert", false, "rm trends/refs/a.jpg trends/INDEX.md"],
     ["meme-expert", false, "ffmpeg -i trends/refs/a.jpg -vf crop=1:1:0:0 /tmp/x.jpg"],
     ["unknown", false, "rm trends/refs/a.jpg"],
+    ["meme-expert", true, "mv trends/black-cat-clapping.md trends/stale/black-cat-clapping.md"],
+    ["meme-expert", true, "mv trends/stale/black-cat-clapping.md trends/black-cat-clapping.md"],
+    ["meme-expert", false, "mv trends/cat.md trends/stale/dog.md"],
+    ["meme-expert", false, "mv trends/INDEX.md trends/stale/INDEX.md"],
+    ["meme-expert", false, "mv trends/cat.md /tmp/cat.md"],
+    ["meme-expert", false, "mv trends/../cat.md trends/stale/../cat.md"],
+    ["designer", false, "mv trends/cat.md trends/stale/cat.md"],
     ["meme-expert", true, "node .claude/scripts/last30days.mjs diagnose"],
     ["meme-expert", true, "node .claude/scripts/last30days.mjs research 'black cat clapping meme'"],
     ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat'; rm -rf ~"],
@@ -102,15 +112,18 @@ if (process.argv[2] === "--self-test") {
   const outside = mkdtempSync(join(tmpdir(), "shell-guard-out-"));
   try {
     mkdirSync(join(root, "trends/refs"), { recursive: true });
+    mkdirSync(join(root, "trends/stale"), { recursive: true });
     mkdirSync(join(root, "designs/cat-tee"), { recursive: true });
     mkdirSync(join(root, "designs/cat"), { recursive: true });
     symlinkSync(outside, join(root, "designs/escape"));
     symlinkSync(outside, join(root, "trends/refs/out.jpg"));
     symlinkSync(join(root, "nowhere"), join(root, "trends/refs/dangling.jpg"));
+    symlinkSync(join(outside, "x.md"), join(root, "trends/stale/escape.md"));
     cases.push(
       ["designer", false, "curl -sfL -o designs/escape/x.png 'https://x.net/a.png'"],
       ["meme-expert", false, "rm trends/refs/out.jpg"],
       ["meme-expert", false, "rm trends/refs/dangling.jpg"],
+      ["meme-expert", false, "mv trends/stale/escape.md trends/escape.md"],
     );
     const run = (agent, cmd) => { try { return check(agent, cmd, root); } catch { return false; } };
     const fails = cases.filter(([agent, want, cmd]) => run(agent, cmd) !== want);

@@ -9,4 +9,4 @@ designer.md gives the designer Bash (two guarded curl commands), media_upload, a
 
 **Why:** Text-only prompts without a reference produced art that didn't look like the meme (the black-cat-clapping tee was rejected).
 
-**How to apply:** At the start of a design task, confirm the three tools are present. If any is missing, stop and report it rather than generating without the reference or skipping the visual review.
+**How to apply:** At the start of a design task, confirm the three tools are present. If any is missing, stop and report it rather than generating without the reference or skipping the visual review. Pitches (`status: pitch`) have no artwork, so this check doesn't apply to them.
