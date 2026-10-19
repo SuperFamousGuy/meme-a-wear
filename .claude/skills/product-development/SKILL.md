@@ -30,7 +30,12 @@ outside these steps, don't do it. Tell the user.
 Ask the `meme-expert` agent to run a trend analysis for sellable apparel
 memes, focused on `$ARGUMENTS` if the user gave a focus. It writes new and
 updated briefs to `trends/`, and then retires stale briefs to
-`trends/stale/` (its workflow step 6).
+`trends/stale/` (its workflow step 6). It moves each stale brief's designs
+to `designs/stale/` and their viability reports and marketing pages to
+`marketing/stale/`.
+
+In `marketing/INDEX.md`, remove the row of each product that moved to
+`marketing/stale/`, and restore the row of each product that moved back.
 
 Check the result: every brief in `trends/` appears in `trends/INDEX.md`.
 If no current brief is `emerging` or `peaking` with a `risk.overall` other
@@ -100,7 +105,8 @@ user decides.
 
 Write the PR body in the project's communication style. Include:
 
-- The trend briefs added, updated, and moved to or from `trends/stale/`.
+- The trend briefs added, updated, and moved to or from `trends/stale/`,
+  with the designs and marketing files that moved with them.
 - One table row per pitch: slug, product, total, recommendation, and its
   path.
 - For each pitch that went through REVISE: the round count and the changes

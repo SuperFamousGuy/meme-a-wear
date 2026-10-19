@@ -24,6 +24,9 @@ them.
 - `designs/no-go/<slug>/`: a pitch or design that marketing rated NO-GO,
   moved here whole. Agents skip `designs/no-go/` unless the user asks for
   it.
+- `designs/stale/<slug>/`: a design whose trend brief the meme-expert moved
+  to `trends/stale/`, moved here whole. Its viability report and marketing
+  page move to `marketing/stale/`. Agents skip both unless the user asks.
 - `brand/`: the brand guidelines, logo, and brand copy. Every design follows
   `brand/guidelines.md`.
 - `storefront/`: storefront specs and HTML mockups.

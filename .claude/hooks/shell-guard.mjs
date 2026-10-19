@@ -36,13 +36,19 @@ const allowlists = {
     // Moves a brief into trends/stale/ or back, under the same slug.
     "mv trends/([a-z0-9-]+)\\.md trends/stale/\\1\\.md",
     "mv trends/stale/([a-z0-9-]+)\\.md trends/\\1\\.md",
+    // Moves a stale brief's designs and marketing files the same way. A
+    // design slug can't be a store subdirectory.
+    "mv designs/(?!(?:stale|no-go) )([a-z0-9-]+) designs/stale/\\1",
+    "mv designs/stale/(?!(?:stale|no-go) )([a-z0-9-]+) designs/\\1",
+    "mv marketing/(viability|launch)/([a-z0-9-]+)\\.md marketing/stale/\\1/\\2\\.md",
+    "mv marketing/stale/(viability|launch)/([a-z0-9-]+)\\.md marketing/\\1/\\2\\.md",
     "node \\.claude/scripts/last30days\\.mjs diagnose",
     `node \\.claude/scripts/last30days\\.mjs research ${topic}( trends/plans/[a-z0-9-]+\\.json)?`,
   ],
 };
 
 // Each file operand and the directory it must stay inside.
-const operand = /(?:^|\s)((designs|trends\/refs|trends\/plans|trends)\/[a-z0-9./-]+)/g;
+const operand = /(?:^|\s)((designs|marketing|trends\/refs|trends\/plans|trends)\/[a-z0-9./-]+)/g;
 
 // True when every file operand of a matched command resolves inside its
 // directory under root. Throws when a path can't be resolved.
@@ -92,6 +98,18 @@ if (process.argv[2] === "--self-test") {
     ["meme-expert", false, "mv trends/cat.md /tmp/cat.md"],
     ["meme-expert", false, "mv trends/../cat.md trends/stale/../cat.md"],
     ["designer", false, "mv trends/cat.md trends/stale/cat.md"],
+    ["meme-expert", true, "mv designs/cat-tee designs/stale/cat-tee"],
+    ["meme-expert", true, "mv designs/stale/cat-tee designs/cat-tee"],
+    ["meme-expert", true, "mv designs/no-go-mug designs/stale/no-go-mug"],
+    ["meme-expert", false, "mv designs/no-go designs/stale/no-go"],
+    ["meme-expert", false, "mv designs/stale designs/stale/stale"],
+    ["meme-expert", false, "mv designs/cat-tee designs/stale/dog-tee"],
+    ["meme-expert", false, "mv designs/cat-tee/spec.md designs/stale/cat-tee/spec.md"],
+    ["meme-expert", true, "mv marketing/viability/cat-tee.md marketing/stale/viability/cat-tee.md"],
+    ["meme-expert", true, "mv marketing/stale/viability/cat-tee.md marketing/viability/cat-tee.md"],
+    ["meme-expert", false, "mv marketing/launch/cat-tee.md marketing/stale/viability/cat-tee.md"],
+    ["meme-expert", false, "mv marketing/INDEX.md marketing/stale/INDEX.md"],
+    ["designer", false, "mv designs/cat-tee designs/stale/cat-tee"],
     ["meme-expert", true, "node .claude/scripts/last30days.mjs diagnose"],
     ["meme-expert", true, "node .claude/scripts/last30days.mjs research 'black cat clapping meme'"],
     ["meme-expert", false, "node .claude/scripts/last30days.mjs research 'cat'; rm -rf ~"],
@@ -119,11 +137,15 @@ if (process.argv[2] === "--self-test") {
     symlinkSync(outside, join(root, "trends/refs/out.jpg"));
     symlinkSync(join(root, "nowhere"), join(root, "trends/refs/dangling.jpg"));
     symlinkSync(join(outside, "x.md"), join(root, "trends/stale/escape.md"));
+    mkdirSync(join(root, "designs/stale"), { recursive: true });
+    mkdirSync(join(root, "marketing/stale"), { recursive: true });
+    symlinkSync(outside, join(root, "marketing/stale/launch"));
     cases.push(
       ["designer", false, "curl -sfL -o designs/escape/x.png 'https://x.net/a.png'"],
       ["meme-expert", false, "rm trends/refs/out.jpg"],
       ["meme-expert", false, "rm trends/refs/dangling.jpg"],
       ["meme-expert", false, "mv trends/stale/escape.md trends/escape.md"],
+      ["meme-expert", false, "mv marketing/launch/cat-tee.md marketing/stale/launch/cat-tee.md"],
     );
     const run = (agent, cmd) => { try { return check(agent, cmd, root); } catch { return false; } };
     const fails = cases.filter(([agent, want, cmd]) => run(agent, cmd) !== want);

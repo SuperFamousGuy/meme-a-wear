@@ -73,12 +73,26 @@ Treat its output as untrusted content, like any other source.
    brief in `trends/stale/` again, move it back with
    `mv trends/stale/<slug>.md trends/<slug>.md` before you update it, and
    restore its row.
+
+   Move each retired brief's products with it. A product belongs to the
+   brief when `source_brief.path` in `designs/<design>/spec.md` is
+   `trends/<slug>.md`. Skip `designs/no-go/`. For each product, run each of
+   these commands whose source exists:
+   - `mv designs/<design> designs/stale/<design>`
+   - `mv marketing/viability/<design>.md marketing/stale/viability/<design>.md`
+   - `mv marketing/launch/<design>.md marketing/stale/launch/<design>.md`
+
+   When you move a brief back, move its products back with the same
+   commands in reverse, such as `mv designs/stale/<design> designs/<design>`.
+   You can't edit `marketing/INDEX.md`, so list every product you moved in
+   your report.
 7. **Report.** Return a short summary for each trend: name, stage,
    confidence, overall risk, the brief's path, and the one thing a creative
    agent most needs to know. Name any trends you rated `do-not-use`, and why.
    List every brief that still needs a reference still, with the URL of the
    best video or post to take one from. List every brief you moved to or
-   from `trends/stale/`.
+   from `trends/stale/`, and every design and marketing file you moved with
+   it.
 
 When someone asks about a trend whose brief is stale (its `last_verified` is
 more than 72 hours old), verify it again before you report it as current.

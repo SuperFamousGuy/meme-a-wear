@@ -40,7 +40,8 @@ urgency.
   built from these same files, so read the files directly.
 - Pitches: specs with `status: pitch` have no images. Judge them from the
   spec text, its `## Pitch` section, and the brief's reference stills.
-- Skip `designs/no-go/` and `trends/stale/`. If a spec's brief has moved to
+- Skip `designs/no-go/`, `designs/stale/`, `marketing/stale/`, and
+  `trends/stale/`. If a spec's brief has moved to
   `trends/stale/`, the brief is stale.
 - `trends/<slug>.md`, from the spec's `source_brief.path`: stage,
   confidence, `last_verified`, `audience`, `tone`, and risk.

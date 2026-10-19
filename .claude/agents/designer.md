@@ -128,7 +128,8 @@ skip Higgsfield, the upload and download commands, and the check that those
 tools are present.
 
 1. **Check the brand and pick trends** as in steps 1 to 3 of Product designs.
-   Use only briefs listed in `trends/INDEX.md`. Ignore `trends/stale/`.
+   Use only briefs listed in `trends/INDEX.md`. Ignore `trends/stale/` and
+   `designs/stale/`.
 2. **Skip existing products.** Read `source_brief.path` in each spec in
    `designs/`, including `designs/no-go/`. Don't pitch a product type that a
    brief already has, so a rejected idea doesn't come back.
