@@ -53,8 +53,8 @@ that.
 
 ## 3. Viability: marketing-expert
 
-Every pitch must end this step as GO or NO-GO. A pitch gets at most 3
-revisions, so run up to 4 review rounds. The first round reviews the new
+Every pitch must end this step as GO or NO-GO. A pitch gets at most 2
+revisions, so run up to 3 review rounds. The first round reviews the new
 pitches. Each later round reviews only the pitches revised after the round
 before it.
 
@@ -74,13 +74,13 @@ before it.
    change the pitch: ask the `meme-expert` agent to re-verify the named
    briefs. Then ask the `designer` agent to revise each pitch with its
    designer actions, as its Product pitches workflow defines. The revised
-   pitches form the next round. Skip this substep in round 4.
+   pitches form the next round. Skip this substep in round 3.
 4. **Recheck GO pitches.** If the meme-expert re-verified a brief, add every
    GO pitch from this run that uses that brief to the next round, because a
    changed stage or risk can make it NO-GO. A recheck doesn't count as a
    revision.
 
-After round 4, treat each pitch that is still REVISE as NO-GO. In its
+After round 3, treat each pitch that is still REVISE as NO-GO. In its
 viability report, set `recommendation: NO-GO` and add a note that it was
 still REVISE when the review rounds ran out. Update its row in `marketing/INDEX.md` to
 match. Then retire it as in substep 2.
