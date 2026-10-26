@@ -18,6 +18,9 @@ Collected 2026-10-18. All figures come from third-party sources. Confirm them in
 - Tee US shipping about $4.75. At $21.99 a tee nets about $3.70. Mug at $16.99 is profitable only with a low-cost provider.
 - Etsy US fees: $0.20 listing, 6.5% transaction (incl. shipping), 3% + $0.25 processing. Offsite Ads 15% when attributed.
 
+- Re-check 2026-10-26 (podvector.ai): tee $10.50-10.95 Free; Gildan 18500 $22.49 Free ($18-22.50 range); mug $5.49-6.21 Free; kiss-cut $1.20-1.52. Etsy fees unchanged; Offsite Ads 12-15%. Printify production 2-7 business days + 2-8 US transit (help.printify.com), so a seasonal pitch needs about 3 weeks of lead time.
+- Later 2026-10-26 check: mug base $4.69-6.45 Free by provider, US ship $4.39-7.99; Gildan 18500 $17.80-22.49 Free (mydesigns.io), ship $5.99-7.49. Costliest mug provider leaves ~$0.49 at $16.99. Agent clocks have run ahead of real UTC; timeapi.io via WebFetch gives the true time.
+
 Access: etsy.com search, etsy.com/legal/fees, redbubble.com, and teepublic.com return 403 to WebFetch. Amazon search returns 503. The Printify product pages load without prices (JS). Use WebSearch summaries and state the gap.
 
 Related: [[user-decisions]]
