@@ -180,7 +180,7 @@ mockups and photo order as tasks for the designer. Save it to
   `peaking` trend, post within days. Plan a stop date for when the trend is
   likely to saturate.
 - **Posts.** Draft copy for each channel, in the brand voice from
-  `brand/guidelines.md`, with hashtags and the mockup to use. For TikTok, you
+  `brand/guidelines.md`, with hashtags and the mockup or video ad (`ads` in the spec) to use. For TikTok, you
   can list trending sounds from `tiktok_music_trending`. Check each sound's
   license for commercial use before you suggest it. You can score a draft
   clip with `virality_predictor`, but only a clip that the user supplied or

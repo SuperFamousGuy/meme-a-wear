@@ -29,7 +29,7 @@ const specs = "grep -r --include=spec\\.md -e '\\^  path: trends/' -e '\\^  type
 const allowlists = {
   designer: [
     specs,
-    `curl -sfL -o designs/[a-z0-9-]+/[a-z0-9-]+\\.(png|jpg|webp) ${url}`,
+    `curl -sfL -o designs/[a-z0-9-]+/[a-z0-9-]+\\.(png|jpg|webp|mp4) ${url}`,
     ...Object.entries(mimes).map(
       ([ext, mime]) => `curl -sf -X PUT -H 'Content-Type: image/${mime}' --upload-file (trends/refs|designs/[a-z0-9-]+)/[a-z0-9-]+\\.${ext} ${url}`,
     ),
@@ -74,6 +74,8 @@ export function check(agent, command, cwd, root = cwd) {
 
 if (process.argv[2] === "--self-test") {
   const cases = [
+    ["designer", true, "curl -sfL -o designs/cat-tee/ad-light-spin.mp4 'https://d8j0ntlcm91z4.cloudfront.net/u/hf_1.mp4'"],
+    ["designer", false, "curl -sfL -o designs/cat-tee/ad.mov 'https://x.net/a.mov'"],
     ["designer", true, "curl -sfL -o designs/cat-tee/light.png 'https://d8j0ntlcm91z4.cloudfront.net/u/hf_1.png'"],
     ["designer", true, "curl -sf -X PUT -H 'Content-Type: image/jpeg' --upload-file trends/refs/black-cat-clapping.jpg 'https://s3.amazonaws.com/b/k?X-Amz-Signature=ab%2F&x=1'"],
     ["designer", true, "curl -sf -X PUT -H 'Content-Type: image/png' --upload-file trends/refs/cat.png 'https://s3.amazonaws.com/b/k'"],
