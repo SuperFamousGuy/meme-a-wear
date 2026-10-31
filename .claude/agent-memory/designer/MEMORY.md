@@ -1,4 +1,5 @@
 - [Reference prompting](project_reference_prompting.md) — still + anatomy + redraw wording; fix trait errors by editing the prior job; set dark outline width explicitly; 4k 21:9 mug is ~452 DPI
 - [Unintended readings](feedback_unintended_readings.md) — mustache, hair, and robe shapes can read as dictator or monk; steer prompts away
 - [Higgsfield concurrency](project_higgsfield_concurrency.md) — starter plan allows 4 concurrent jobs; a 429 means too many active jobs, retry smaller
+- [Meme text vs brand](project_meme_text_vs_brand.md) — serif/sentence-case captions and ginger fur conflict with brand; user decision pending
 - [Image review tools](project_image_review_gap.md) — confirm Bash, media_upload, media_confirm exist at task start; stop if missing
