@@ -21,6 +21,8 @@ them.
 - `designs/<slug>/mockup-<variant>.png`: one sales mockup per variant, such
   as `mockup-light.png`. It shows the printed product for sales and
   marketing. Printers never print from it. Older designs may have none.
+- `designs/<slug>/ad-<name>.mp4`: a short video ad made from a mockup, such
+  as `ad-light-spin.mp4`, for social posts. Most designs have none.
 - `designs/no-go/<slug>/`: a pitch or design that marketing rated NO-GO,
   moved here whole. Agents skip `designs/no-go/` unless the user asks for
   it.
@@ -83,6 +85,15 @@ mockups:                    # one per variant; for marketing, never for print
     prompt: Photorealistic black crew-neck t-shirt on a wooden hanger with the supplied artwork...
     url: https://...
     size_px: [2048, 2048]
+ads:                        # optional; video ads for social posts
+  - file: ad-light-spin.mp4
+    mockup: mockup-light.png
+    shows: slow 360-degree turn of the white tee on a hanger
+    model: marketing_studio_video
+    prompt: Slow orbit around the supplied t-shirt on a hanger, soft studio light...
+    aspect_ratio: "9:16"
+    duration_s: 5
+    url: https://...
 fonts: []                   # only for SVG designs; generated text has no font file
 risk_addressed:             # one entry for each risk field in the brief
   ip: Original drawing. No frames from the source reel.
@@ -187,6 +198,20 @@ template's source in the notes when you use one.
 - Add no logos, brand names, or text other than the art's own, except the
   meme-a-wear logo if `brand/guidelines.md` allows it.
 - A missing or failed mockup doesn't block `ready`. List it in `open_risks`.
+
+### Video ads
+
+- Make an ad only for a `ready` design. Generate it with Higgsfield, and
+  pass an approved mockup in `medias` so the print matches the artwork.
+- Follow the mockup rules above: product only, no person, hands, or face,
+  and no added logos or text.
+- Ask for camera or product motion only, such as an orbit, a slow push-in,
+  or fabric moving on a hanger. Don't ask the art itself to move or morph.
+- Ask for no music, speech, or lyrics. The marketing-expert picks a sound
+  for each post and checks its license.
+- Keep ads short, 5 to 10 seconds, and `9:16` unless the request names
+  another ratio.
+- A missing ad never blocks `ready`.
 
 ### Light and dark garments
 
