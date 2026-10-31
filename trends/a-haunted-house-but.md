@@ -53,7 +53,7 @@ risk:
   ip: None found. The template is text. The KYM still's haunted-house background is someone else's artwork, so draw an original house.
   likeness: None found. The still shows only text and an illustrated house. No crop was needed.
   extremist_or_coded: None found. Checked KYM and web search results on 2026-10-26.
-  tragedy_harassment_danger: A concern a design can avoid. KYM and meme.com report that many 2026 posts use the format for painful memories, angry parents, and lost loved ones. Keep designs to everyday annoyances.
+  tragedy_harassment_danger: A concern a design can avoid. KYM reports that many 2026 posts use the format for painful memories, angry parents, and lost loved ones. Keep designs to everyday annoyances.
 ---
 
 ## Notes

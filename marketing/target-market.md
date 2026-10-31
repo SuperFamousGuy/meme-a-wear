@@ -15,7 +15,9 @@ means three or more that agree. `contested` means sources conflict.
 The meme-expert re-verified while-theyre-out-partying at 2026-10-26T19:18:00Z,
 so it becomes stale after 2026-10-29T19:18:00Z. The other two current briefs
 record `last_verified` 2026-10-26T19:20:00Z, which the meme-expert found was
-ahead of the real clock.
+ahead of the real clock. Their checks ran before 2026-10-26T19:17:00Z, when
+timeapi.io returned the time for the re-verification, so treat them as stale
+after 2026-10-29T19:17:00Z.
 
 ## Claims across trends
 
