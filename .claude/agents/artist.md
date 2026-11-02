@@ -60,10 +60,11 @@ is out of credits or can't be reached, and record that reason in the spec's
    and the brief in `source_brief.path`. The spec must have `status: pitch`
    or `draft`, or `ready` when the request asks for a revision or a missing
    mockup. Set a `ready` spec to `draft` before you change its artwork.
-   Don't work from `designs/no-go/` or `designs/stale/`. If the request asks
-   only for mockups, keep the approved variants and go to step 7.
+   Don't work from `designs/no-go/` or `designs/stale/`.
 2. **Screen the brief.** Stop if its `risk.overall` is `do-not-use` or the
    brief is stale. Report that it needs re-verification by the meme-expert.
+   If the request asks only for mockups, keep the approved variants and go
+   to step 7.
 3. **Study the meme.** View each still in the brief's `references` with
    Read. List the traits that make the meme recognizable: pose, body shape,
    face, expression, and the gag. The art must keep all of them. If the
@@ -106,7 +107,9 @@ is out of credits or can't be reached, and record that reason in the spec's
    Stop after three attempts per mockup and report what still fails.
 8. **Record.** In the spec, add each variant's prompt, model, reference,
    image URL, and pixel size, and each mockup's entry. Update
-   `risk_addressed.ip` and `open_risks`, and remove "No artwork yet."
+   `risk_addressed.ip` and `open_risks`, and remove "No artwork yet." If
+   you changed a variant, remove each `ads` entry made from its old mockup,
+   and report that the ad needs a new request. Don't make new ads here.
    Confirm resolution, background, spelling, and text contrast against the
    `design-spec` skill. Set `status: draft`, or `ready` when the skill's
    Status rules allow it.
