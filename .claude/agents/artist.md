@@ -122,8 +122,10 @@ is out of credits or can't be reached, and record that reason in the spec's
 Make video ads only when a request asks for them. Videos cost far more
 credits than images.
 
-1. **Check the design.** The spec must have `status: ready` and at least one
-   approved mockup. If it doesn't, don't make the ad. Report what's missing.
+1. **Check the design.** The spec must have at least one approved mockup
+   and `status: ready`, or `status: draft` when its only blockers are draft
+   brand guidelines or open risks that wait on the user's decision. If it
+   doesn't, don't make the ad. Report what's missing.
 2. **Upload the mockup.** Upload `designs/<slug>/mockup-<variant>.png` as in
    step 7 of Artwork. Check the model's reference roles, durations, and
    aspect ratios with `models_explore`. Prefer `marketing_studio_video` for
@@ -132,7 +134,9 @@ credits than images.
    the mockup in `medias`. Use `9:16` unless the request names another
    ratio. Write the prompt per the `design-spec` skill's Video ads rules.
    Call `jobs_wait` until all jobs finish. If the result asks which balance
-   to use (`unlim_choice`), stop and report the question.
+   to use (`unlim_choice`), stop and report the question. If Higgsfield
+   rejects a job for insufficient credits, stop without retrying, and start
+   your report with `OUT OF CREDITS`.
 4. **Review.** Download each video with exactly this command:
    `curl -sfL -o designs/<slug>/ad-<name>.mp4 '<result URL>'`
    You can't view a video with Read, so review the job's preview image or
