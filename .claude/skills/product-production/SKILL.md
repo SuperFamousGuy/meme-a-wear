@@ -34,7 +34,7 @@ the queue only when all of these hold:
 
 - Its report has `recommendation: GO`, and its `decision` isn't `rejected`.
 - Its spec is in `designs/<slug>/`, not `designs/no-go/` or
-  `designs/stale/`, and has `status: pitch` or `draft`.
+  `designs/stale/`, and has `status: pitch`, `draft`, or `ready`.
 - Its brief is in `trends/`, isn't stale per the `trend-brief` skill, and
   has a `risk.overall` other than `do-not-use`.
 - If the user gave slugs in `$ARGUMENTS`, its slug is one of them.
@@ -51,8 +51,10 @@ Then, for each product in queue order:
 
 1. **Artwork and mockups.** If the spec already has `variants` and one
    approved mockup per variant, keep them and skip to substep 2. A rerun
-   must not replace finished art, because a new variant drops its ads.
-   Otherwise ask the `artist` agent to run its Artwork
+   must not replace finished art, because a new variant drops its ads. If
+   the spec has `variants` but lacks a mockup, ask the `artist` agent for
+   the missing mockups only, so it keeps the approved variants. Otherwise
+   ask the `artist` agent to run its Artwork
    workflow for `designs/<slug>/spec.md`: every variant and one mockup per
    variant. Tell it not to make video ads in this call. When it finishes,
    read the spec. If it has no approved mockup, record the reason and skip
