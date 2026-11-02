@@ -205,8 +205,10 @@ template's source in the notes when you use one.
 
 ### Video ads
 
-- Make an ad only for a `ready` design. Generate it with Higgsfield, and
-  pass an approved mockup in `medias` so the print matches the artwork.
+- Make an ad only for a `ready` design, or for a `draft` design whose only
+  blockers are draft brand guidelines or open risks that wait on the user's
+  decision. Generate it with Higgsfield, and pass an approved mockup in
+  `medias` so the print matches the artwork.
 - Follow the mockup rules above: product only, no person, hands, or face,
   and no added logos or text.
 - Ask for camera or product motion only, such as an orbit, a slow push-in,
