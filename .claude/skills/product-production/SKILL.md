@@ -49,12 +49,16 @@ the queue is empty, stop and report that.
 Set `video = on`. Call `mcp__higgsfield__balance` and note the credits.
 Then, for each product in queue order:
 
-1. **Artwork and mockups.** Ask the `artist` agent to run its Artwork
+1. **Artwork and mockups.** If the spec already has `variants` and one
+   approved mockup per variant, keep them and skip to substep 2. A rerun
+   must not replace finished art, because a new variant drops its ads.
+   Otherwise ask the `artist` agent to run its Artwork
    workflow for `designs/<slug>/spec.md`: every variant and one mockup per
    variant. Tell it not to make video ads in this call. When it finishes,
    read the spec. If it has no approved mockup, record the reason and skip
    to substep 3.
-2. **Video ad.** Skip this substep when `video = off`. Otherwise ask the
+2. **Video ad.** Skip this substep when `video = off` or the spec already
+   has an `ads` entry. Otherwise ask the
    `artist` agent to run its Video ads workflow for the slug: one 9:16 ad
    from its best mockup. Tell it that a `draft` spec qualifies when its only
    blockers are draft brand guidelines or decisions that wait on the user.
@@ -70,9 +74,10 @@ those products in the PR.
 
 ## 3. Pull request
 
-1. Run `git status` and review the changed paths. Stage only `designs/` and
-   `.claude/agent-memory/`. If anything else changed, stop and tell the
-   user.
+1. Run `git status` and review the changed paths. If nothing changed,
+   stop and report each product's result instead of opening a PR. Stage
+   only `designs/` and `.claude/agent-memory/`. If anything else changed,
+   stop and tell the user.
 2. Commit with a message in the style of `git log`, such as "Add artwork
    for 4 products and video ads for 2". Add the attribution lines that your
    session requires.
