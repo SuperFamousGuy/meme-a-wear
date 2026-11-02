@@ -14,7 +14,7 @@ price: "$21.99, free shipping"
 # Marketing page: Scientists Reveal the Hi tee
 
 This plan waits on the user's decision (currently `pending`) and on the
-artwork. The spec is a pitch with no variants or mockups yet. The designer
+artwork. The spec is a pitch with no variants or mockups yet. The artist
 makes the mockups and sets the photo order.
 
 ## Before launch
@@ -23,8 +23,8 @@ makes the mockups and sets the photo order.
 |---|---|---|
 | user | Decide on the pitch in `marketing/viability/scientists-reveal-the-hi-tee.md`. | 2026-10-27 |
 | user | Approve or reject the brand exceptions: the serif headline in sentence case, and Yolk fur for a ginger cat. | 2026-10-27 |
-| designer | Make the light and dark variants. Check that the cat isn't a trace of the source photo. | 2026-10-29 |
-| designer | Make `mockup-dark.png` and `mockup-light.png`, and set the Etsy photo order. Suggested order: dark mockup first, because the Chalk "HI" box reads best in a thumbnail. Then the light mockup, then a close crop of the eyes and box, then Printify's size chart. | 2026-10-29 |
+| artist | Make the light and dark variants. Check that the cat isn't a trace of the source photo. | 2026-10-29 |
+| artist | Make `mockup-dark.png` and `mockup-light.png`, and set the Etsy photo order. Suggested order: dark mockup first, because the Chalk "HI" box reads best in a thumbnail. Then the light mockup, then a close crop of the eyes and box, then Printify's size chart. | 2026-10-29 |
 | designer | Update the spec tags. "scientists reveal the hi" has 24 characters, and Etsy allows 20 per tag. Use the tags below or approve them. | 2026-10-29 |
 | meme-expert | Re-verify `trends/scientists-reveal-the-hi.md`. It goes stale at 2026-10-29T19:20:00Z. | 2026-10-29 |
 | user | Create the Etsy shop if it doesn't exist. Connect Printify with a Bella+Canvas 3001 provider, and confirm the base cost in the editor. | 2026-10-29 |
@@ -61,7 +61,7 @@ May with no brand use or "overdone" posts. Post within days of listing.
 
 | Date | Action |
 |---|---|
-| 2026-10-27 to 2026-10-29 | User decides. Designer makes the artwork and mockups. Meme-expert re-verifies the brief. |
+| 2026-10-27 to 2026-10-29 | User decides. Artist makes the artwork and mockups. Meme-expert re-verifies the brief. |
 | 2026-10-30 | Listing live. First Instagram post and first TikTok. |
 | 2026-10-30 to 2026-11-15 | One TikTok a day, cross-posted as a Reel. Two feed posts a week. |
 | 2026-11-01 | Pin both mockups. |
@@ -122,7 +122,7 @@ Scientists Reveal the Hi Shirt, Orange Cat Meme Tee, Funny Ginger Cat Shirt, Who
 scientists reveal, orange cat shirt, ginger cat tee, cat meme shirt, funny cat tshirt, hi shirt, big eyed cat, wholesome meme, cat lover gift, meme tshirt, deadpan humor, orange tabby, funny science tee
 ```
 
-**Photo order:** The designer sets it from the finished mockups. See the
+**Photo order:** The artist sets it from the finished mockups. See the
 suggested order under Before launch.
 
 **Description, first lines** (from the spec's copy):

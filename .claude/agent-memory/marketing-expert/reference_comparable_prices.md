@@ -1,6 +1,6 @@
 ---
 name: reference-comparable-prices
-description: Comparable Etsy prices, Printify base costs, Etsy fees, and which marketplace pages block WebFetch (as of 2026-10-18)
+description: Comparable Etsy prices (incl. buttons, magnets), Printify base costs, Etsy fees, and which marketplace pages block WebFetch (as of 2026-10-18)
 metadata:
   type: reference
 ---
@@ -20,6 +20,13 @@ Collected 2026-10-18. All figures come from third-party sources. Confirm them in
 
 - Re-check 2026-10-26 (podvector.ai): tee $10.50-10.95 Free; Gildan 18500 $22.49 Free ($18-22.50 range); mug $5.49-6.21 Free; kiss-cut $1.20-1.52. Etsy fees unchanged; Offsite Ads 12-15%. Printify production 2-7 business days + 2-8 US transit (help.printify.com), so a seasonal pitch needs about 3 weeks of lead time.
 - Later 2026-10-26 check: mug base $4.69-6.45 Free by provider, US ship $4.39-7.99; Gildan 18500 $17.80-22.49 Free (mydesigns.io), ship $5.99-7.49. Costliest mug provider leaves ~$0.49 at $16.99. Agent clocks have run ahead of real UTC; timeapi.io via WebFetch gives the true time.
+- Buttons and magnets, 2026-10-31 (WebSearch summaries only):
+  - Etsy pinback button: median $3.97-4.00, average $5.90-6.90 (RankHero "pinback button" and "pin back button"). Single listings $2.50-4.50.
+  - Etsy fridge magnet: median $11.20, average $15.86, range very wide (RankHero, May 2026). "Button magnet" median $7.19, 70% under $10. Simple novelty magnets about $4-8.
+  - Printify custom pin buttons: from $2.19 with Premium, 3 sizes (1.25, 2.25, 3 in). The source doesn't say if that is per pin or per set, or which size. Printful sells a set of five (1.25 or 2.25 in) from about EUR 8.17.
+  - Printify die-cut magnets (Printed Simply): from $4.83 Free / $3.50 Premium, 5 sizes; 3x3 price not confirmed.
+  - Shipping for both not found. Assume sticker-like rates (about $3.99 first item) until checked. A $4 button with free shipping loses money; sell buttons as an add-on or a multi-pack. A magnet at $8-11 has room if shipping is charged.
+  - Confirm the 2.25 in button and 3x3 magnet base and shipping in the Printify editor before pricing.
 
 Access: etsy.com search, etsy.com/legal/fees, redbubble.com, and teepublic.com return 403 to WebFetch. Amazon search returns 503. The Printify product pages load without prices (JS). Use WebSearch summaries and state the gap.
 

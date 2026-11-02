@@ -14,7 +14,7 @@ price: "$16.99, free shipping"
 # Marketing page: Scientists Reveal the Coffee mug
 
 This plan waits on the user's decision (currently `pending`) and on the
-artwork. The spec is a pitch with no wrap or mockup yet. The designer makes
+artwork. The spec is a pitch with no wrap or mockup yet. The artist makes
 the mockup and sets the photo order.
 
 ## Before launch
@@ -23,8 +23,8 @@ the mockup and sets the photo order.
 |---|---|---|
 | user | Decide on the pitch in `marketing/viability/scientists-reveal-the-coffee-mug.md`. | 2026-10-27 |
 | user | Approve or reject the brand exceptions: the serif headline in sentence case, and Yolk fur for a ginger cat. | 2026-10-27 |
-| designer | Make `wrap.png`. Check that the cat isn't a trace of the source photo, and that the eyes and pasted box read as the meme without "Hi". | 2026-10-29 |
-| designer | Make `mockup-wrap.png` on a desk scene, and set the Etsy photo order. Suggested order: the cat-face side first, then the handle side, then Printify's mug dimensions image. | 2026-10-29 |
+| artist | Make `wrap.png`. Check that the cat isn't a trace of the source photo, and that the eyes and pasted box read as the meme without "Hi". | 2026-10-29 |
+| artist | Make `mockup-wrap.png` on a desk scene, and set the Etsy photo order. Suggested order: the cat-face side first, then the handle side, then Printify's mug dimensions image. | 2026-10-29 |
 | designer | Update the spec tags. "scientists reveal the hi" has 24 characters, and Etsy allows 20 per tag. Use the tags below or approve them. | 2026-10-29 |
 | meme-expert | Re-verify `trends/scientists-reveal-the-hi.md`. It goes stale at 2026-10-29T19:20:00Z. | 2026-10-29 |
 | user | Pick a Printify mug provider with a landed cost near $10, and confirm it in the editor. A costlier provider cuts the margin to about $2.13. | 2026-10-29 |
@@ -61,7 +61,7 @@ within days of listing.
 
 | Date | Action |
 |---|---|
-| 2026-10-27 to 2026-10-29 | User decides. Designer makes the wrap and mockup. Meme-expert re-verifies the brief. |
+| 2026-10-27 to 2026-10-29 | User decides. Artist makes the wrap and mockup. Meme-expert re-verifies the brief. |
 | 2026-10-30 | Listing live. First Instagram post and first TikTok. |
 | 2026-10-30 to 2026-11-15 | Three TikToks a week, cross-posted as Reels. Two feed posts a week. If the tee is also listed, alternate products day by day. |
 | 2026-11-01 | Pin the mockup to a "Funny Coffee Mugs" board. |
@@ -119,7 +119,7 @@ Scientists Reveal the Coffee Mug, Orange Cat Meme Mug, Funny Ginger Cat Coffee C
 scientists reveal, coffee mug funny, orange cat mug, ginger cat mug, cat meme mug, cat lover gift, coffee lover gift, funny science mug, office mug, not a morning person, coworker gift, orange tabby, meme mug
 ```
 
-**Photo order:** The designer sets it from the finished mockup. See the
+**Photo order:** The artist sets it from the finished mockup. See the
 suggested order under Before launch.
 
 **Description, first lines** (from the spec's copy):

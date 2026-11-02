@@ -14,7 +14,7 @@ price: "$36.99, free shipping"
 # Marketing page: While They're Out Partying controller hoodie
 
 This plan waits on the user's decision (currently `pending`) and on the
-artwork. The spec is a pitch with no variants or mockups yet. The designer
+artwork. The spec is a pitch with no variants or mockups yet. The artist
 makes the mockups and sets the photo order.
 
 ## Before launch
@@ -24,8 +24,8 @@ makes the mockups and sets the photo order.
 | user | Decide on the pitch in `marketing/viability/out-partying-controller-hoodie.md`. | 2026-10-27 |
 | user | Approve or reject the brand exception: the sentence-case caption. | 2026-10-27 |
 | meme-expert | Supply a caption-only reference still, such as a crop of the burger-wrapping clip with the hands removed. The brief has none. | 2026-10-28 |
-| designer | Make the light and dark variants. Check the spelling of "they're" and "btw" in every version. Keep the controller generic. | 2026-10-29 |
-| designer | Make `mockup-dark.png` and `mockup-light.png`, and set the Etsy photo order. Suggested order: dark mockup first (gamers buy dark hoodies, and the Chalk caption reads best), then the light mockup, then a close crop of the worn thumbsticks, then Printify's size chart. | 2026-10-29 |
+| artist | Make the light and dark variants. Check the spelling of "they're" and "btw" in every version. Keep the controller generic. | 2026-10-29 |
+| artist | Make `mockup-dark.png` and `mockup-light.png`, and set the Etsy photo order. Suggested order: dark mockup first (gamers buy dark hoodies, and the Chalk caption reads best), then the light mockup, then a close crop of the worn thumbsticks, then Printify's size chart. | 2026-10-29 |
 | designer | Update the spec tags. "while theyre out partying" has 25 characters, and Etsy allows 20 per tag. Update `source_brief` to confidence `high` and 19:18Z. | 2026-10-29 |
 | meme-expert | Re-verify `trends/while-theyre-out-partying.md`. It goes stale at 2026-10-29T19:18:00Z. | 2026-10-29 |
 | user | Connect Printify with a Gildan 18500 provider, and confirm the base cost in the editor. | 2026-10-29 |
@@ -61,7 +61,7 @@ notes say to watch for an "overdone" signal within one or two weeks of
 
 | Date | Action |
 |---|---|
-| 2026-10-27 to 2026-10-29 | User decides. Meme-expert supplies the still and re-verifies the brief. Designer makes the artwork and mockups. |
+| 2026-10-27 to 2026-10-29 | User decides. Meme-expert supplies the still and re-verifies the brief. Artist makes the artwork and mockups. |
 | 2026-10-30 | Listing live. First TikTok and Reel. |
 | 2026-10-30 to 2026-11-09 | One or two TikToks a day, cross-posted as Reels. |
 | 2026-11-01 | Pin both mockups. |
@@ -123,7 +123,7 @@ While They're Out Partying Hoodie, Funny Gamer Hoodie, Controller Meme Sweatshir
 out partying btw, gamer hoodie, gaming hoodie, funny gamer gift, meme hoodie, video game hoodie, gamer gift, controller hoodie, ironic hoodie, funny hoodie, stay home hoodie, introvert hoodie, teen gamer gift
 ```
 
-**Photo order:** The designer sets it from the finished mockups. See the
+**Photo order:** The artist sets it from the finished mockups. See the
 suggested order under Before launch.
 
 **Description, first lines** (from the spec's copy):

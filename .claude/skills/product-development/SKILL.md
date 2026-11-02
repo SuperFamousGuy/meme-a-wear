@@ -44,8 +44,8 @@ than `do-not-use`, stop and report that.
 ## 2. Pitches: designer
 
 Ask the `designer` agent to run its Product pitches workflow for every brief
-in `trends/INDEX.md`. Tell it that the Higgsfield tools aren't available in
-this run, so it must not make artwork, mockups, video ads, or SVG.
+in `trends/INDEX.md`. Don't call the `artist` agent in this run. Pitches
+have no artwork.
 
 Check the result: each new `designs/<slug>/spec.md` has `status: pitch` and
 a `## Pitch` section. List the new slugs. If there are none, stop and report

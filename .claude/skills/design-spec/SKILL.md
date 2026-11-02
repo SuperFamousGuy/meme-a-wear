@@ -1,13 +1,15 @@
 ---
 name: design-spec
-description: Schema and print rules for product design specs in this project's design store (designs/). Use when you write, update, review, or produce from a design spec — for example, when the designer agent turns a trend brief into a t-shirt, hoodie, or mug design, or when a printer or developer needs to know what a design contains. Defines the required fields, the default print limits per product, the light and dark garment rules, and how a design records the trend brief and risks it came from.
+description: Schema and print rules for product design specs in this project's design store (designs/). Use when you write, update, review, or produce from a design spec — for example, when the designer agent pitches a t-shirt, hoodie, mug, button, magnet, or sticker from a trend brief, when the artist agent adds its artwork, or when a printer or developer needs to know what a design contains. Defines the required fields, the default print limits per product, the light and dark garment rules, and how a design records the trend brief and risks it came from.
 ---
 
 # Design spec
 
-A design spec is the contract between the `designer` agent and the people who
-print or sell a design. The designer writes specs. Other agents and people read
-them.
+A design spec is the contract between the agents that make a design and the
+people who print or sell it. The `designer` agent writes the spec: the
+product, the pitch, the copy, and the risk notes. The `artist` agent adds the
+artwork, mockups, and video ads with Higgsfield, and records them in
+`variants`, `mockups`, and `ads`. Other agents and people read specs.
 
 ## Store layout
 
@@ -16,7 +18,7 @@ them.
 - `designs/<slug>/<variant>.png`: one image per artwork variant that the
   spec lists, generated with Higgsfield. Garments use `light.png` and
   `dark.png`. Other products use one file per print surface, such as
-  `wrap.png` for a mug. The designer downloads each result to this path to
+  `wrap.png` for a mug. The artist downloads each result to this path to
   review it. Older designs use SVG.
 - `designs/<slug>/mockup-<variant>.png`: one sales mockup per variant, such
   as `mockup-light.png`. It shows the printed product for sales and
@@ -50,7 +52,7 @@ source_brief:
   confidence: low
   last_verified: 2026-10-13T11:40:00Z
 product:
-  type: t-shirt             # t-shirt | hoodie | mug | sticker | other
+  type: t-shirt             # t-shirt | hoodie | mug | button | magnet | sticker | other
   placement: front-center
   print_method: dtg         # dtg | screen | sublimation | digital | unknown
   print_area_in: [12, 16]   # width, height in inches
@@ -143,7 +145,7 @@ makes artwork. It uses the same `spec.md` and schema, with these changes:
 - A pitch keeps `status: pitch` while the brand guidelines are a draft. Add
   "Brand guidelines not yet approved" to `open_risks` instead.
 
-When the pitch gets artwork, the designer adds the variants and mockups and
+When the pitch gets artwork, the artist adds the variants and mockups and
 changes the status to `draft`.
 
 ## Print rules
@@ -157,6 +159,8 @@ template's source in the notes when you use one.
 | Hoodie, front | 12 × 12 | DTG | Same as the t-shirt. Keep clear of the pocket and drawstrings. |
 | Mug, 11 oz wrap | 8.5 × 3.5 | Sublimation | None. Keep key content 0.25 in from each edge and clear of the handle. |
 | Sticker | 3 × 3 | Digital | None. Add 0.125 in bleed. |
+| Button, 2.25 in round pinback | 2.25 × 2.25 | Digital | None. The edge wraps around the back, so keep key content inside the center 1.75 in circle. |
+| Magnet, die-cut | 3 × 3 | Digital | None. Add 0.125 in bleed. |
 
 ### Artwork
 
@@ -189,7 +193,7 @@ template's source in the notes when you use one.
 - Make one mockup per variant. Generate it with Higgsfield, and pass the
   variant image in `medias` so the print matches the artwork.
 - Show the product only: a flat lay, a hanger, or a ghost mannequin for
-  garments, and a tabletop scene for mugs and stickers. Never show a person,
+  garments, and a tabletop scene for mugs, buttons, magnets, and stickers. Never show a person,
   hands, or a face.
 - Put the art on a product color that the variant's `for` names, in its
   `placement`, at a realistic print size.
@@ -215,7 +219,7 @@ template's source in the notes when you use one.
 
 ### Light and dark garments
 
-- These rules apply to garments only. Mugs, stickers, and other products
+- These rules apply to garments only. Mugs, buttons, magnets, stickers, and other products
   need one variant per print surface, printed on a known background color.
 - Make a separate variant for each garment group. Don't rely on the garment
   color to fill shapes unless the notes say so.
