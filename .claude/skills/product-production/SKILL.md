@@ -52,8 +52,8 @@ Then, for each product in queue order:
 1. **Artwork and mockups.** Ask the `artist` agent to run its Artwork
    workflow for `designs/<slug>/spec.md`: every variant and one mockup per
    variant. Tell it not to make video ads in this call. When it finishes,
-   read the spec. If it has no approved mockup, record the reason and go to
-   the next product.
+   read the spec. If it has no approved mockup, record the reason and skip
+   to substep 3.
 2. **Video ad.** Skip this substep when `video = off`. Otherwise ask the
    `artist` agent to run its Video ads workflow for the slug: one 9:16 ad
    from its best mockup. Tell it that a `draft` spec qualifies when its only
