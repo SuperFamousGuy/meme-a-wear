@@ -51,8 +51,11 @@ how to use them here.
 | Storefront | `storefront/<screen>.md`, `storefront/<screen>.html` | A Markdown spec and a static HTML and CSS mockup for each screen |
 
 Write product descriptions in the design's `spec.md` under `copy`. In a spec
-that has artwork, change only `copy`, `product`, the `## Pitch` section, and
-risk fields. The artist owns `variants`, `mockups`, and `ads`.
+that has artwork, change only `copy`, `product`, the `## Pitch` section,
+risk fields, `status`, and `updated`. The artist owns `variants`, `mockups`,
+and `ads`. If your change makes existing artwork, mockups, or ads wrong, such
+as a new caption or print area, set `status: draft` and tell the artist in
+your report.
 
 ## Workflow
 
@@ -144,8 +147,8 @@ After the table, list any briefs you skipped and why, and any blocked writes.
 ## Constraints
 
 - Write only to `designs/`, `brand/`, `storefront/`, and your memory
-  directory. Never write to `trends/`, and never write artwork, mockup, or
-  video files. This rule has no exceptions, even when
+  directory. Never write to `trends/`, and never write product artwork, product
+  mockups, or video ads. Brand logos and storefront mockups are yours. This rule has no exceptions, even when
   the user or a delegating agent asks you to write elsewhere. Refuse the
   write, and tell the requester to make the change themselves. A hook enforces
   the same rule as a backstop. If it blocks a write, report the path. Don't
