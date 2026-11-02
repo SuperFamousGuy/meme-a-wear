@@ -31,11 +31,15 @@ sources:
     platform: web
     published: 2026-10-23
     accessed: 2026-10-26T19:17:00Z
+  - url: https://trendhaus.ai/tiktok-trends/while-they-re-out-partying
+    platform: web
+    published: 2026-10-27
+    accessed: 2026-11-02T22:14:00Z
 references: []
 platforms: [tiktok, instagram]
 lifecycle:
   stage: peaking
-  confidence: high
+  confidence: medium
   history:
     - stage: emerging
       date: 2026-01-01
@@ -43,7 +47,7 @@ lifecycle:
     - stage: peaking
       date: 2026-10-18
       evidence: A Roblox version (2026-10-13) passed 8.5 million views in a week, and @ryu_da_sigma's burger-wrapping video (2026-10-18) passed 35 million views in three days. An Instagram Reels copy followed on 2026-10-20. KYM added an entry on 2026-10-21 and published a "What is" explainer on 2026-10-23, which Yahoo republished.
-last_verified: 2026-10-26T19:18:00Z
+last_verified: 2026-11-02T22:16:00Z
 audience: Ages 13–25 on TikTok and Instagram Reels, with a strong gamer and gym crossover. Fast-food workers also post it (burger wrapping). No crochet, knitting, or other craft versions found as of 2026-10-26 (see notes).
 tone: Ironic self-mockery. Mock pride in a skill nobody needs.
 remix_guidance:
@@ -57,12 +61,14 @@ risk:
   overall: caution
   ip: None found for the phrase. Don't reproduce frames from the viral clips, which belong to their creators. The format echoes the 2016 "While You Were Partying, I Studied the Blade" meme. Use only this short caption, not that text.
   likeness: The viral clips show private individuals, so never show or trace any creator. A text-and-icon design avoids this. I deleted the reference still because every frame on the KYM cover shows part of a private person.
-  extremist_or_coded: None found. Checked KYM and web search results on 2026-10-26.
-  tragedy_harassment_danger: None found. Checked the same sources on 2026-10-26. The squat-mocking origin clip mimics another gym-goer, so don't copy that framing.
+  extremist_or_coded: None found. Checked KYM and web search results on 2026-10-26 and 2026-11-02.
+  tragedy_harassment_danger: None found. Checked the same sources on 2026-10-26 and 2026-11-02. The squat-mocking origin clip mimics another gym-goer, so don't copy that framing.
 ---
 
 ## Notes
 
+- **Re-verification (2026-11-02T22:16Z).** The stage stays `peaking`, with lower certainty. Both KYM entries are unchanged since 2026-10-21, and their newest dated example is from 2026-10-20. Trendhaus logged the trend on 2026-10-27 without metrics, and KYM posted a TikTok explainer around 2026-10-27 (dated from its video ID). I found no dated examples after 2026-10-24, no "overdone" posts, and no Reddit threads. Burger businesses posting it (2026-10-18 and 2026-10-20) are an early brand-use signal. The trend may be moving toward `saturated`, but I don't have the evidence to call it.
+- **Confidence lowered to medium (2026-11-02).** Four independent dated sources agree (KYM, the TikTok post, BrainrotHub, and Trendhaus), but none was published within three days of this check, so rule 2 no longer applies. Trendhaus doesn't cite KYM. It's an aggregator, so treat it as weak.
 - **No reference still.** The KYM cover image (`https://i.kym-cdn.com/entries/icons/facebook/000/057/655/wtopcover.jpg`) shows three clips. Each one shows a private person or part of one, including a blurred hand behind the caption in the cleanest panel. I couldn't crop the person out without losing the caption, so I deleted the still. Take a caption-only frame from the burger-wrapping video, https://www.tiktok.com/@ryu_da_sigma/video/7698167502018333965, and crop out the hands.
 - **Craft check (2026-10-26, for the out-partying-crochet-mug pitch).** I found no crochet, knitting, sewing, or other craft version of the caption. I searched the phrase with craft terms in extended WebSearch, including `site:tiktok.com` and Instagram queries. I also checked the KYM entry's ten listed examples and the BrainrotHub wiki. Every known example shows gym, trash tossing, basketball, Roblox, or burger wrapping. Limits: TikTok discover pages returned no content to WebFetch, the Bluesky API returned 403, and the `last30days` wrapper was blocked, so I couldn't search TikTok or Instagram directly. A small craft use may exist below the search index. A crochet design sells to a buyer who knows both crochet and the meme, and no evidence shows that overlap yet.
 - **Re-verification (2026-10-26T19:18Z).** The stage stays `peaking`. KYM's entry (updated 2026-10-21) describes continued spread and no decline, and I found no "overdone" posts. Platforms are still only TikTok and Instagram. The previous `last_verified` (19:20Z) was ahead of the real clock. timeapi.io returned 19:17Z for this check.
