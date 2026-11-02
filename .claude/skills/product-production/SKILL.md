@@ -49,12 +49,13 @@ the queue is empty, stop and report that.
 Set `video = on`. Call `mcp__higgsfield__balance` and note the credits.
 Then, for each product in queue order:
 
-1. **Artwork and mockups.** If the spec already has `variants` and one
-   approved mockup per variant, keep them and skip to substep 2. A rerun
-   must not replace finished art, because a new variant drops its ads. If
-   the spec has `variants` but lacks a mockup, ask the `artist` agent for
-   the missing mockups only, so it keeps the approved variants. Otherwise
-   ask the `artist` agent to run its Artwork
+1. **Artwork and mockups.** If the spec already has every variant that the
+   `design-spec` skill requires for its product, such as light and dark for
+   a garment, and one approved mockup per variant, keep them and skip to
+   substep 2. A rerun must not replace finished art, because a new variant
+   drops its ads. If the spec has some variants, ask the `artist` agent to
+   keep them and make only the missing variants and mockups. Otherwise ask
+   the `artist` agent to run its Artwork
    workflow for `designs/<slug>/spec.md`: every variant and one mockup per
    variant. Tell it not to make video ads in this call. When it finishes,
    read the spec. If it has no approved mockup, record the reason and skip
