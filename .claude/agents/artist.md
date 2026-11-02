@@ -67,7 +67,10 @@ is out of credits or can't be reached, and record that reason in the spec's
    to step 7.
 3. **Study the meme.** View each still in the brief's `references` with
    Read. List the traits that make the meme recognizable: pose, body shape,
-   face, expression, and the gag. The art must keep all of them. If the
+   face, expression, and the gag. Where the spec's art direction changes a
+   trait and the brief's `remix_guidance` allows it, such as a new caption,
+   list the spec's version instead. The art must keep every trait on the
+   list, and steps 5 and 6 use this list. If the
    brief has no reference, stop and report that the meme-expert must add a
    reference still.
 4. **Upload the reference.** Call `media_upload` for the still, then upload
