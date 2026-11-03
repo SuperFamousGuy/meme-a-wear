@@ -63,14 +63,15 @@ and note the credits. Then, for each product in queue order:
    workflow for `designs/<slug>/spec.md`: every variant and one mockup per
    variant. Tell it not to make video ads in this call. While `video = on`,
    protect the ad budget: tell the artist to make one attempt per mockup
-   unless the balance covers the artwork, two mockup retries, and one ad.
-   Count about 3.5 credits per image job and `ad_cost` per ad. While
+   unless the balance covers every image job for this product plus one ad.
+   That is each missing variant, plus three attempts for each missing
+   mockup. Count about 3.5 credits per image job and `ad_cost` per ad. While
    `ad_cost` is unknown, treat retries as not covered. Tell it never to
    hand-write SVG artwork. If its report starts with `OUT OF CREDITS`, keep
    whatever Higgsfield made, then stop the loop and go to step 3. Record the
    next slug as the first product not started. When it finishes, read the
-   spec. If it has no approved mockup, record the reason, add the slug to
-   the retry list, and skip to substep 3.
+   spec. If any variant lacks an approved mockup, record the reason and add
+   the slug to the retry list. If no mockup is approved, skip to substep 3.
 2. **Video ad.** Skip this substep when `video = off` or the spec already
    has an `ads` entry. Otherwise ask the
    `artist` agent to run its Video ads workflow for the slug: one 9:16 ad
@@ -85,8 +86,10 @@ and note the credits. Then, for each product in queue order:
 After the last product, run a retry pass if the balance still covers an
 image job. For each slug on the retry list, in queue order, ask the artist
 to keep the approved variants and make the missing mockups, with up to
-three attempts each. If it approves a mockup while `video = on`, run
-substeps 2 and 3 for that slug. Stop the pass on an `OUT OF CREDITS` report.
+three attempts each. If the spec now has an approved mockup and no ad
+while `video = on`, run substep 2. Then run substep 3 for every slug, and
+add the credits to that product's existing total. Stop the pass on an
+`OUT OF CREDITS` report.
 
 Running out of credits never fails the run. With `video = off`, keep
 making artwork and mockups while the balance covers image jobs. When image

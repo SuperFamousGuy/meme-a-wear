@@ -79,9 +79,9 @@ open_risks:
   - >-
     Edge margin. In wrap.png, the ear tips sit about 0.12 in from the top
     edge and the "COFFEE" box about 0.11 in from the bottom edge. The print
-    rule needs 0.25 in. Before printing, scale the art to 82 percent and
-    center it on Chalk (white), which leaves about 0.3 in top and bottom at
-    about 260 DPI. Or regenerate it when credits allow. An edit pass for
+    rule needs 0.25 in. Before printing, place the art at 82 percent of the
+    wrap size, centered on Chalk (white), without resampling. That leaves
+    about 0.3 in top and bottom, and the art prints at about 386 DPI. Or regenerate it when credits allow. An edit pass for
     this was rejected because the account ran out of credits.
   - >-
     No mockup. Higgsfield rejected mockup-wrap.png because the account ran
@@ -166,8 +166,9 @@ suggests, so it extends the trend to a second product type.
   job. The 2k submit (job 69d86839-db09-4bcc-81de-67b70934b666) passed
   review on the first attempt, apart from the margins. The margin edit pass
   and the mockup were then rejected for lack of credits.
-- **Resolution.** 2688 x 1152 px on 8.5 x 3.5 in is about 316 DPI. Scaled
-  to 82 percent for the margin fix, it's about 260 DPI. No upscale needed.
+- **Resolution.** 2688 x 1152 px on 8.5 x 3.5 in is about 316 DPI. Placed
+  at 82 percent for the margin fix without resampling, it prints at about
+  386 DPI. No upscale needed.
 - **Contrast.** Ink text on the white mug and Ink "COFFEE" on the Chalk box
   are about 16:1. Yolk carries no text.
 - **Spelling.** Every letter checked: "Scientists reveal the" and "COFFEE".
