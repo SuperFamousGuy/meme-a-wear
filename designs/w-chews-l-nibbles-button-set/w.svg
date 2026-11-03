@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  W Chews sticker, kiss-cut, 3 x 3 in, digital print. Pair: l.svg.
+  Hand-written SVG fallback: Higgsfield had no image credits (2026-11-02).
+  Units: 1000 per inch. Canvas 3.25 in = 3 in trim + 0.125 in bleed per side.
+  Layers, bottom to top:
+    bleed       Ink face, extends 0.125 in past the cut line
+    caption     "W chews", Archivo Black, Chalk. Convert to outlines before print.
+    bowl        original flat drawing: heaped bowl of glazed chunks over rice
+    CutContour  kiss-cut line. Non-printing. Hide before RIP or map to the printer's cut spot.
+  Palette: Ink #141414, Chalk #F2F2EE, Yolk #F2C14E.
+  Bowl, rim, and caption positions match l.svg exactly.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="3.25in" height="3.25in" viewBox="0 0 3250 3250">
+  <title>W Chews Sticker</title>
+  <defs>
+    <rect id="cut" x="125" y="125" width="3000" height="3000" rx="300" ry="300"/>
+    <path id="chunk-shape" d="M -150 -20 C -150 -100 -60 -125 10 -115 C 90 -110 155 -70 150 10 C 145 85 70 115 -10 112 C -100 108 -150 60 -150 -20 Z"/>
+    <!-- one glazed chunk: Yolk with Ink edge, Chalk gloss, Ink sesame seeds -->
+    <g id="chunk">
+      <use xlink:href="#chunk-shape" href="#chunk-shape" fill="#F2C14E" stroke="#141414" stroke-width="24" stroke-linejoin="round"/>
+      <path d="M -85 -60 C -45 -88 15 -90 60 -72" fill="none" stroke="#F2F2EE" stroke-width="24" stroke-linecap="round"/>
+      <g fill="#141414">
+        <ellipse cx="-30" cy="20" rx="17" ry="9" transform="rotate(-25 -30 20)"/>
+        <ellipse cx="55" cy="-10" rx="17" ry="9" transform="rotate(30 55 -10)"/>
+        <ellipse cx="20" cy="65" rx="17" ry="9" transform="rotate(5 20 65)"/>
+      </g>
+    </g>
+  </defs>
+
+  <g id="bleed">
+    <rect x="0" y="0" width="3250" height="3250" fill="#141414"/>
+  </g>
+
+  <g id="caption">
+    <text x="1625" y="950" font-family="'Archivo Black', 'Arial Black', sans-serif" font-size="440" fill="#F2F2EE" text-anchor="middle" textLength="2150" lengthAdjust="spacingAndGlyphs">W chews</text>
+  </g>
+
+  <g id="bowl" stroke-linecap="round" stroke-linejoin="round">
+    <!-- back of the rim, then a rice dome -->
+    <ellipse cx="1625" cy="1900" rx="775" ry="110" fill="#F2F2EE"/>
+    <path d="M 900 1900 C 950 1500 2300 1500 2350 1900 Z" fill="#F2F2EE" stroke="#141414" stroke-width="20"/>
+    <!-- heaped chunks, back row to front row -->
+    <use xlink:href="#chunk" href="#chunk" transform="translate(1300 1520) rotate(-10) scale(0.9)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(1950 1520) rotate(12) scale(0.9)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(1625 1440)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(1100 1760) rotate(8) scale(0.9)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(2150 1760) rotate(-15) scale(0.9)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(1420 1690) rotate(20) scale(1.05)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(1800 1690) rotate(-6) scale(1.05)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(1250 1900) rotate(-18) scale(1.0)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(2000 1900) rotate(15) scale(1.0)"/>
+    <use xlink:href="#chunk" href="#chunk" transform="translate(1625 1880) rotate(4) scale(1.1)"/>
+    <!-- bowl front and foot, Chalk; the front rim covers the bottom of the heap -->
+    <rect x="1350" y="2560" width="550" height="160" rx="40" fill="#F2F2EE"/>
+    <path d="M 850 1900 A 775 110 0 0 0 2400 1900 C 2380 2350 2100 2620 1625 2620 C 1150 2620 870 2350 850 1900 Z" fill="#F2F2EE"/>
+    <path d="M 900 1945 A 725 100 0 0 0 2350 1945" fill="none" stroke="#141414" stroke-width="18"/>
+    <!-- glossy glaze drips over the front rim -->
+    <g fill="#F2C14E" stroke="#141414" stroke-width="18">
+      <path d="M 1400 2000 C 1400 2080 1415 2150 1440 2150 C 1465 2150 1480 2080 1480 2002 Z"/>
+      <path d="M 1850 1998 C 1850 2060 1862 2110 1880 2110 C 1898 2110 1910 2060 1910 1995 Z"/>
+    </g>
+  </g>
+
+  <g id="CutContour">
+    <!-- Non-printing kiss-cut line, 0.125 in inside the bleed edge. -->
+    <use xlink:href="#cut" href="#cut" fill="none" stroke="#FF00FF" stroke-width="4"/>
+  </g>
+</svg>
