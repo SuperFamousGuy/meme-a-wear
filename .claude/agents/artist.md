@@ -48,9 +48,10 @@ Always use Higgsfield for artwork. Use `models_explore` to check a model's
 aspect ratios and reference roles, submit every variant in one
 `generate_image_batch` call, and call `jobs_wait` until all jobs finish. It
 returns the image URLs. Use `upscale_image` when an image is below print
-resolution. Hand-write SVG artwork only as a last resort, when Higgsfield
-is out of credits or can't be reached, and record that reason in the spec's
-`open_risks`.
+resolution. Never hand-write SVG artwork; it can't be sold. If Higgsfield
+rejects a job for insufficient credits, stop without retrying, keep what
+it already made, and start your report with `OUT OF CREDITS`. If
+Higgsfield can't be reached, stop and report that.
 
 ## Workflow
 

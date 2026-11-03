@@ -166,9 +166,9 @@ template's source in the notes when you use one.
 
 - Generate each variant with Higgsfield. Pick an aspect ratio that matches
   the print area, such as 3:4 for a 12 × 16 in t-shirt.
-- Use hand-written SVG only as a last resort, when Higgsfield is out of
-  credits or can't be reached. Record that reason in `open_risks` and keep
-  the spec `draft`.
+- Never use hand-written SVG artwork; it can't be sold. When Higgsfield is
+  out of credits or can't be reached, make no artwork and leave the spec
+  as it is.
 - Ask for a flat, isolated illustration on a solid background that the
   printer can remove. Avoid photographic backgrounds, soft shadows, and
   fine gradients near edges.
