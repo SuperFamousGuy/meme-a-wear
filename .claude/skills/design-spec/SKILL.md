@@ -198,7 +198,11 @@ template's source in the notes when you use one.
 - Put the art on a product color that the variant's `for` names, in its
   `placement`, at a realistic print size.
 - The printed art must match the variant: same text, spelling, colors, and
-  shapes. Regenerate the mockup if it doesn't.
+  shapes. Regenerate the mockup if it doesn't. A difference only in how the
+  text is drawn, such as a lighter or heavier weight, doesn't fail the
+  mockup when the words, spelling, colors, and shapes match. Approve it, and
+  record the difference in `open_risks` so a person checks it before
+  posting.
 - Add no logos, brand names, or text other than the art's own, except the
   meme-a-wear logo if `brand/guidelines.md` allows it.
 - A missing or failed mockup doesn't block `ready`. List it in `open_risks`.
