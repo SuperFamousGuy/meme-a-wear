@@ -166,9 +166,9 @@ template's source in the notes when you use one.
 
 - Generate each variant with Higgsfield. Pick an aspect ratio that matches
   the print area, such as 3:4 for a 12 × 16 in t-shirt.
-- Use hand-written SVG only as a last resort, when Higgsfield is out of
-  credits or can't be reached. Record that reason in `open_risks` and keep
-  the spec `draft`.
+- Never use hand-written SVG artwork; it can't be sold. When Higgsfield is
+  out of credits or can't be reached, make no artwork and leave the spec
+  as it is.
 - Ask for a flat, isolated illustration on a solid background that the
   printer can remove. Avoid photographic backgrounds, soft shadows, and
   fine gradients near edges.
@@ -198,7 +198,11 @@ template's source in the notes when you use one.
 - Put the art on a product color that the variant's `for` names, in its
   `placement`, at a realistic print size.
 - The printed art must match the variant: same text, spelling, colors, and
-  shapes. Regenerate the mockup if it doesn't.
+  shapes. Regenerate the mockup if it doesn't. A difference only in how the
+  text is drawn, such as a lighter or heavier weight, doesn't fail the
+  mockup when the words, spelling, colors, and shapes match. Approve it, and
+  record the difference in `open_risks` so a person checks it before
+  posting.
 - Add no logos, brand names, or text other than the art's own, except the
   meme-a-wear logo if `brand/guidelines.md` allows it.
 - A missing or failed mockup doesn't block `ready`. List it in `open_risks`.

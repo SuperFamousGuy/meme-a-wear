@@ -48,9 +48,10 @@ Always use Higgsfield for artwork. Use `models_explore` to check a model's
 aspect ratios and reference roles, submit every variant in one
 `generate_image_batch` call, and call `jobs_wait` until all jobs finish. It
 returns the image URLs. Use `upscale_image` when an image is below print
-resolution. Hand-write SVG artwork only as a last resort, when Higgsfield
-is out of credits or can't be reached, and record that reason in the spec's
-`open_risks`.
+resolution. Never hand-write SVG artwork; it can't be sold. If Higgsfield
+rejects a job for insufficient credits, stop without retrying, keep what
+it already made, and start your report with `OUT OF CREDITS`. If
+Higgsfield can't be reached, stop and report that.
 
 ## Workflow
 
@@ -107,7 +108,11 @@ is out of credits or can't be reached, and record that reason in the spec's
    variant is `for`. Download it to `designs/<slug>/mockup-<variant>.png`
    and view it with Read. Regenerate it if the printed art differs from the
    variant, such as changed text, color, or shape, or if it shows a person.
-   Stop after three attempts per mockup and report what still fails.
+   A difference only in type weight or rendering doesn't fail it. Approve
+   it, and record the difference in `open_risks`. Stop after three attempts
+   per mockup, or after the number the request allows. Also stop when a
+   retry repeats the same defect, because another retry won't fix it.
+   Report what still fails.
 8. **Record.** In the spec, add each variant's prompt, model, reference,
    image URL, and pixel size, and each mockup's entry. Update
    `risk_addressed.ip` and `open_risks`, and remove "No artwork yet." If

@@ -9,4 +9,6 @@ artist.md gives the artist Bash (two guarded curl commands), media_upload, and m
 
 **Why:** Text-only prompts without a reference produced art that didn't look like the meme (the black-cat-clapping tee was rejected).
 
+On 2026-11-02 and 2026-11-03, out of credits, the artist hand-wrote SVG artwork for five products. The user rejected all of it as unsellable. Never hand-write SVG art: when Higgsfield is out of credits, stop and report `OUT OF CREDITS`.
+
 **How to apply:** At the start of a design task, confirm the three tools are present. If any is missing, stop and report it rather than generating without the reference or skipping the visual review.

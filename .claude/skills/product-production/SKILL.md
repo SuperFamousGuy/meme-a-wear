@@ -46,8 +46,13 @@ the queue is empty, stop and report that.
 
 ## 2. Produce, one product at a time
 
-Set `video = on`. Call `mcp__higgsfield__balance` and note the credits.
-Then, for each product in queue order:
+Set `video = on` and `ad_cost = unknown`. Call `mcp__higgsfield__balance`
+and note the credits. Then, for each product in queue order:
+
+0. **Credit check.** If the balance is 0, stop the loop and go to step 3.
+   Record this slug as the first product not started. Image prices vary by
+   model and size, so otherwise let the artist try, and rely on its
+   `OUT OF CREDITS` report.
 
 1. **Artwork and mockups.** If the spec already has every variant that the
    `design-spec` skill requires for its product, such as light and dark for
@@ -57,9 +62,17 @@ Then, for each product in queue order:
    keep them and make only the missing variants and mockups. Otherwise ask
    the `artist` agent to run its Artwork
    workflow for `designs/<slug>/spec.md`: every variant and one mockup per
-   variant. Tell it not to make video ads in this call. When it finishes,
-   read the spec. If it has no approved mockup, record the reason and skip
-   to substep 3.
+   variant. Tell it not to make video ads in this call. While `video = on`,
+   protect the ad budget: tell the artist to make one attempt per mockup
+   unless the balance covers every image job for this product plus one ad.
+   That is each missing variant, plus three attempts for each missing
+   mockup. Count about 3.5 credits per image job and `ad_cost` per ad. While
+   `ad_cost` is unknown, treat retries as not covered. Tell it never to
+   hand-write SVG artwork. If its report starts with `OUT OF CREDITS`, keep
+   whatever Higgsfield made, run substep 3, then stop the loop and go to
+   step 3. Record the next slug as the first product not started. When it finishes, read the
+   spec. If any variant lacks an approved mockup, record the reason and add
+   the slug to the retry list. If no mockup is approved, skip to substep 3.
 2. **Video ad.** Skip this substep when `video = off` or the spec already
    has an `ads` entry. Otherwise ask the
    `artist` agent to run its Video ads workflow for the slug: one 9:16 ad
@@ -68,12 +81,21 @@ Then, for each product in queue order:
    If its report starts with `OUT OF CREDITS`, or asks which balance to use,
    set `video = off`. Record the slug as the first product without video.
 3. **Credits.** Call `mcp__higgsfield__balance` and note the credits spent
-   on this product.
+   on this product. If the artist made an ad, set `ad_cost` to the credits
+   the ad used.
+
+After the last product, run a retry pass if the balance is above 0. For each slug on the retry list, in queue order, ask the artist
+to keep the approved variants and make the missing mockups, with up to
+three attempts each. If the spec now has an approved mockup and no ad
+while `video = on`, run substep 2. Then run substep 3 for every slug, even
+after an `OUT OF CREDITS` report, and add the credits to that product's
+existing total. Stop the pass on an `OUT OF CREDITS` report from the
+Artwork workflow.
 
 Running out of credits never fails the run. With `video = off`, keep
-making artwork and mockups for every remaining product. If the artist falls
-back to SVG artwork because image credits ran out too, keep going, and list
-those products in the PR.
+making artwork and mockups until the artist reports `OUT OF CREDITS`. When image
+credits run out, the run delivers only what Higgsfield made. Products not
+started stay untouched for a later run.
 
 ## 3. Pull request
 
@@ -91,7 +113,8 @@ Write the PR body in the project's communication style. Include:
 
 - One table row per queued product, in queue order: rank, slug, product,
   total, variants, mockups, ad, and credits spent.
-- The product where video stopped and why, and the credits left.
+- The product where video stopped and why, the first product not started
+  for lack of credits, and the credits left.
 - The products you skipped in step 1, and why.
 - Each product's open risks and the changes the artist says the designer or
   meme-expert must make.
