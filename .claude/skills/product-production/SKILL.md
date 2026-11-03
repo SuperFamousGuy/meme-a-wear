@@ -49,9 +49,10 @@ the queue is empty, stop and report that.
 Set `video = on` and `ad_cost = unknown`. Call `mcp__higgsfield__balance`
 and note the credits. Then, for each product in queue order:
 
-0. **Credit check.** If the balance is below one image job, about 3.5
-   credits, stop the loop and go to step 3. Record this slug as the first
-   product not started.
+0. **Credit check.** If the balance is 0, stop the loop and go to step 3.
+   Record this slug as the first product not started. Image prices vary by
+   model and size, so otherwise let the artist try, and rely on its
+   `OUT OF CREDITS` report.
 
 1. **Artwork and mockups.** If the spec already has every variant that the
    `design-spec` skill requires for its product, such as light and dark for
@@ -68,8 +69,8 @@ and note the credits. Then, for each product in queue order:
    mockup. Count about 3.5 credits per image job and `ad_cost` per ad. While
    `ad_cost` is unknown, treat retries as not covered. Tell it never to
    hand-write SVG artwork. If its report starts with `OUT OF CREDITS`, keep
-   whatever Higgsfield made, then stop the loop and go to step 3. Record the
-   next slug as the first product not started. When it finishes, read the
+   whatever Higgsfield made, run substep 3, then stop the loop and go to
+   step 3. Record the next slug as the first product not started. When it finishes, read the
    spec. If any variant lacks an approved mockup, record the reason and add
    the slug to the retry list. If no mockup is approved, skip to substep 3.
 2. **Video ad.** Skip this substep when `video = off` or the spec already
@@ -83,16 +84,16 @@ and note the credits. Then, for each product in queue order:
    on this product. If the artist made an ad, set `ad_cost` to the credits
    the ad used.
 
-After the last product, run a retry pass if the balance still covers an
-image job. For each slug on the retry list, in queue order, ask the artist
+After the last product, run a retry pass if the balance is above 0. For each slug on the retry list, in queue order, ask the artist
 to keep the approved variants and make the missing mockups, with up to
 three attempts each. If the spec now has an approved mockup and no ad
-while `video = on`, run substep 2. Then run substep 3 for every slug, and
-add the credits to that product's existing total. Stop the pass on an
-`OUT OF CREDITS` report.
+while `video = on`, run substep 2. Then run substep 3 for every slug, even
+after an `OUT OF CREDITS` report, and add the credits to that product's
+existing total. Stop the pass on an `OUT OF CREDITS` report from the
+Artwork workflow.
 
 Running out of credits never fails the run. With `video = off`, keep
-making artwork and mockups while the balance covers image jobs. When image
+making artwork and mockups until the artist reports `OUT OF CREDITS`. When image
 credits run out, the run delivers only what Higgsfield made. Products not
 started stay untouched for a later run.
 
