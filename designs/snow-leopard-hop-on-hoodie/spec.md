@@ -3,12 +3,12 @@ slug: snow-leopard-hop-on-hoodie
 name: Snow Leopard Paws at You, Hop On Hoodie
 status: pitch
 created: 2026-11-02T22:30:00Z
-updated: 2026-11-02T22:30:00Z
+updated: 2026-11-09T23:30:00Z
 source_brief:
   path: trends/snow-leopard-paws-at-you.md
   stage: peaking
   confidence: medium
-  last_verified: 2026-11-02T22:16:00Z
+  last_verified: 2026-11-09T23:12:00Z
 product:
   type: hoodie
   placement: front-center, above the pocket
@@ -43,8 +43,10 @@ open_risks:
     The brief's visual_signature is marked unverified. The traits match the
     brief's still, which I viewed.
   - >-
-    Brand use already started (an official game-store post on 2026-10-28).
-    The trend may saturate within a week or two.
+    The trend is slowing. The brief's newest example is from about
+    2026-11-05, and the meme left MemeStand's daily chart after 2026-11-03.
+    If nothing new appears, the brief expects saturated or dead by about
+    2026-11-12. Don't list the hoodie if the recheck finds saturation.
 copy:
   title: Paws at You Hoodie
   description: >-
@@ -74,6 +76,9 @@ the invite instead of texting it.
 
 **Timing.** The brief rates it peaking: four platforms and a brand post
 within a week of 2026-10-23. Hoodie season matches.
+
+**Revised 2026-11-09.** Updated the brief link and timing risk to the
+2026-11-09T23:12Z check, which shows the meme slowing.
 
 ## Design notes
 

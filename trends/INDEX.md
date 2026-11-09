@@ -4,7 +4,7 @@ Sorted by `last_verified`, newest first. Read a brief before you design from it.
 
 | Slug | Name | Stage | Confidence | Overall risk | Last verified |
 |---|---|---|---|---|---|
-| [w-chews-l-nibbles](w-chews-l-nibbles.md) | W Chews / L Nibbles | emerging | medium | caution | 2026-11-02T22:28:00Z |
-| [snow-leopard-paws-at-you](snow-leopard-paws-at-you.md) | Snow Leopard Paws at You (Snowmei) | peaking | medium | caution | 2026-11-02T22:16:00Z |
-| [scientists-reveal-the-hi](scientists-reveal-the-hi.md) | Scientists Reveal the Hi | peaking | medium | caution | 2026-11-02T22:16:00Z |
-| [while-theyre-out-partying](while-theyre-out-partying.md) | While They're Out Partying (BTW) | peaking | medium | caution | 2026-11-02T22:16:00Z |
+| [bicep-heart-trend](bicep-heart-trend.md) | Bicep Heart Trend | peaking | medium | caution | 2026-11-09T23:12:00Z |
+| [snow-leopard-paws-at-you](snow-leopard-paws-at-you.md) | Snow Leopard Paws at You (Snowmei) | peaking | medium | caution | 2026-11-09T23:12:00Z |
+| [frutiger-aero-yams](frutiger-aero-yams.md) | Frutiger Aero Yams | peaking | high | caution | 2026-11-09T22:58:00Z |
+| [w-chews-l-nibbles](w-chews-l-nibbles.md) | W Chews / L Nibbles | peaking | medium | caution | 2026-11-09T22:58:00Z |

@@ -1,1 +1,2 @@
 - [Meme text vs brand](project_meme_text_vs_brand.md) — serif/sentence-case captions and ginger fur conflict with brand; user decision pending
+- [Marketing pitch rules](feedback_marketing_pitch_rules.md) — kiss-cut stickers, no trademarks in listing title/tags, mug art and caption on one panel

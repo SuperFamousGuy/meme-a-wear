@@ -2,9 +2,9 @@
 
 This profile describes who buys meme-a-wear products. It draws on the
 `audience`, `platforms`, and `tone` fields of the four current briefs in
-`trends/`, and on the eleven viability reports in `marketing/viability/`. It
-also keeps claims from nine briefs that the meme-expert moved to
-`trends/stale/`, and from 23 reports now in `marketing/stale/viability/`.
+`trends/`, and on the twelve viability reports in `marketing/viability/`. It
+also keeps claims from eleven briefs that the meme-expert moved to
+`trends/stale/`, and from 28 reports now in `marketing/stale/viability/`.
 Stale sources are marked `(stale)`. They aren't `dead` or `do-not-use`, so
 their claims stay. The store has no sales data yet, so every claim is a
 research estimate.
@@ -12,71 +12,78 @@ research estimate.
 Confidence: `low` means one source, `medium` means two that agree, and `high`
 means three or more that agree. `contested` means sources conflict.
 
-Three current briefs record `last_verified` 2026-11-02T22:16:00Z, so they
-become stale after 2026-11-05T22:16:00Z. w-chews-l-nibbles records
-2026-11-02T22:28:00Z and becomes stale after 2026-11-05T22:28:00Z. The meme-expert moved
-a-haunted-house-but to `trends/stale/` on 2026-11-02. Its two reports are
-still in `marketing/viability/`.
+frutiger-aero-yams and w-chews-l-nibbles record `last_verified`
+2026-11-09T22:58:00Z, and become stale after 2026-11-12T22:58:00Z.
+bicep-heart-trend and snow-leopard-paws-at-you record 2026-11-09T23:12:00Z,
+and become stale after 2026-11-12T23:12:00Z. The meme-expert moved
+scientists-reveal-the-hi and while-theyre-out-partying to `trends/stale/`
+before this run, and their five reports moved to `marketing/stale/`.
+a-haunted-house-but is also stale, but its two reports are still in
+`marketing/viability/`.
 
 ## Claims across trends
 
 ### Age
 
 - **The core buyer is 16 to 25.** Every brief's age range covers 16 to 25.
-  - sources: snow-leopard-paws-at-you (15–30), w-chews-l-nibbles (13–25),
-    scientists-reveal-the-hi (13–30), while-theyre-out-partying (13–25);
-    stale: a-haunted-house-but, black-cat-clapping,
-    randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
+  - sources: frutiger-aero-yams (13–25), bicep-heart-trend (16–30),
+    snow-leopard-paws-at-you (15–30), w-chews-l-nibbles (13–25); stale:
+    scientists-reveal-the-hi, while-theyre-out-partying, a-haunted-house-but,
+    black-cat-clapping, randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
     fat-talking-tom-and-angela, biddy-blas-scrib-doon,
     ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan,
     losercore-playlist
   - confidence: high
 - **The upper age bound is contested.**
-  - Side A, tops out at 25 to 30: snow-leopard-paws-at-you,
-    w-chews-l-nibbles, scientists-reveal-the-hi, while-theyre-out-partying;
-    stale: tra-la-la-spongebob, fat-talking-tom-and-angela,
-    losercore-playlist, black-cat-clapping.
+  - Side A, tops out at 25 to 30: frutiger-aero-yams, bicep-heart-trend,
+    snow-leopard-paws-at-you, w-chews-l-nibbles; stale:
+    scientists-reveal-the-hi, while-theyre-out-partying, tra-la-la-spongebob,
+    fat-talking-tom-and-angela, losercore-playlist, black-cat-clapping.
   - Side B, reaches 35 to 40: stale: a-haunted-house-but,
     randy-marsh-vs-whats-up-brah, ai-rumpelstiltskin-tip-toein,
     biddy-blas-scrib-doon, youre-blatantly-just-not-me-nan.
   - confidence: contested. The split follows the trend. Every current brief
-    now sits on Side A, so plan current products for buyers 30 and under.
+    sits on Side A, so plan current products for buyers 30 and under.
 - **Part of the audience is under 16, and may not buy on Etsy directly.**
   Products for these trends may depend on parents or gift buyers. Higher
-  prices, such as a $36.99 hoodie, hit this group hardest.
-  - sources: snow-leopard-paws-at-you (15+), w-chews-l-nibbles (13+),
-    scientists-reveal-the-hi (13+), while-theyre-out-partying (13+),
-    viability/out-partying-controller-hoodie,
-    viability/snow-leopard-hop-on-hoodie; stale: tra-la-la-spongebob,
-    black-cat-clapping, randy-marsh-vs-whats-up-brah,
-    fat-talking-tom-and-angela, viability/tra-la-la-blob-tee
+  prices, such as a $36.99 hoodie or a $24.99 apron, hit this group hardest.
+  - sources: frutiger-aero-yams (13+), snow-leopard-paws-at-you (15+),
+    w-chews-l-nibbles (13+), viability/snow-leopard-hop-on-hoodie,
+    viability/w-chews-apron; stale: scientists-reveal-the-hi (13+),
+    while-theyre-out-partying (13+), tra-la-la-spongebob, black-cat-clapping,
+    randy-marsh-vs-whats-up-brah, fat-talking-tom-and-angela,
+    viability/out-partying-controller-hoodie, viability/tra-la-la-blob-tee
   - confidence: high
 
 ### Platforms
 
-- **TikTok is the main platform.** All four current briefs and all nine
+- **TikTok is the main platform.** All four current briefs and all eleven
   stale briefs list it.
-  - sources: snow-leopard-paws-at-you, w-chews-l-nibbles,
-    scientists-reveal-the-hi, while-theyre-out-partying; stale: all nine
+  - sources: frutiger-aero-yams, bicep-heart-trend, snow-leopard-paws-at-you,
+    w-chews-l-nibbles; stale: all eleven
   - confidence: high
 - **Instagram (Reels) reaches the audience.**
-  - sources: snow-leopard-paws-at-you, w-chews-l-nibbles,
-    scientists-reveal-the-hi, while-theyre-out-partying; stale:
-    a-haunted-house-but, black-cat-clapping, randy-marsh-vs-whats-up-brah,
-    biddy-blas-scrib-doon, ai-rumpelstiltskin-tip-toein,
-    youre-blatantly-just-not-me-nan
+  - sources: frutiger-aero-yams, bicep-heart-trend, snow-leopard-paws-at-you,
+    w-chews-l-nibbles; stale: scientists-reveal-the-hi,
+    while-theyre-out-partying, a-haunted-house-but, black-cat-clapping,
+    randy-marsh-vs-whats-up-brah, biddy-blas-scrib-doon,
+    ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan
   - confidence: high
 - **X carries many of these memes.**
-  - sources: snow-leopard-paws-at-you, w-chews-l-nibbles; stale:
-    a-haunted-house-but, black-cat-clapping, tra-la-la-spongebob,
+  - sources: frutiger-aero-yams, bicep-heart-trend, snow-leopard-paws-at-you,
+    w-chews-l-nibbles; stale: a-haunted-house-but, black-cat-clapping, tra-la-la-spongebob,
     fat-talking-tom-and-angela, biddy-blas-scrib-doon,
     ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan,
     losercore-playlist
   - confidence: high
 - **Reddit carries cat memes.**
-  - sources: scientists-reveal-the-hi, snow-leopard-paws-at-you; stale:
+  - sources: snow-leopard-paws-at-you; stale: scientists-reveal-the-hi,
     fat-talking-tom-and-angela
   - confidence: high
+- **Facebook carries some pose trends.** meme-a-wear doesn't use it as a
+  launch channel.
+  - sources: bicep-heart-trend
+  - confidence: low
 - **YouTube carries some trends.** meme-a-wear doesn't use it as a launch
   channel.
   - sources: stale: randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
@@ -84,7 +91,7 @@ still in `marketing/viability/`.
   - confidence: high
 - **No brief puts the audience on Pinterest.** Pinterest suits desk and mug
   posts in some reports, but no brief gives audience evidence for it.
-  - sources: all thirteen briefs (absence); stale:
+  - sources: all fifteen briefs (absence); stale:
     viability/whats-up-monday-mug, viability/tip-toein-inbox-mug,
     viability/chubby-cat-hibernating-hoodie (suggest Pinterest as a product
     fit)
@@ -96,49 +103,74 @@ still in `marketing/viability/`.
   - confidence: high
 - **Caption, text, and still-image formats let the store make its own
   posts.** These memes need no creator footage or audio.
-  - sources: viability/out-partying-controller-hoodie,
-    viability/w-chews-l-nibbles-mug, viability/snow-leopard-hop-on-hoodie;
-    stale: viability/haunted-house-reply-all-tee,
+  - sources: viability/w-chews-l-nibbles-mug, viability/snow-leopard-hop-on-hoodie,
+    viability/frutiger-aero-yams-tee; stale:
+    viability/out-partying-controller-hoodie,
+    viability/haunted-house-reply-all-tee,
     viability/haunted-house-group-project-sticker
   - confidence: high
+- **Self-filmed pose trends are hard to post without a person.** Fans know
+  the trend from people doing it on camera, and product-only posts can't
+  perform it.
+  - sources: viability/bicep-heart-tee, viability/bicep-heart-sticker
+  - confidence: low. Both reports rely on the same brief.
 
 ### Tone
 
 - **The humor is ironic or deadpan, not earnest.**
-  - sources: scientists-reveal-the-hi (deadpan), while-theyre-out-partying
-    (ironic self-mockery), w-chews-l-nibbles (ironic); stale:
-    black-cat-clapping, randy-marsh-vs-whats-up-brah,
-    ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan
+  - sources: frutiger-aero-yams (absurd and ironic), w-chews-l-nibbles
+    (ironic); stale: scientists-reveal-the-hi (deadpan),
+    while-theyre-out-partying (ironic self-mockery), black-cat-clapping,
+    randy-marsh-vs-whats-up-brah, ai-rumpelstiltskin-tip-toein,
+    youre-blatantly-just-not-me-nan
   - confidence: high
 - **Self-deprecating and relatable-complaint humor lands.**
-  - sources: while-theyre-out-partying; stale: a-haunted-house-but,
+  - sources: stale: while-theyre-out-partying, a-haunted-house-but,
     losercore-playlist, fat-talking-tom-and-angela
   - confidence: high
 - **Absurd and surreal humor lands.**
-  - sources: stale: black-cat-clapping, randy-marsh-vs-whats-up-brah,
-    tra-la-la-spongebob
+  - sources: frutiger-aero-yams; stale: black-cat-clapping,
+    randy-marsh-vs-whats-up-brah, tra-la-la-spongebob
   - confidence: high
 - **Loud, goofy bravado lands.**
   - sources: stale: randy-marsh-vs-whats-up-brah, biddy-blas-scrib-doon
   - confidence: medium
-- **Wholesome or cute animal humor lands.**
-  - sources: scientists-reveal-the-hi (wholesome), snow-leopard-paws-at-you
-    (cute, clingy, mock-needy)
-  - confidence: medium
+- **Wholesome, affectionate, or cute animal humor lands.**
+  - sources: snow-leopard-paws-at-you (cute, clingy, mock-needy),
+    bicep-heart-trend (flirty and wholesome); stale: scientists-reveal-the-hi
+    (wholesome)
+  - confidence: high
+- **Mild innuendo lands when the product stays clean.** The literal yam
+  carries a body joke without showing a body.
+  - sources: frutiger-aero-yams
+  - confidence: low
 
 ### Interest segments
 
 - **Gamers are a recurring core segment.**
-  - sources: snow-leopard-paws-at-you (gamer core), while-theyre-out-partying
-    (gamer crossover); stale: randy-marsh-vs-whats-up-brah,
+  - sources: snow-leopard-paws-at-you (gamer core); stale:
+    while-theyre-out-partying (gamer crossover), randy-marsh-vs-whats-up-brah,
     biddy-blas-scrib-doon
   - confidence: high
 - **Cat-meme fans are a recurring segment.**
-  - sources: snow-leopard-paws-at-you, scientists-reveal-the-hi; stale:
+  - sources: snow-leopard-paws-at-you; stale: scientists-reveal-the-hi,
     black-cat-clapping, fat-talking-tom-and-angela
   - confidence: high
+- **Gym and fitness fans are a segment.**
+  - sources: bicep-heart-trend (gym core); stale: while-theyre-out-partying
+    (gym crossover)
+  - confidence: medium
+- **Couples are a segment.**
+  - sources: bicep-heart-trend; stale: fat-talking-tom-and-angela
+  - confidence: medium
+- **Brainrot slang fans are a segment.**
+  - sources: frutiger-aero-yams; stale: tra-la-la-spongebob
+  - confidence: medium
+- **Y2K and Frutiger Aero aesthetic fans are a segment.**
+  - sources: frutiger-aero-yams
+  - confidence: low
 - **Food posters and fast-food fans or workers buy food jokes.**
-  - sources: w-chews-l-nibbles, while-theyre-out-partying,
+  - sources: w-chews-l-nibbles; stale: while-theyre-out-partying,
     viability/out-partying-crochet-mug
   - confidence: medium. Two briefs agree; the report relies on one of them.
 
@@ -148,39 +180,61 @@ No brief records merch-buying evidence. These claims come from viability
 judgments, not sales.
 
 - **They buy t-shirts.**
-  - sources: viability/scientists-reveal-the-hi-tee,
+  - sources: viability/frutiger-aero-yams-tee, viability/bicep-heart-tee,
     viability/haunted-house-reply-all-tee; stale:
+    viability/scientists-reveal-the-hi-tee,
     viability/losercore-table-for-one-tee,
     viability/whats-up-brah-alarm-clock-tee, viability/tra-la-la-blob-tee,
     viability/chubby-cat-couple-tee, viability/scrib-doon-tee
   - confidence: high
-- **They buy laptop and notebook stickers.**
-  - sources: viability/snow-leopard-paws-at-you-sticker,
-    viability/scientists-reveal-the-hi-sticker,
+- **They buy laptop, bottle, and notebook stickers.**
+  - sources: viability/frutiger-aero-yams-sticker,
+    viability/bicep-heart-sticker, viability/snow-leopard-paws-at-you-sticker,
     viability/haunted-house-group-project-sticker,
     viability/w-chews-l-nibbles-button-set (now a two-sticker set); stale:
+    viability/scientists-reveal-the-hi-sticker,
     viability/losercore-sad-songs-sticker, viability/whats-up-brah-sticker,
     viability/clapping-cat-great-choice-sticker, viability/scrib-doon-sticker
   - confidence: high
 - **They buy hoodies, especially cozy or gamer themes in autumn.**
-  - sources: viability/out-partying-controller-hoodie,
-    viability/snow-leopard-hop-on-hoodie; stale:
+  - sources: viability/snow-leopard-hop-on-hoodie; stale:
+    viability/out-partying-controller-hoodie,
     viability/clapping-cat-one-more-episode-hoodie,
     viability/chubby-cat-hibernating-hoodie
   - confidence: high
 - **Mug buying is contested.**
-  - For: viability/scientists-reveal-the-coffee-mug and
-    viability/w-chews-l-nibbles-mug (both briefs name a mug in
-    remix_guidance); stale: viability/not-me-nan-wolf-mug,
+  - For: viability/w-chews-l-nibbles-mug and
+    viability/snow-leopard-one-more-match-mug (both briefs name a mug or a
+    desk request in remix_guidance); stale:
+    viability/scientists-reveal-the-coffee-mug, viability/not-me-nan-wolf-mug,
     viability/chubby-cat-couple-mug, viability/scrib-doon-mug.
-  - Against: viability/scientists-reveal-the-coffee-mug,
-    viability/out-partying-crochet-mug, and viability/w-chews-l-nibbles-mug
-    (all note mugs are weaker for buyers under 30 and lean on gift buyers);
-    stale: viability/tra-la-la-7am-mug, viability/losercore-my-date-mug.
+  - Against: viability/w-chews-l-nibbles-mug and
+    viability/snow-leopard-one-more-match-mug (both note mugs are weaker for
+    buyers under 30); stale: viability/scientists-reveal-the-coffee-mug,
+    viability/out-partying-crochet-mug, viability/tra-la-la-7am-mug,
+    viability/losercore-my-date-mug.
   - Unknown: stale: viability/whats-up-monday-mug,
     viability/tip-toein-inbox-mug.
   - confidence: contested. Mugs look stronger for older segments and as
     gifts.
+- **Apron buying is contested.**
+  - For: w-chews-l-nibbles (remix_guidance names "W chews" on an apron as a
+    design that lands).
+  - Against: viability/w-chews-apron (no evidence the 13–25 core buys
+    aprons; the spec's buyer is a gift giver outside the meme's fans).
+  - confidence: contested. The brief judges the design, and the report judges
+    the buyer.
+- **Two-sided products can split the joke.** When the image and the caption
+  sit on opposite sides, one view or one photo shows half the meme. Repeating
+  one panel that holds both on each side fixes it at no extra print cost.
+  - sources: viability/snow-leopard-one-more-match-mug (2026-11-09T23:05Z
+    found the split; 23:20Z scored the fix)
+  - confidence: low
+- **Trademarked meme names can't go in listing titles or tags.** Discovery
+  then depends on the caption and on social posts.
+  - sources: viability/frutiger-aero-yams-tee,
+    viability/frutiger-aero-yams-sticker
+  - confidence: low. Both reports rely on the same brief.
 - **No evidence shows they buy pinback buttons.** Button cost and shipping
   at Printify are also unconfirmed.
   - sources: viability/w-chews-l-nibbles-button-set, version of
@@ -190,8 +244,8 @@ judgments, not sales.
 - **Hobby-specific designs sell when the buyer has the hobby.** Gamers and
   fast-food workers are the documented skill segments. The brief found no
   crafter use as of 2026-10-26, so the crochet idea was replaced.
-  - sources: while-theyre-out-partying, viability/out-partying-controller-hoodie,
-    viability/out-partying-crochet-mug
+  - sources: stale: while-theyre-out-partying,
+    viability/out-partying-controller-hoodie, viability/out-partying-crochet-mug
   - confidence: low. All three rest on one brief.
 - **Seasonal formats lose their buyers after the date.** A Halloween
   product needed to ship before 2026-10-31.
@@ -209,6 +263,30 @@ judgments, not sales.
 
 ## Segments by trend
 
+### Frutiger Aero Yams
+
+- Ages 13–25 on TikTok, X, and Instagram who follow brainrot slang and the
+  Frutiger Aero and Y2K aesthetic. Absurd, ironic humor with a mild body joke.
+  - sources: frutiger-aero-yams
+  - confidence: low
+- Shares the literal glossy blue yam and the "to your right" caption with an
+  arrow. Both suit image posts the store can make itself.
+  - sources: frutiger-aero-yams, viability/frutiger-aero-yams-tee,
+    viability/frutiger-aero-yams-sticker
+  - confidence: low. The reports rely on the same brief.
+
+### Bicep Heart Trend
+
+- Ages 16–30 on TikTok, Instagram Reels, X, and Facebook. A gym and fitness
+  core plus couples. Flirty, wholesome humor.
+  - sources: bicep-heart-trend
+  - confidence: low. One brief, now at medium confidence.
+- Shares self-filmed videos of the pose, solo or with a partner, and "send
+  bicep hearts" requests. The store can't make those posts without a person.
+  - sources: bicep-heart-trend, viability/bicep-heart-tee,
+    viability/bicep-heart-sticker
+  - confidence: low. The reports rely on the same brief.
+
 ### Snow Leopard Paws at You
 
 - Ages 15–30 on X, Instagram, and TikTok, also Reddit. A strong gamer core
@@ -216,10 +294,11 @@ judgments, not sales.
   - sources: snow-leopard-paws-at-you
   - confidence: low
 - Shares the caption plus a short request, usually a game invite. A gamer
-  request on a hoodie joins that pattern; the bare caption on a sticker
-  reaches non-gamers too.
+  request on a hoodie or mug joins that pattern; the bare caption on a
+  sticker reaches non-gamers too. The caption needs the raised paw beside it.
   - sources: snow-leopard-paws-at-you, viability/snow-leopard-hop-on-hoodie,
-    viability/snow-leopard-paws-at-you-sticker
+    viability/snow-leopard-paws-at-you-sticker,
+    viability/snow-leopard-one-more-match-mug
   - confidence: low. The reports rely on the same brief.
 
 ### W Chews / L Nibbles
@@ -234,43 +313,28 @@ judgments, not sales.
     viability/w-chews-l-nibbles-button-set
   - confidence: low. The reports rely on the same brief.
 - A two-sided verdict is the product hook. A mug carries both sides; a
-  two-sticker set lets the buyer place each verdict.
+  two-sticker set lets the buyer place each verdict. A one-sided apron loses
+  that hook and reaches a gift buyer instead of the fan.
   - sources: w-chews-l-nibbles (remix_guidance), viability/w-chews-l-nibbles-mug,
-    viability/w-chews-l-nibbles-button-set
+    viability/w-chews-l-nibbles-button-set, viability/w-chews-apron
   - confidence: low. The reports rely on the same brief.
-
-### Scientists Reveal the Hi
-
-- Broad, ages 13–30, on Instagram Reels and TikTok, plus cat-meme fans on
-  Reddit. Deadpan, wholesome humor.
-  - sources: scientists-reveal-the-hi
-  - confidence: low
-- Shares one-word recaptions of the headline. A product word swap, such as
-  "coffee" on a mug, joins that pattern.
-  - sources: scientists-reveal-the-hi, viability/scientists-reveal-the-coffee-mug
-  - confidence: low. The report relies on the same brief.
-
-### While They're Out Partying
-
-- Ages 13–25 on TikTok and Instagram Reels, with a strong gamer and gym
-  crossover. Ironic self-mockery about useless skills.
-  - sources: while-theyre-out-partying
-  - confidence: low
-- Fast-food workers post the burger-wrapping version, the trend's biggest
-  clip. They and their friends are the likeliest mug and gift buyers.
-  - sources: while-theyre-out-partying, viability/out-partying-crochet-mug
-  - confidence: low. The report relies on the same brief.
-- No crochet, knitting, or other craft use of the meme was found.
-  - sources: while-theyre-out-partying (craft check, 2026-10-26)
-  - confidence: low
-- Shares self-filmed clips of a niche skill under the caption.
-  - sources: while-theyre-out-partying, viability/out-partying-controller-hoodie
-  - confidence: low. The report relies on the same brief.
 
 ### Segments from stale briefs
 
 These briefs are in `trends/stale/`. Treat their stages as unconfirmed.
 
+- **Scientists Reveal the Hi.** Broad, ages 13–30, on Instagram Reels and
+  TikTok, plus cat-meme fans on Reddit. Deadpan, wholesome humor. Shares
+  one-word recaptions of the headline.
+  - sources: scientists-reveal-the-hi, viability/scientists-reveal-the-coffee-mug
+  - confidence: low. The report relies on the same brief.
+- **While They're Out Partying.** Ages 13–25 on TikTok and Instagram Reels,
+  with a gamer and gym crossover. Ironic self-mockery about useless skills.
+  Fast-food workers post the burger-wrapping version. No craft use was found
+  as of 2026-10-26.
+  - sources: while-theyre-out-partying, viability/out-partying-crochet-mug,
+    viability/out-partying-controller-hoodie
+  - confidence: low. The reports rely on the same brief.
 - **A Haunted House But.** Ages 16–35 on TikTok, Instagram, and X. Relatable
   complaint humor framed as horror. Students and office workers recognize the
   petty versions.
@@ -355,3 +419,31 @@ These briefs are in `trends/stale/`. Treat their stages as unconfirmed.
 - 2026-11-02 (23:10Z): Wrote marketing pages for the five GO pitches. No
   brief or report changed since the last update, so no claim changed.
   Removed no claim.
+- 2026-11-09 (23:05Z): Added two current briefs (frutiger-aero-yams,
+  bicep-heart-trend) and six viability reports. Marked
+  scientists-reveal-the-hi and while-theyre-out-partying stale after their
+  move to `trends/stale/`, and their five reports stale after their move to
+  `marketing/stale/`; kept their claims, because neither is `dead` or
+  `do-not-use`. Raised "wholesome, affectionate, or cute animal humor" to
+  `high`. Added `medium` segments for gym fans, couples, and brainrot fans,
+  and `low` claims for Facebook, Y2K aesthetic fans, mild innuendo, pose
+  trends that need a person, split two-sided products, and trademarked meme
+  names in listings. Added a `contested` apron claim. Added segments for the
+  two new trends and moved the two stale trends into the stale section.
+  Updated the stale date. Removed no claim.
+- 2026-11-09 (23:20Z): Re-scored six reports after the re-verification of
+  bicep-heart-trend and snow-leopard-paws-at-you (both 23:12Z) and the
+  revised mug and bicep sticker pitches. The audience and tone fields didn't
+  change. Added bicep-heart-trend to the X claim (still `high`), because its
+  platforms now list X, and added X to the Bicep Heart segment. Noted the
+  repeated-panel fix on the two-sided product claim. Split the stale date by
+  brief. Removed no claim.
+- 2026-11-09 (23:22Z): Re-scored snow-leopard-paws-at-you-sticker (now
+  kiss-cut, GO at 14) and snow-leopard-hop-on-hoodie (brief link and timing
+  risk updated, GO at 14). The brief hasn't changed since 23:12Z, so no
+  claim's sources or confidence changed. Removed no claim.
+- 2026-11-09 (23:16Z, timeapi.io): Wrote marketing pages for
+  frutiger-aero-yams-tee, frutiger-aero-yams-sticker, and
+  snow-leopard-one-more-match-mug, and updated the
+  snow-leopard-paws-at-you-sticker page. No brief or report changed, so no
+  claim changed. Removed no claim.

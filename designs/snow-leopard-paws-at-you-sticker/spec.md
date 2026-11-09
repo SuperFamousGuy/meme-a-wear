@@ -3,15 +3,17 @@ slug: snow-leopard-paws-at-you-sticker
 name: Snow Leopard Paws at You Sticker
 status: pitch
 created: 2026-11-02T22:30:00Z
-updated: 2026-11-02T22:30:00Z
+updated: 2026-11-09T23:30:00Z
 source_brief:
   path: trends/snow-leopard-paws-at-you.md
   stage: peaking
   confidence: medium
-  last_verified: 2026-11-02T22:16:00Z
+  last_verified: 2026-11-09T23:12:00Z
 product:
   type: sticker
-  placement: die-cut around the leopard and caption, with a Chalk border
+  placement: >-
+    kiss-cut contour around the leopard and caption, with a Chalk border at
+    least 0.125 in wide, on a square backing
   print_method: digital
   print_area_in: [3, 3]
 variants: []
@@ -42,8 +44,10 @@ open_risks:
     The brief's visual_signature is marked unverified. The traits match the
     brief's still, which I viewed.
   - >-
-    Brand use already started (an official game-store post on 2026-10-28).
-    The trend may saturate within a week or two.
+    The trend is slowing. The brief's newest example is from about
+    2026-11-05, and the meme left MemeStand's daily chart after 2026-11-03.
+    If nothing new appears, the brief expects saturated or dead by about
+    2026-11-12. Recheck before listing.
 copy:
   title: Paws at You Sticker
   description: >-
@@ -54,7 +58,8 @@ copy:
 
 ## Pitch
 
-**Product.** A 3 × 3 in die-cut vinyl sticker.
+**Product.** A 3 × 3 in kiss-cut vinyl sticker. The cut follows the outline
+of the leopard and caption, with a Chalk border, on a square backing.
 
 **Caption.** "*PAWS AT YOU*" arched over the leopard's head, with the
 asterisks. The brief's remix_guidance names the caption with its asterisks as
@@ -71,8 +76,12 @@ vector, no background.
 **Buyer.** Cat-meme fans and gamers aged 15 to 30. A sticker is the cheapest
 way to own the meme while it peaks, and a natural add-on to the hoodie.
 
-**Timing.** The brief rates it peaking. A sticker can list fast, before the
-trend saturates.
+**Timing.** The brief rates it peaking but slowing. A sticker lists fastest,
+so it can sell before the expected saturation around 2026-11-12.
+
+**Revised 2026-11-09.** Changed die-cut to kiss-cut, because marketing found
+die-cut loses money at $4.99. Updated the brief link and timing risk to the
+2026-11-09T23:12Z check.
 
 ## Design notes
 
