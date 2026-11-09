@@ -1,6 +1,6 @@
 ---
 name: reference-comparable-prices
-description: Comparable Etsy prices (incl. buttons, magnets), Printify base costs, Etsy fees, and which marketplace pages block WebFetch (as of 2026-10-18)
+description: Comparable Etsy prices (tee, mug, sticker, hoodie, apron, button, magnet), Printify base costs, Etsy fees, and which marketplace pages block WebFetch (re-checked 2026-11-09)
 metadata:
   type: reference
 ---
@@ -30,6 +30,10 @@ Collected 2026-10-18. All figures come from third-party sources. Confirm them in
 
 - Re-check 2026-11-02 (WebSearch summaries): Gildan 18500 $19.95-22.50 Free size M; mug 11 oz $6.45-8.25 Free; 3x3 kiss-cut $1.20-1.27; die-cut $2.80 (4x4) to from $3.78, so die-cut stickers at $4.99 + shipping clear under $1. Printify Premium reportedly rose to $39/mo. Still no Printify 2.25 in button price or shipping; Teelaunch 2.25 in pins ship $4.50-12.90 first item. Etsy fees unchanged.
 - Later 2026-11-02 check: 2026 guides put the Printify 11 oz mug at $4.69-6.45 Free / $3.50-5.16 Premium; the catalog shows "from $5.75". A two-sticker kiss-cut set at $5.99 + $3.99 shipping nets about $1.05-1.69, a workable replacement for button pairs.
+- Re-check 2026-11-09 (WebSearch summaries): Bella 3001 $9.50-10.98 Free by provider, ship $4.45-5.49, so a $19.99 tee nets $1.17-3.69. Mug catalog from $4.93 (Bestseller) / $5.75 (Taylor), ship $4.39-6.49. Die-cut sticker "from $3.78" in the Printify catalog loses money at $4.99 + $3.99 ship; kiss-cut from $1.21 nets ~$2.42. Printify added a $0.40 US holiday surcharge in 2025. Etsy fees unchanged.
+- 2026-11-09T23:22Z re-check: kiss-cut $1.20-1.52 by provider, unchanged; Gildan 18500 $17.00-22.50. At $4.99 + $3.99 ship, a kiss-cut nets $1.77-2.48 (Price and margin 2); die-cut scores 1. Default stickers to kiss-cut.
+- Apron, 2026-11-09: no Printify catalog price; guides estimate $12-15 base, $3.99 ship (podvector example $14). Etsy "apron gift" median $26.07, avg $36.29; funny gift aprons $12.85-16.65 (RankHero, July 2026).
+- "Frutiger Aero" is a US registered mark (perfume) and "FRUTIGER" is Monotype's (typefaces). Keep both out of listing titles and tags.
 
 Access: etsy.com search, etsy.com/legal/fees, redbubble.com, and teepublic.com return 403 to WebFetch. Amazon search returns 503. The Printify product pages load without prices (JS). Use WebSearch summaries and state the gap.
 

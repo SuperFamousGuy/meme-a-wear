@@ -1,1 +1,1 @@
-- [Source notes](reference_source_notes.md) — which sources work (KYM roundups, TikTok oEmbed), Bluesky 403, Yahoo = KYM syndication, UTC time lookup, trademark search (Trademarkia ok, EUIPO unreachable)
+- [Source notes](reference_source_notes.md) — which sources work (KYM roundups, TikTok oEmbed), Bluesky 403, Yahoo = KYM syndication, UTC time lookup, trademark search (Trademarkia US ok, EUIPO/TMview unreachable), viewing images via WebFetch
