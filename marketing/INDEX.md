@@ -6,6 +6,11 @@ changes `decision`. Rows marked `listed` are the products to upload to Etsy.
 
 | Slug | Product | Total | Recommendation | Evaluated | Decision |
 |---|---|---|---|---|---|
+| [i-got-so-mad-muted-mic-tee](viability/i-got-so-mad-muted-mic-tee.md) | t-shirt | 14 | GO | 2026-11-16T23:06:00Z | pending |
+| [i-got-so-mad-peeled-this-sticker](viability/i-got-so-mad-peeled-this-sticker.md) | sticker | 14 | GO | 2026-11-16T23:06:00Z | pending |
+| [i-got-so-mad-reheated-mug](viability/i-got-so-mad-reheated-mug.md) | mug | 13 | NO-GO | 2026-11-16T23:06:00Z | pending |
+| [w-chews-l-nibbles-magnet-set](viability/w-chews-l-nibbles-magnet-set.md) | magnet (set of 2) | 13 | NO-GO | 2026-11-16T22:58:00Z | pending |
+| [w-chews-lunch-bag](viability/w-chews-lunch-bag.md) | lunch bag | 12 | NO-GO | 2026-11-16T22:58:00Z | pending |
 | [w-chews-l-nibbles-button-set](viability/w-chews-l-nibbles-button-set.md) | sticker (set of 2) | 14 | GO | 2026-11-02T22:30:00Z | pending |
 | [w-chews-l-nibbles-mug](viability/w-chews-l-nibbles-mug.md) | mug | 14 | GO | 2026-11-02T22:30:00Z | pending |
 | [scientists-reveal-the-hi-sticker](viability/scientists-reveal-the-hi-sticker.md) | sticker | 14 | GO | 2026-11-02T22:25:00Z | pending |

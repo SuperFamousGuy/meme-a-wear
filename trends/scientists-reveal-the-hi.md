@@ -39,7 +39,7 @@ references:
     shows: The orange cat staring head-on with huge black pupils, with "Scientists reveal the" in white serif and the white "Hi" box at the bottom right.
 platforms: [reddit, instagram, tiktok]
 lifecycle:
-  stage: peaking
+  stage: saturated
   confidence: medium
   history:
     - stage: emerging
@@ -48,7 +48,10 @@ lifecycle:
     - stage: peaking
       date: 2026-10-15
       evidence: Instagram recaptions spread in October ("bye" edit 2026-10-12, over 35,000 likes in three days; seal-face edit 2026-10-14). KYM added an entry on 2026-10-15, Pop Creep ran an explainer on 2026-10-18, and the KYM weekly roundup covered it on 2026-10-23. Seen on Reddit, Instagram, and TikTok.
-last_verified: 2026-11-02T22:16:00Z
+    - stage: saturated
+      date: 2026-11-16
+      evidence: The KYM entry hasn't changed since 2026-10-19, and its newest dated example is 2026-10-14. Search now returns about ten template, generator, and explainer sites (meme.com, viralmeme.ai, lul-forge, kickclap, memish, sillycat.wiki) and no fresh dated variations. KYM tags one TikTok post "#slop".
+last_verified: 2026-11-16T22:51:00Z
 audience: Broad. Mostly ages 13–30 on Instagram Reels and TikTok, plus cat-meme fans on Reddit.
 tone: Deadpan and wholesome. The humor comes from the gap between a science headline and "Hi".
 remix_guidance:
@@ -62,12 +65,13 @@ risk:
   overall: caution
   ip: The cat photo appeared in a BBC article ("What makes ginger cats ginger?", May 2025). The BBC or its photo agency likely holds the rights. The headline styling imitates a BBC News thumbnail. Don't trace the photo or use BBC branding or its typeface. Draw an original orange cat and set the headline in a generic serif.
   likeness: None found. The still shows only the cat. No crop was needed.
-  extremist_or_coded: None found. Checked KYM, Pop Creep, and web search results on 2026-10-26, and KYM and web search results again on 2026-11-02.
-  tragedy_harassment_danger: None found. Checked the same sources on 2026-10-26 and 2026-11-02.
+  extremist_or_coded: None found. Checked KYM, Pop Creep, and web search results on 2026-10-26, and KYM and web search results again on 2026-11-02 and 2026-11-16.
+  tragedy_harassment_danger: None found. Checked the same sources on 2026-10-26, 2026-11-02, and 2026-11-16.
 ---
 
 ## Notes
 
+- **Re-verification (2026-11-16T22:51Z).** Stage moved to `saturated`. Over a month has passed without a dated new variation, and the web is now full of template and generator pages. That shows wide reuse outside the first audience. I found no brand posts or "overdone" posts, and the lack of new examples could mean `dead`. Confidence stays `medium`: KYM and Pop Creep agree, and neither is recent. A design now sells to people who already know the meme. Don't plan a large print run.
 - **Re-verification (2026-11-02T22:16Z).** The stage stays `peaking`. KYM's October 2026 Meme of the Month results (2026-11-02) put it second with about 13% of the vote. The KYM entry hasn't changed since 2026-10-19, and I found no dated spread after 2026-10-14, no brand use, and no "overdone" posts. Search now returns several explainer and template sites (BrainrotHub, mendoi-apps, meme.com, YouTube explainers), but they cite or restate KYM, so they don't add independent sources. Confidence stays `medium`: KYM and Pop Creep are the two independent sources, and the recent poll is KYM's. Volume may be past its high point, so recheck before a large print run.
 - **Origin is confused.** KYM dates a dog version ("Scientists reveal the secret") to Instagram user cheemsitz on 2025-07-16. It also lists an orange-cat edit on r/Wunkus dated 2025-07-05, which is earlier than the dog version. The "Hi" edit dates to 2026-05-28 on Reddit. `origin.date` uses the "Hi" edit, because that is the sellable meme. I couldn't confirm its post URL, so `first_seen_url` is `unknown`.
 - **Confidence.** Two independent publishers agree: KYM and Pop Creep. Pop Creep doesn't cite KYM. The KYM roundup (2026-10-23) is recent, but it's the same publisher as the entry. Rule 2 needs three independent sources, so confidence is `medium`.

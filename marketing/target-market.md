@@ -1,21 +1,24 @@
 # Target market
 
 This profile describes who buys meme-a-wear products. It draws on the
-`audience`, `platforms`, and `tone` fields of the four current briefs in
-`trends/`, and on the eleven viability reports in `marketing/viability/`. It
+`audience`, `platforms`, and `tone` fields of five current briefs in
+`trends/`, and on the sixteen viability reports in `marketing/viability/`. It
 also keeps claims from nine briefs that the meme-expert moved to
 `trends/stale/`, and from 23 reports now in `marketing/stale/viability/`.
 Stale sources are marked `(stale)`. They aren't `dead` or `do-not-use`, so
 their claims stay. The store has no sales data yet, so every claim is a
 research estimate.
 
+The profile doesn't use pennywide, a current brief marked `do-not-use`.
+
 Confidence: `low` means one source, `medium` means two that agree, and `high`
 means three or more that agree. `contested` means sources conflict.
 
-Three current briefs record `last_verified` 2026-11-02T22:16:00Z, so they
-become stale after 2026-11-05T22:16:00Z. w-chews-l-nibbles records
-2026-11-02T22:28:00Z and becomes stale after 2026-11-05T22:28:00Z. The meme-expert moved
-a-haunted-house-but to `trends/stale/` on 2026-11-02. Its two reports are
+All current briefs record `last_verified` 2026-11-16T22:51:00Z, so they
+become stale after 2026-11-19T22:51:00Z. On 2026-11-16, w-chews-l-nibbles
+moved to `peaking`, and snow-leopard-paws-at-you, scientists-reveal-the-hi,
+and while-theyre-out-partying moved to `saturated`. Their audiences didn't
+change. a-haunted-house-but is still in `trends/stale/`. Its two reports are
 still in `marketing/viability/`.
 
 ## Claims across trends
@@ -24,8 +27,8 @@ still in `marketing/viability/`.
 
 - **The core buyer is 16 to 25.** Every brief's age range covers 16 to 25.
   - sources: snow-leopard-paws-at-you (15–30), w-chews-l-nibbles (13–25),
-    scientists-reveal-the-hi (13–30), while-theyre-out-partying (13–25);
-    stale: a-haunted-house-but, black-cat-clapping,
+    scientists-reveal-the-hi (13–30), while-theyre-out-partying (13–25),
+    i-got-so-mad (13–25); stale: a-haunted-house-but, black-cat-clapping,
     randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
     fat-talking-tom-and-angela, biddy-blas-scrib-doon,
     ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan,
@@ -33,8 +36,8 @@ still in `marketing/viability/`.
   - confidence: high
 - **The upper age bound is contested.**
   - Side A, tops out at 25 to 30: snow-leopard-paws-at-you,
-    w-chews-l-nibbles, scientists-reveal-the-hi, while-theyre-out-partying;
-    stale: tra-la-la-spongebob, fat-talking-tom-and-angela,
+    w-chews-l-nibbles, scientists-reveal-the-hi, while-theyre-out-partying,
+    i-got-so-mad; stale: tra-la-la-spongebob, fat-talking-tom-and-angela,
     losercore-playlist, black-cat-clapping.
   - Side B, reaches 35 to 40: stale: a-haunted-house-but,
     randy-marsh-vs-whats-up-brah, ai-rumpelstiltskin-tip-toein,
@@ -46,22 +49,24 @@ still in `marketing/viability/`.
   prices, such as a $36.99 hoodie, hit this group hardest.
   - sources: snow-leopard-paws-at-you (15+), w-chews-l-nibbles (13+),
     scientists-reveal-the-hi (13+), while-theyre-out-partying (13+),
-    viability/out-partying-controller-hoodie,
-    viability/snow-leopard-hop-on-hoodie; stale: tra-la-la-spongebob,
+    i-got-so-mad (13+), viability/out-partying-controller-hoodie,
+    viability/snow-leopard-hop-on-hoodie, viability/w-chews-lunch-bag
+    (parents buy for under-16s); stale: tra-la-la-spongebob,
     black-cat-clapping, randy-marsh-vs-whats-up-brah,
     fat-talking-tom-and-angela, viability/tra-la-la-blob-tee
   - confidence: high
 
 ### Platforms
 
-- **TikTok is the main platform.** All four current briefs and all nine
+- **TikTok is the main platform.** All five current briefs and all nine
   stale briefs list it.
   - sources: snow-leopard-paws-at-you, w-chews-l-nibbles,
-    scientists-reveal-the-hi, while-theyre-out-partying; stale: all nine
+    scientists-reveal-the-hi, while-theyre-out-partying, i-got-so-mad;
+    stale: all nine
   - confidence: high
 - **Instagram (Reels) reaches the audience.**
   - sources: snow-leopard-paws-at-you, w-chews-l-nibbles,
-    scientists-reveal-the-hi, while-theyre-out-partying; stale:
+    scientists-reveal-the-hi, while-theyre-out-partying, i-got-so-mad; stale:
     a-haunted-house-but, black-cat-clapping, randy-marsh-vs-whats-up-brah,
     biddy-blas-scrib-doon, ai-rumpelstiltskin-tip-toein,
     youre-blatantly-just-not-me-nan
@@ -77,14 +82,18 @@ still in `marketing/viability/`.
   - sources: scientists-reveal-the-hi, snow-leopard-paws-at-you; stale:
     fat-talking-tom-and-angela
   - confidence: high
+- **Reddit also carries caption formats for gamers and very-online teens.**
+  - sources: i-got-so-mad
+  - confidence: low
 - **YouTube carries some trends.** meme-a-wear doesn't use it as a launch
   channel.
-  - sources: stale: randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
+  - sources: w-chews-l-nibbles (explainers and Shorts); stale:
+    randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
     biddy-blas-scrib-doon, ai-rumpelstiltskin-tip-toein, losercore-playlist
   - confidence: high
 - **No brief puts the audience on Pinterest.** Pinterest suits desk and mug
   posts in some reports, but no brief gives audience evidence for it.
-  - sources: all thirteen briefs (absence); stale:
+  - sources: all fourteen briefs (absence); stale:
     viability/whats-up-monday-mug, viability/tip-toein-inbox-mug,
     viability/chubby-cat-hibernating-hoodie (suggest Pinterest as a product
     fit)
@@ -97,8 +106,11 @@ still in `marketing/viability/`.
 - **Caption, text, and still-image formats let the store make its own
   posts.** These memes need no creator footage or audio.
   - sources: viability/out-partying-controller-hoodie,
-    viability/w-chews-l-nibbles-mug, viability/snow-leopard-hop-on-hoodie;
-    stale: viability/haunted-house-reply-all-tee,
+    viability/w-chews-l-nibbles-mug, viability/snow-leopard-hop-on-hoodie,
+    viability/i-got-so-mad-muted-mic-tee,
+    viability/i-got-so-mad-peeled-this-sticker,
+    viability/w-chews-l-nibbles-magnet-set; stale:
+    viability/haunted-house-reply-all-tee,
     viability/haunted-house-group-project-sticker
   - confidence: high
 
@@ -106,7 +118,8 @@ still in `marketing/viability/`.
 
 - **The humor is ironic or deadpan, not earnest.**
   - sources: scientists-reveal-the-hi (deadpan), while-theyre-out-partying
-    (ironic self-mockery), w-chews-l-nibbles (ironic); stale:
+    (ironic self-mockery), w-chews-l-nibbles (ironic), i-got-so-mad
+    (deadpan mock rage); stale:
     black-cat-clapping, randy-marsh-vs-whats-up-brah,
     ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan
   - confidence: high
@@ -115,7 +128,7 @@ still in `marketing/viability/`.
     losercore-playlist, fat-talking-tom-and-angela
   - confidence: high
 - **Absurd and surreal humor lands.**
-  - sources: stale: black-cat-clapping, randy-marsh-vs-whats-up-brah,
+  - sources: i-got-so-mad; stale: black-cat-clapping, randy-marsh-vs-whats-up-brah,
     tra-la-la-spongebob
   - confidence: high
 - **Loud, goofy bravado lands.**
@@ -130,7 +143,7 @@ still in `marketing/viability/`.
 
 - **Gamers are a recurring core segment.**
   - sources: snow-leopard-paws-at-you (gamer core), while-theyre-out-partying
-    (gamer crossover); stale: randy-marsh-vs-whats-up-brah,
+    (gamer crossover), i-got-so-mad (gamers); stale: randy-marsh-vs-whats-up-brah,
     biddy-blas-scrib-doon
   - confidence: high
 - **Cat-meme fans are a recurring segment.**
@@ -149,7 +162,8 @@ judgments, not sales.
 
 - **They buy t-shirts.**
   - sources: viability/scientists-reveal-the-hi-tee,
-    viability/haunted-house-reply-all-tee; stale:
+    viability/haunted-house-reply-all-tee,
+    viability/i-got-so-mad-muted-mic-tee; stale:
     viability/losercore-table-for-one-tee,
     viability/whats-up-brah-alarm-clock-tee, viability/tra-la-la-blob-tee,
     viability/chubby-cat-couple-tee, viability/scrib-doon-tee
@@ -158,7 +172,8 @@ judgments, not sales.
   - sources: viability/snow-leopard-paws-at-you-sticker,
     viability/scientists-reveal-the-hi-sticker,
     viability/haunted-house-group-project-sticker,
-    viability/w-chews-l-nibbles-button-set (now a two-sticker set); stale:
+    viability/w-chews-l-nibbles-button-set (now a two-sticker set),
+    viability/i-got-so-mad-peeled-this-sticker; stale:
     viability/losercore-sad-songs-sticker, viability/whats-up-brah-sticker,
     viability/clapping-cat-great-choice-sticker, viability/scrib-doon-sticker
   - confidence: high
@@ -169,13 +184,15 @@ judgments, not sales.
     viability/chubby-cat-hibernating-hoodie
   - confidence: high
 - **Mug buying is contested.**
-  - For: viability/scientists-reveal-the-coffee-mug and
-    viability/w-chews-l-nibbles-mug (both briefs name a mug in
-    remix_guidance); stale: viability/not-me-nan-wolf-mug,
-    viability/chubby-cat-couple-mug, viability/scrib-doon-mug.
+  - For: viability/scientists-reveal-the-coffee-mug,
+    viability/w-chews-l-nibbles-mug, and viability/i-got-so-mad-reheated-mug
+    (all three briefs name a mug in remix_guidance); stale:
+    viability/not-me-nan-wolf-mug, viability/chubby-cat-couple-mug,
+    viability/scrib-doon-mug.
   - Against: viability/scientists-reveal-the-coffee-mug,
-    viability/out-partying-crochet-mug, and viability/w-chews-l-nibbles-mug
-    (all note mugs are weaker for buyers under 30 and lean on gift buyers);
+    viability/out-partying-crochet-mug, viability/w-chews-l-nibbles-mug, and
+    viability/i-got-so-mad-reheated-mug (all note mugs are weaker for buyers
+    under 30 and lean on gift buyers or the older end of the range);
     stale: viability/tra-la-la-7am-mug, viability/losercore-my-date-mug.
   - Unknown: stale: viability/whats-up-monday-mug,
     viability/tip-toein-inbox-mug.
@@ -187,6 +204,15 @@ judgments, not sales.
     2026-11-02T22:25Z. The 22:30Z re-score replaced buttons with stickers
     and no longer judges buttons.
   - confidence: low
+- **No evidence shows they buy fridge magnets.** Printify magnet costs also
+  leave a two-magnet set under $1 of margin at a mid-range price.
+  - sources: viability/w-chews-l-nibbles-magnet-set
+  - confidence: low
+- **Lunch bags fit school-age buyers but can't reach an impulse price.**
+  The brief suggests a lunch bag, but Printify's cost exceeds comparable Etsy
+  prices.
+  - sources: w-chews-l-nibbles (remix_guidance), viability/w-chews-lunch-bag
+  - confidence: low. The report relies on the same brief.
 - **Hobby-specific designs sell when the buyer has the hobby.** Gamers and
   fast-food workers are the documented skill segments. The brief found no
   crafter use as of 2026-10-26, so the crochet idea was replaced.
@@ -225,7 +251,9 @@ judgments, not sales.
 ### W Chews / L Nibbles
 
 - Ages 13–25 on TikTok, Instagram Reels, and X who already use W and L slang.
-  Food posters and fast-food fans. Ironic "new lingo" humor.
+  Food posters and fast-food fans. Ironic "new lingo" humor. YouTube
+  explainers and Shorts appeared by 2026-11-16, when the brief moved to
+  `peaking`.
   - sources: w-chews-l-nibbles
   - confidence: low
 - Shares food photos and eating clips with a verdict. The store can film its
@@ -237,6 +265,29 @@ judgments, not sales.
   two-sticker set lets the buyer place each verdict.
   - sources: w-chews-l-nibbles (remix_guidance), viability/w-chews-l-nibbles-mug,
     viability/w-chews-l-nibbles-button-set
+  - confidence: low. The reports rely on the same brief.
+
+### I Got So Mad
+
+- Ages 13–25 on TikTok, plus gamers and very-online teens on Instagram and
+  Reddit. Deadpan, absurd mock rage.
+  - sources: i-got-so-mad
+  - confidence: low. The brief itself has low confidence, and its
+    2026-11-16 re-check found no second independent source.
+- Shares "I got so mad I..." with a trivial act from their own niche, over a
+  flat photo of the object. A niche act per product (gamer mic, reheated
+  coffee, a peeled sticker) joins that pattern, and the store can post the
+  same format itself.
+  - sources: i-got-so-mad, viability/i-got-so-mad-muted-mic-tee,
+    viability/i-got-so-mad-reheated-mug,
+    viability/i-got-so-mad-peeled-this-sticker
+  - confidence: low. The reports rely on the same brief.
+- The tee (gamers) and the sticker (laptop sticker buyers) carry this trend.
+  The reheated mug fell one point short, because mug buying is contested for
+  buyers under 25 and the brief's confidence is low.
+  - sources: viability/i-got-so-mad-muted-mic-tee,
+    viability/i-got-so-mad-peeled-this-sticker,
+    viability/i-got-so-mad-reheated-mug (round 2, 2026-11-16T23:06Z)
   - confidence: low. The reports rely on the same brief.
 
 ### Scientists Reveal the Hi
@@ -355,3 +406,20 @@ These briefs are in `trends/stale/`. Treat their stages as unconfirmed.
 - 2026-11-02 (23:10Z): Wrote marketing pages for the five GO pitches. No
   brief or report changed since the last update, so no claim changed.
   Removed no claim.
+- 2026-11-16 (22:58Z): Added the i-got-so-mad brief and five viability
+  reports. Added i-got-so-mad to the age, platform, tone, and gamer claims,
+  and added its segment. Added a `low` Reddit claim for caption formats.
+  Added w-chews-l-nibbles to the YouTube claim. Added `low` claims that no
+  evidence shows magnet buying and that lunch bags can't reach an impulse
+  price. Added the reheated mug to both sides of the contested mug claim.
+  Noted the stage changes of 2026-11-16 and the new stale date. Excluded
+  pennywide, which is `do-not-use`. Removed no claim.
+- 2026-11-16 (23:06Z): Re-scored the three i-got-so-mad pitches after the
+  brief's re-check. The brief's audience, platforms, and tone didn't change,
+  so no cross-trend claim changed. Noted the re-check in the I Got So Mad
+  segment, and added a `low` claim that the tee and sticker carry the trend
+  while the mug falls short. The reheated mug report stays on both sides of
+  the contested mug claim. Removed no claim.
+- 2026-11-16 (23:20Z): Wrote marketing pages for the two i-got-so-mad GO
+  pitches (muted-mic tee, peeled sticker). No brief or report changed since
+  the last update, so no claim changed. Removed no claim.
