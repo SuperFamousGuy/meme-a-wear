@@ -30,13 +30,21 @@ sources:
     platform: x
     published: 2026-10-27
     accessed: 2026-11-02T22:14:00Z
+  - url: https://popcreep.com/snow-leopard-paws-at-you-meme-meaning-and-origin/
+    platform: news
+    published: 2026-10-30
+    accessed: 2026-11-16T22:50:00Z
+  - url: https://x.com/i/trending/2116595427349090361
+    platform: x
+    published: 2026-10-31
+    accessed: 2026-11-16T22:50:00Z
 references:
   - path: trends/refs/snow-leopard-paws-at-you.jpg
     source_url: https://i.kym-cdn.com/photos/images/original/003/338/839/76d.jpg
     shows: The edited snow leopard sitting up head-on, with huge round dark eyes and one paw pushed toward the camera, against a blurred grey-blue background.
 platforms: [x, instagram, tiktok, reddit]
 lifecycle:
-  stage: peaking
+  stage: saturated
   confidence: medium
   history:
     - stage: emerging
@@ -45,7 +53,10 @@ lifecycle:
     - stage: peaking
       date: 2026-10-28
       evidence: Two X posts on 2026-10-27 passed 1.4 million and 914,000 views in a day. The Epic Games Store X account posted "*paws at you* hop online" on 2026-10-28. X ran a trending summary on 2026-10-27, KYM added an entry on 2026-10-29, and KYM published a "What is" explainer on 2026-10-30, which Yahoo republished. Seen on X, Instagram, TikTok, and Reddit.
-last_verified: 2026-11-02T22:16:00Z
+    - stage: saturated
+      date: 2026-11-16
+      evidence: The newest dated spread is an X trending summary on 2026-10-31. KYM updated its entry on 2026-11-06 but added no example after 2026-10-28. Commercial AI-template apps (makeviral.ai, vidstar.app) now sell "paws at you" pet videos, on top of the earlier Epic Games Store post. Search results show explainers and templates, not fresh variations.
+last_verified: 2026-11-16T22:51:00Z
 audience: Ages 15–30 on X, Instagram, and TikTok, with a strong gamer core (Deadlock, Monster Hunter, MMO raid invites) and cat-meme fans.
 tone: Cute, clingy, and mock-needy. The humor comes from a big wild cat acting like a pet that wants attention.
 remix_guidance:
@@ -61,12 +72,13 @@ risk:
   overall: caution
   ip: The base photo of the leopard Himmel was taken at Ishikawa Zoo and posted to X by @black03_white03 on 2024-05-25. That photographer likely holds the copyright. The eyes come from photos of Mei Mei (Tole Tole) Cat, owned by another person. KYM also shows a second paw photo with a "Zoo Krefeld" watermark. Don't trace or print any of these photos. Draw an original stylized leopard. Don't use Epic Games or any game's branding from remixes.
   likeness: None found. The meme shows only animals. I cropped the still to the leopard panel, which removed the X poster's profile photo and a second leopard photo.
-  extremist_or_coded: None found. Checked the KYM entry, the KYM explainer, and web search results on 2026-11-02. "*paws at you*" is older asterisk roleplay text, like "*nuzzles*", with no listed hidden meaning.
+  extremist_or_coded: None found. Checked the KYM entry, the KYM explainer, and web search results on 2026-11-02, and the KYM entry, Pop Creep, and web search results on 2026-11-16. "*paws at you*" is older asterisk roleplay text, like "*nuzzles*", with no listed hidden meaning.
   tragedy_harassment_danger: A concern a design can avoid. A top X post (@PhoenixReal902, 2026-10-27) used the format to repeat an insult, and KYM's gallery title for it includes a slur. I found no harassment campaign, deaths, or injuries. Keep designs to friendly requests.
 ---
 
 ## Notes
 
+- **Re-verification (2026-11-16T22:51Z).** Stage moved to `saturated`. Brand and app use (Epic Games Store, AI-template sellers) has spread beyond the original audience, and I found no dated new variation in over two weeks. I found no posts that call it overdone, so `dead` is possible within a week or two. Confidence stays `medium`: three independent dated sources agree (KYM, X trending, and Pop Creep, which doesn't cite KYM), but none is recent. I dated the X trending page from its ID and read its title from search results (X returns HTTP 402). A product now sells to fans of the meme, not to people discovering it.
 - **Name.** Fans also call it "Snowmei", from snow leopard plus Mei Mei Cat.
 - **Origin details conflict.** KYM credits the big eyes to an AI edit with Mei Mei Cat's face. One search result summary said the cat may be edited from a Pallas's cat. The still I viewed shows a snow leopard. `origin.date` uses the 2026-10-23 combined edit, which is the sellable meme. The base photo dates to 2024-05-25.
 - **Confidence is medium.** Two independent publishers agree: KYM (entry and explainer count as one) and X's trending summary. Yahoo republishes KYM, so it doesn't count. I couldn't open the X trending page (HTTP 402). I read its title and summary from search results, and dated it from its ID (2026-10-27). No independent source is recent (2026-10-30 or later).

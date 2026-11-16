@@ -35,10 +35,14 @@ sources:
     platform: web
     published: 2026-10-27
     accessed: 2026-11-02T22:14:00Z
+  - url: https://www.tiktok.com/@brad.gjc/video/7701766750366469398
+    platform: tiktok
+    published: 2026-10-28
+    accessed: 2026-11-16T22:50:00Z
 references: []
 platforms: [tiktok, instagram]
 lifecycle:
-  stage: peaking
+  stage: saturated
   confidence: medium
   history:
     - stage: emerging
@@ -47,7 +51,10 @@ lifecycle:
     - stage: peaking
       date: 2026-10-18
       evidence: A Roblox version (2026-10-13) passed 8.5 million views in a week, and @ryu_da_sigma's burger-wrapping video (2026-10-18) passed 35 million views in three days. An Instagram Reels copy followed on 2026-10-20. KYM added an entry on 2026-10-21 and published a "What is" explainer on 2026-10-23, which Yahoo republished.
-last_verified: 2026-11-02T22:16:00Z
+    - stage: saturated
+      date: 2026-11-16
+      evidence: The KYM entry hasn't changed since 2026-10-21. The newest dated example I found is an air-fryer TikTok on 2026-10-28 (dated from its video ID). Burger businesses used it in October, the caption now goes on unrelated clips, and AI-template sites (memeclone.ai, makeviral.ai) offer it. I found no fresh dated variation in over two weeks.
+last_verified: 2026-11-16T22:51:00Z
 audience: Ages 13–25 on TikTok and Instagram Reels, with a strong gamer and gym crossover. Fast-food workers also post it (burger wrapping). No crochet, knitting, or other craft versions found as of 2026-10-26 (see notes).
 tone: Ironic self-mockery. Mock pride in a skill nobody needs.
 remix_guidance:
@@ -61,12 +68,13 @@ risk:
   overall: caution
   ip: None found for the phrase. Don't reproduce frames from the viral clips, which belong to their creators. The format echoes the 2016 "While You Were Partying, I Studied the Blade" meme. Use only this short caption, not that text.
   likeness: The viral clips show private individuals, so never show or trace any creator. A text-and-icon design avoids this. I deleted the reference still because every frame on the KYM cover shows part of a private person.
-  extremist_or_coded: None found. Checked KYM and web search results on 2026-10-26 and 2026-11-02.
-  tragedy_harassment_danger: None found. Checked the same sources on 2026-10-26 and 2026-11-02. The squat-mocking origin clip mimics another gym-goer, so don't copy that framing.
+  extremist_or_coded: None found. Checked KYM and web search results on 2026-10-26, 2026-11-02, and 2026-11-16.
+  tragedy_harassment_danger: None found. Checked the same sources on 2026-10-26, 2026-11-02, and 2026-11-16. The squat-mocking origin clip mimics another gym-goer, so don't copy that framing.
 ---
 
 ## Notes
 
+- **Re-verification (2026-11-16T22:51Z).** Stage moved to `saturated`, with brand use, template sites, and no dated new variation since 2026-10-28. I found no "overdone" posts. makeviral.ai claims a 2026-11-05 origin from a stream clip tied to an "Almost Almost" sound. That conflicts with KYM's dated 2025 and 2026 examples, so I didn't use it. Confidence stays `medium`: several independent dated sources agree, but none is recent. The still is still missing. Use the burger-wrapping video below.
 - **Re-verification (2026-11-02T22:16Z).** The stage stays `peaking`, with lower certainty. Both KYM entries are unchanged since 2026-10-21, and their newest dated example is from 2026-10-20. Trendhaus logged the trend on 2026-10-27 without metrics, and KYM posted a TikTok explainer around 2026-10-27 (dated from its video ID). I found no dated examples after 2026-10-24, no "overdone" posts, and no Reddit threads. Burger businesses posting it (2026-10-18 and 2026-10-20) are an early brand-use signal. The trend may be moving toward `saturated`, but I don't have the evidence to call it.
 - **Confidence lowered to medium (2026-11-02).** Four independent dated sources agree (KYM, the TikTok post, BrainrotHub, and Trendhaus), but none was published within three days of this check, so rule 2 no longer applies. Trendhaus doesn't cite KYM. It's an aggregator, so treat it as weak.
 - **No reference still.** The KYM cover image (`https://i.kym-cdn.com/entries/icons/facebook/000/057/655/wtopcover.jpg`) shows three clips. Each one shows a private person or part of one, including a blurred hand behind the caption in the cleanest panel. I couldn't crop the person out without losing the caption, so I deleted the still. Take a caption-only frame from the burger-wrapping video, https://www.tiktok.com/@ryu_da_sigma/video/7698167502018333965, and crop out the hands.

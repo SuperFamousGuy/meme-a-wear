@@ -1,1 +1,2 @@
 - [Meme text vs brand](project_meme_text_vs_brand.md) — serif/sentence-case captions and ginger fur conflict with brand; user decision pending
+- [Buttons margin](feedback_buttons_margin.md) — marketing scored buttons 1 on margin; prefer stickers or magnets for small add-ons
