@@ -30,14 +30,22 @@ sources:
     platform: x
     published: 2026-10-27
     accessed: 2026-11-02T22:14:00Z
+  - url: https://popcreep.com/snow-leopard-paws-at-you-meme-meaning-and-origin/
+    platform: news
+    published: 2026-10-30
+    accessed: 2026-11-24T00:38:00Z
+  - url: https://x.com/i/trending/2116595427349090361
+    platform: x
+    published: 2026-10-31
+    accessed: 2026-11-24T00:35:00Z
 references:
   - path: trends/refs/snow-leopard-paws-at-you.jpg
     source_url: https://i.kym-cdn.com/photos/images/original/003/338/839/76d.jpg
     shows: The edited snow leopard sitting up head-on, with huge round dark eyes and one paw pushed toward the camera, against a blurred grey-blue background.
 platforms: [x, instagram, tiktok, reddit]
 lifecycle:
-  stage: peaking
-  confidence: medium
+  stage: saturated
+  confidence: low
   history:
     - stage: emerging
       date: 2026-10-23
@@ -45,7 +53,10 @@ lifecycle:
     - stage: peaking
       date: 2026-10-28
       evidence: Two X posts on 2026-10-27 passed 1.4 million and 914,000 views in a day. The Epic Games Store X account posted "*paws at you* hop online" on 2026-10-28. X ran a trending summary on 2026-10-27, KYM added an entry on 2026-10-29, and KYM published a "What is" explainer on 2026-10-30, which Yahoo republished. Seen on X, Instagram, TikTok, and Reddit.
-last_verified: 2026-11-02T22:16:00Z
+    - stage: saturated
+      date: 2026-11-24
+      evidence: The newest dated use I found is an X trending summary from about 2026-10-31. After the Epic Games Store post (2026-10-28), commercial AI "turn your pet into the snow leopard" generator sites (makeviral.ai, snowleopardai.org) and SEO meme pages took up the format. KYM's 2026-11-19 update added no new examples. I found no new dated examples in over three weeks, no Reddit results, and no "overdone" posts.
+last_verified: 2026-11-24T00:42:00Z
 audience: Ages 15–30 on X, Instagram, and TikTok, with a strong gamer core (Deadlock, Monster Hunter, MMO raid invites) and cat-meme fans.
 tone: Cute, clingy, and mock-needy. The humor comes from a big wild cat acting like a pet that wants attention.
 remix_guidance:
@@ -67,6 +78,7 @@ risk:
 
 ## Notes
 
+- **Re-verification (2026-11-24T00:42Z).** The stage moves to `saturated`, and confidence drops to `low`. The call rests mostly on missing evidence: no dated use after about 2026-10-31, brand and generator-site uptake, and retrospective coverage. No source says the meme is overdone, and I couldn't search TikTok, Instagram, or Bluesky directly, so new use may sit below the search index. Pop Creep (2026-10-30) doesn't cite KYM and adds a third independent publisher for the October facts. I dated the second X trending summary from its ID. KYM's front page still lists the entry. Saturated memes can still sell as cute evergreen designs, but don't sell them as new. Risk fields are unchanged; I found nothing new in this run's sources.
 - **Name.** Fans also call it "Snowmei", from snow leopard plus Mei Mei Cat.
 - **Origin details conflict.** KYM credits the big eyes to an AI edit with Mei Mei Cat's face. One search result summary said the cat may be edited from a Pallas's cat. The still I viewed shows a snow leopard. `origin.date` uses the 2026-10-23 combined edit, which is the sellable meme. The base photo dates to 2024-05-25.
 - **Confidence is medium.** Two independent publishers agree: KYM (entry and explainer count as one) and X's trending summary. Yahoo republishes KYM, so it doesn't count. I couldn't open the X trending page (HTTP 402). I read its title and summary from search results, and dated it from its ID (2026-10-27). No independent source is recent (2026-10-30 or later).

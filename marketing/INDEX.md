@@ -6,6 +6,12 @@ changes `decision`. Rows marked `listed` are the products to upload to Etsy.
 
 | Slug | Product | Total | Recommendation | Evaluated | Decision |
 |---|---|---|---|---|---|
+| [huss-town-except-me-tee](viability/huss-town-except-me-tee.md) | t-shirt | 14 | GO | 2026-11-24T02:05:00Z | pending |
+| [huss-huss-huss-sticker](viability/huss-huss-huss-sticker.md) | sticker | 14 | GO | 2026-11-24T00:55:00Z | pending |
+| [i-got-so-mad-microwave-mug](viability/i-got-so-mad-microwave-mug.md) | mug | 14 | GO | 2026-11-24T00:55:00Z | pending |
+| [i-got-so-mad-no-worries-tee](viability/i-got-so-mad-no-worries-tee.md) | t-shirt | 15 | GO | 2026-11-24T00:55:00Z | pending |
+| [will-appreciate-dishes-magnet](viability/will-appreciate-dishes-magnet.md) | magnet | 14 | GO | 2026-11-24T00:55:00Z | pending |
+| [will-appreciate-dog-walk-tee](viability/will-appreciate-dog-walk-tee.md) | t-shirt | 14 | GO | 2026-11-24T00:55:00Z | pending |
 | [w-chews-l-nibbles-button-set](viability/w-chews-l-nibbles-button-set.md) | sticker (set of 2) | 14 | GO | 2026-11-02T22:30:00Z | pending |
 | [w-chews-l-nibbles-mug](viability/w-chews-l-nibbles-mug.md) | mug | 14 | GO | 2026-11-02T22:30:00Z | pending |
 | [scientists-reveal-the-hi-sticker](viability/scientists-reveal-the-hi-sticker.md) | sticker | 14 | GO | 2026-11-02T22:25:00Z | pending |

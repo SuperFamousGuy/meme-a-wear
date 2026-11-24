@@ -1,8 +1,8 @@
 # Target market
 
 This profile describes who buys meme-a-wear products. It draws on the
-`audience`, `platforms`, and `tone` fields of the four current briefs in
-`trends/`, and on the eleven viability reports in `marketing/viability/`. It
+`audience`, `platforms`, and `tone` fields of the seven current briefs in
+`trends/`, and on the 17 viability reports in `marketing/viability/`. It
 also keeps claims from nine briefs that the meme-expert moved to
 `trends/stale/`, and from 23 reports now in `marketing/stale/viability/`.
 Stale sources are marked `(stale)`. They aren't `dead` or `do-not-use`, so
@@ -12,40 +12,47 @@ research estimate.
 Confidence: `low` means one source, `medium` means two that agree, and `high`
 means three or more that agree. `contested` means sources conflict.
 
-Three current briefs record `last_verified` 2026-11-02T22:16:00Z, so they
-become stale after 2026-11-05T22:16:00Z. w-chews-l-nibbles records
-2026-11-02T22:28:00Z and becomes stale after 2026-11-05T22:28:00Z. The meme-expert moved
-a-haunted-house-but to `trends/stale/` on 2026-11-02. Its two reports are
-still in `marketing/viability/`.
+All seven current briefs record `last_verified` 2026-11-24T00:42:00Z, so they
+become stale after 2026-11-27T00:42:00Z. The 2026-11-24 re-verification moved
+snow-leopard-paws-at-you, scientists-reveal-the-hi, and
+while-theyre-out-partying to `saturated` with `low` confidence, and moved
+w-chews-l-nibbles to `peaking`. The meme-expert moved a-haunted-house-but to
+`trends/stale/` on 2026-11-02. Its two reports are still in
+`marketing/viability/`.
 
 ## Claims across trends
 
 ### Age
 
 - **The core buyer is 16 to 25.** Every brief's age range covers 16 to 25.
-  - sources: snow-leopard-paws-at-you (15–30), w-chews-l-nibbles (13–25),
-    scientists-reveal-the-hi (13–30), while-theyre-out-partying (13–25);
-    stale: a-haunted-house-but, black-cat-clapping,
-    randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
+  - sources: lucia-will-appreciate-this (16–35), huss-town (12–25),
+    i-got-so-mad (13–25), snow-leopard-paws-at-you (15–30),
+    w-chews-l-nibbles (13–25), scientists-reveal-the-hi (13–30),
+    while-theyre-out-partying (13–25); stale: a-haunted-house-but,
+    black-cat-clapping, randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
     fat-talking-tom-and-angela, biddy-blas-scrib-doon,
     ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan,
     losercore-playlist
   - confidence: high
 - **The upper age bound is contested.**
-  - Side A, tops out at 25 to 30: snow-leopard-paws-at-you,
-    w-chews-l-nibbles, scientists-reveal-the-hi, while-theyre-out-partying;
-    stale: tra-la-la-spongebob, fat-talking-tom-and-angela,
-    losercore-playlist, black-cat-clapping.
-  - Side B, reaches 35 to 40: stale: a-haunted-house-but,
-    randy-marsh-vs-whats-up-brah, ai-rumpelstiltskin-tip-toein,
-    biddy-blas-scrib-doon, youre-blatantly-just-not-me-nan.
-  - confidence: contested. The split follows the trend. Every current brief
-    now sits on Side A, so plan current products for buyers 30 and under.
+  - Side A, tops out at 25 to 30: huss-town, i-got-so-mad,
+    snow-leopard-paws-at-you, w-chews-l-nibbles, scientists-reveal-the-hi,
+    while-theyre-out-partying; stale: tra-la-la-spongebob,
+    fat-talking-tom-and-angela, losercore-playlist, black-cat-clapping.
+  - Side B, reaches 35 to 40: lucia-will-appreciate-this; stale:
+    a-haunted-house-but, randy-marsh-vs-whats-up-brah,
+    ai-rumpelstiltskin-tip-toein, biddy-blas-scrib-doon,
+    youre-blatantly-just-not-me-nan.
+  - confidence: contested. The split follows the trend. Six of seven current
+    briefs sit on Side A. Plan most products for buyers 30 and under. The
+    GTA VI meme reaches buyers up to 35.
 - **Part of the audience is under 16, and may not buy on Etsy directly.**
   Products for these trends may depend on parents or gift buyers. Higher
-  prices, such as a $36.99 hoodie, hit this group hardest.
-  - sources: snow-leopard-paws-at-you (15+), w-chews-l-nibbles (13+),
+  prices, such as a $21.99 tee or a $36.99 hoodie, hit this group hardest.
+  - sources: huss-town (12+), i-got-so-mad (13+),
+    snow-leopard-paws-at-you (15+), w-chews-l-nibbles (13+),
     scientists-reveal-the-hi (13+), while-theyre-out-partying (13+),
+    viability/huss-town-except-me-tee,
     viability/out-partying-controller-hoodie,
     viability/snow-leopard-hop-on-hoodie; stale: tra-la-la-spongebob,
     black-cat-clapping, randy-marsh-vs-whats-up-brah,
@@ -54,22 +61,24 @@ still in `marketing/viability/`.
 
 ### Platforms
 
-- **TikTok is the main platform.** All four current briefs and all nine
-  stale briefs list it.
-  - sources: snow-leopard-paws-at-you, w-chews-l-nibbles,
-    scientists-reveal-the-hi, while-theyre-out-partying; stale: all nine
+- **TikTok is the main platform.** Six of seven current briefs and all nine
+  stale briefs list it. lucia-will-appreciate-this lists X, Instagram, and
+  YouTube instead.
+  - sources: huss-town, i-got-so-mad, snow-leopard-paws-at-you,
+    w-chews-l-nibbles, scientists-reveal-the-hi, while-theyre-out-partying;
+    stale: all nine
   - confidence: high
 - **Instagram (Reels) reaches the audience.**
-  - sources: snow-leopard-paws-at-you, w-chews-l-nibbles,
-    scientists-reveal-the-hi, while-theyre-out-partying; stale:
-    a-haunted-house-but, black-cat-clapping, randy-marsh-vs-whats-up-brah,
-    biddy-blas-scrib-doon, ai-rumpelstiltskin-tip-toein,
-    youre-blatantly-just-not-me-nan
+  - sources: lucia-will-appreciate-this, snow-leopard-paws-at-you,
+    w-chews-l-nibbles, scientists-reveal-the-hi, while-theyre-out-partying;
+    stale: a-haunted-house-but, black-cat-clapping,
+    randy-marsh-vs-whats-up-brah, biddy-blas-scrib-doon,
+    ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan
   - confidence: high
 - **X carries many of these memes.**
-  - sources: snow-leopard-paws-at-you, w-chews-l-nibbles; stale:
-    a-haunted-house-but, black-cat-clapping, tra-la-la-spongebob,
-    fat-talking-tom-and-angela, biddy-blas-scrib-doon,
+  - sources: lucia-will-appreciate-this, snow-leopard-paws-at-you,
+    w-chews-l-nibbles; stale: a-haunted-house-but, black-cat-clapping,
+    tra-la-la-spongebob, fat-talking-tom-and-angela, biddy-blas-scrib-doon,
     ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan,
     losercore-playlist
   - confidence: high
@@ -79,24 +88,31 @@ still in `marketing/viability/`.
   - confidence: high
 - **YouTube carries some trends.** meme-a-wear doesn't use it as a launch
   channel.
-  - sources: stale: randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
+  - sources: lucia-will-appreciate-this, huss-town, w-chews-l-nibbles;
+    stale: randy-marsh-vs-whats-up-brah, tra-la-la-spongebob,
     biddy-blas-scrib-doon, ai-rumpelstiltskin-tip-toein, losercore-playlist
   - confidence: high
-- **No brief puts the audience on Pinterest.** Pinterest suits desk and mug
-  posts in some reports, but no brief gives audience evidence for it.
-  - sources: all thirteen briefs (absence); stale:
-    viability/whats-up-monday-mug, viability/tip-toein-inbox-mug,
+- **No brief puts the audience on Pinterest.** Pinterest suits desk, mug, and
+  fridge-magnet posts in some reports, but no brief gives audience evidence
+  for it.
+  - sources: all sixteen briefs (absence); viability/will-appreciate-dishes-magnet;
+    stale: viability/whats-up-monday-mug, viability/tip-toein-inbox-mug,
     viability/chubby-cat-hibernating-hoodie (suggest Pinterest as a product
     fit)
   - confidence: high that the briefs show no Pinterest audience
 - **Audio-led memes limit posts.** A business account can't reuse the
   original audio, so posts must work without it.
-  - sources: stale: viability/tra-la-la-blob-tee, viability/not-me-nan-tee,
+  - sources: viability/huss-town-except-me-tee, viability/huss-huss-huss-sticker;
+    stale: viability/tra-la-la-blob-tee, viability/not-me-nan-tee,
     viability/tip-toein-imp-tee, viability/scrib-doon-tee
   - confidence: high
 - **Caption, text, and still-image formats let the store make its own
   posts.** These memes need no creator footage or audio.
-  - sources: viability/out-partying-controller-hoodie,
+  - sources: viability/i-got-so-mad-microwave-mug,
+    viability/i-got-so-mad-no-worries-tee,
+    viability/will-appreciate-dishes-magnet,
+    viability/will-appreciate-dog-walk-tee,
+    viability/out-partying-controller-hoodie,
     viability/w-chews-l-nibbles-mug, viability/snow-leopard-hop-on-hoodie;
     stale: viability/haunted-house-reply-all-tee,
     viability/haunted-house-group-project-sticker
@@ -105,18 +121,24 @@ still in `marketing/viability/`.
 ### Tone
 
 - **The humor is ironic or deadpan, not earnest.**
-  - sources: scientists-reveal-the-hi (deadpan), while-theyre-out-partying
-    (ironic self-mockery), w-chews-l-nibbles (ironic); stale:
-    black-cat-clapping, randy-marsh-vs-whats-up-brah,
+  - sources: lucia-will-appreciate-this (deadpan), i-got-so-mad (deadpan),
+    huss-town (ironic), scientists-reveal-the-hi (deadpan),
+    while-theyre-out-partying (ironic self-mockery), w-chews-l-nibbles
+    (ironic); stale: black-cat-clapping, randy-marsh-vs-whats-up-brah,
     ai-rumpelstiltskin-tip-toein, youre-blatantly-just-not-me-nan
   - confidence: high
 - **Self-deprecating and relatable-complaint humor lands.**
-  - sources: while-theyre-out-partying; stale: a-haunted-house-but,
-    losercore-playlist, fat-talking-tom-and-angela
+  - sources: huss-town (mock-grindset loner), while-theyre-out-partying;
+    stale: a-haunted-house-but, losercore-playlist, fat-talking-tom-and-angela
+  - confidence: high
+- **Petty everyday acts framed as big events land.** A chore becomes a game
+  mission, or a tiny act becomes an act of rage.
+  - sources: lucia-will-appreciate-this, i-got-so-mad; stale:
+    a-haunted-house-but
   - confidence: high
 - **Absurd and surreal humor lands.**
-  - sources: stale: black-cat-clapping, randy-marsh-vs-whats-up-brah,
-    tra-la-la-spongebob
+  - sources: i-got-so-mad (absurd); stale: black-cat-clapping,
+    randy-marsh-vs-whats-up-brah, tra-la-la-spongebob
   - confidence: high
 - **Loud, goofy bravado lands.**
   - sources: stale: randy-marsh-vs-whats-up-brah, biddy-blas-scrib-doon
@@ -129,10 +151,18 @@ still in `marketing/viability/`.
 ### Interest segments
 
 - **Gamers are a recurring core segment.**
-  - sources: snow-leopard-paws-at-you (gamer core), while-theyre-out-partying
-    (gamer crossover); stale: randy-marsh-vs-whats-up-brah,
-    biddy-blas-scrib-doon
+  - sources: lucia-will-appreciate-this (GTA VI players), huss-town (Roblox),
+    snow-leopard-paws-at-you (gamer core), while-theyre-out-partying (gamer
+    crossover); stale: randy-marsh-vs-whats-up-brah, biddy-blas-scrib-doon
   - confidence: high
+- **Basketball players and gym-goers are a segment.**
+  - sources: huss-town (basketball and gym crossover),
+    while-theyre-out-partying (gym crossover)
+  - confidence: medium
+- **Couples and partners share relationship jokes.**
+  - sources: lucia-will-appreciate-this (couples and dating-humor accounts);
+    stale: fat-talking-tom-and-angela (couples)
+  - confidence: medium
 - **Cat-meme fans are a recurring segment.**
   - sources: snow-leopard-paws-at-you, scientists-reveal-the-hi; stale:
     black-cat-clapping, fat-talking-tom-and-angela
@@ -148,14 +178,18 @@ No brief records merch-buying evidence. These claims come from viability
 judgments, not sales.
 
 - **They buy t-shirts.**
-  - sources: viability/scientists-reveal-the-hi-tee,
+  - sources: viability/i-got-so-mad-no-worries-tee,
+    viability/will-appreciate-dog-walk-tee,
+    viability/huss-town-except-me-tee,
+    viability/scientists-reveal-the-hi-tee,
     viability/haunted-house-reply-all-tee; stale:
     viability/losercore-table-for-one-tee,
     viability/whats-up-brah-alarm-clock-tee, viability/tra-la-la-blob-tee,
     viability/chubby-cat-couple-tee, viability/scrib-doon-tee
   - confidence: high
-- **They buy laptop and notebook stickers.**
-  - sources: viability/snow-leopard-paws-at-you-sticker,
+- **They buy laptop, notebook, and water-bottle stickers.**
+  - sources: viability/huss-huss-huss-sticker,
+    viability/snow-leopard-paws-at-you-sticker,
     viability/scientists-reveal-the-hi-sticker,
     viability/haunted-house-group-project-sticker,
     viability/w-chews-l-nibbles-button-set (now a two-sticker set); stale:
@@ -169,11 +203,13 @@ judgments, not sales.
     viability/chubby-cat-hibernating-hoodie
   - confidence: high
 - **Mug buying is contested.**
-  - For: viability/scientists-reveal-the-coffee-mug and
-    viability/w-chews-l-nibbles-mug (both briefs name a mug in
+  - For: viability/i-got-so-mad-microwave-mug,
+    viability/scientists-reveal-the-coffee-mug, and
+    viability/w-chews-l-nibbles-mug (each brief names a mug in
     remix_guidance); stale: viability/not-me-nan-wolf-mug,
     viability/chubby-cat-couple-mug, viability/scrib-doon-mug.
-  - Against: viability/scientists-reveal-the-coffee-mug,
+  - Against: viability/i-got-so-mad-microwave-mug,
+    viability/scientists-reveal-the-coffee-mug,
     viability/out-partying-crochet-mug, and viability/w-chews-l-nibbles-mug
     (all note mugs are weaker for buyers under 30 and lean on gift buyers);
     stale: viability/tra-la-la-7am-mug, viability/losercore-my-date-mug.
@@ -181,6 +217,11 @@ judgments, not sales.
     viability/tip-toein-inbox-mug.
   - confidence: contested. Mugs look stronger for older segments and as
     gifts.
+- **No evidence shows they buy fridge magnets.** A magnet leans on gift
+  buyers and the older end of the GTA VI audience. Printify magnet shipping
+  is unconfirmed.
+  - sources: viability/will-appreciate-dishes-magnet
+  - confidence: low
 - **No evidence shows they buy pinback buttons.** Button cost and shipping
   at Printify are also unconfirmed.
   - sources: viability/w-chews-l-nibbles-button-set, version of
@@ -189,10 +230,12 @@ judgments, not sales.
   - confidence: low
 - **Hobby-specific designs sell when the buyer has the hobby.** Gamers and
   fast-food workers are the documented skill segments. The brief found no
-  crafter use as of 2026-10-26, so the crochet idea was replaced.
-  - sources: while-theyre-out-partying, viability/out-partying-controller-hoodie,
+  crafter use as of 2026-10-26, so the crochet idea was replaced. huss-town
+  names gamer, gym, and baller swaps.
+  - sources: while-theyre-out-partying, huss-town,
+    viability/out-partying-controller-hoodie,
     viability/out-partying-crochet-mug
-  - confidence: low. All three rest on one brief.
+  - confidence: medium. Two briefs agree; the reports rely on one of them.
 - **Seasonal formats lose their buyers after the date.** A Halloween
   product needed to ship before 2026-10-31.
   - sources: stale: a-haunted-house-but, viability/haunted-house-reply-all-tee,
@@ -206,13 +249,60 @@ judgments, not sales.
   - sources: stale: youre-blatantly-just-not-me-nan,
     viability/not-me-nan-dog-bandana
   - confidence: low. The report relies on the same brief.
+- **Name swaps widen a meme's buyers.** "The dog" or "Mom" in place of a
+  character's name sells to people who never saw the source and lowers the
+  IP tie.
+  - sources: lucia-will-appreciate-this (remix_guidance),
+    viability/will-appreciate-dog-walk-tee,
+    viability/will-appreciate-dishes-magnet
+  - confidence: low. The reports rely on the same brief.
 
 ## Segments by trend
+
+### Lucia Will Appreciate This
+
+- Ages 16–35. GTA VI players on X and Instagram, plus couples and
+  dating-humor accounts as the format leaves the game. Deadpan humor: an
+  official-looking game UI turns a chore into a mission.
+  - sources: lucia-will-appreciate-this
+  - confidence: low
+- Shares chore and gift tasks under the tag line, and name swaps. Culture-war
+  edits split buyers.
+  - sources: lucia-will-appreciate-this, viability/will-appreciate-dishes-magnet,
+    viability/will-appreciate-dog-walk-tee
+  - confidence: low. The reports rely on the same brief.
+
+### Huss Town
+
+- Ages 12–25 on TikTok and YouTube Shorts, with a Roblox, basketball, and gym
+  crossover. Ironic mock-grindset humor.
+  - sources: huss-town
+  - confidence: low
+- Shares lip dubs of the audio over workouts and pet clips. The store can't
+  reuse the audio, so slogan stills and the "huss huss huss" text gag carry
+  the posts. Recognition of the figure depends on the blue outfit. The
+  revised tee pitch keeps the blue outfit and drops the star and chest text.
+  - sources: huss-town, viability/huss-town-except-me-tee,
+    viability/huss-huss-huss-sticker
+  - confidence: low. The reports rely on the same brief.
+
+### I Got So Mad
+
+- Ages 13–25 on TikTok. Comment-section regulars and compilation viewers.
+  Absurd, deadpan mock rage through harmless acts.
+  - sources: i-got-so-mad
+  - confidence: low
+- Shares photo posts of a caption over a broken object, and invites
+  viewers' own lines. The store can shoot the same format with its product.
+  - sources: i-got-so-mad, viability/i-got-so-mad-microwave-mug,
+    viability/i-got-so-mad-no-worries-tee
+  - confidence: low. The reports rely on the same brief.
 
 ### Snow Leopard Paws at You
 
 - Ages 15–30 on X, Instagram, and TikTok, also Reddit. A strong gamer core
-  (raid and match invites) plus cat-meme fans. Cute, clingy, mock-needy humor.
+  (Deadlock, Monster Hunter, MMO raid invites) plus cat-meme fans. Cute,
+  clingy, mock-needy humor. Saturated with low confidence as of 2026-11-24.
   - sources: snow-leopard-paws-at-you
   - confidence: low
 - Shares the caption plus a short request, usually a game invite. A gamer
@@ -242,7 +332,8 @@ judgments, not sales.
 ### Scientists Reveal the Hi
 
 - Broad, ages 13–30, on Instagram Reels and TikTok, plus cat-meme fans on
-  Reddit. Deadpan, wholesome humor.
+  Reddit. Deadpan, wholesome humor. Saturated with low confidence as of
+  2026-11-24.
   - sources: scientists-reveal-the-hi
   - confidence: low
 - Shares one-word recaptions of the headline. A product word swap, such as
@@ -253,7 +344,8 @@ judgments, not sales.
 ### While They're Out Partying
 
 - Ages 13–25 on TikTok and Instagram Reels, with a strong gamer and gym
-  crossover. Ironic self-mockery about useless skills.
+  crossover. Ironic self-mockery about useless skills. Saturated with low
+  confidence as of 2026-11-24.
   - sources: while-theyre-out-partying
   - confidence: low
 - Fast-food workers post the burger-wrapping version, the trend's biggest
@@ -353,5 +445,21 @@ These briefs are in `trends/stale/`. Treat their stages as unconfirmed.
   report. Added a `low` W Chews claim that the two-sided verdict is the
   product hook. Updated the stale date. Removed no claim.
 - 2026-11-02 (23:10Z): Wrote marketing pages for the five GO pitches. No
+  brief or report changed since the last update, so no claim changed.
+  Removed no claim.
+- 2026-11-24 (00:55Z): Added three current briefs
+  (lucia-will-appreciate-this, huss-town, i-got-so-mad) and six viability
+  reports. Noted the 2026-11-24 re-verification of the four earlier briefs:
+  three moved to `saturated` with `low` confidence, and w-chews-l-nibbles
+  moved to `peaking`. None is `dead` or `do-not-use`, so their claims stay.
+  Side B of the age claim gained its first current brief. TikTok now covers
+  six of seven current briefs. Added claims for petty-acts-as-big-events
+  humor (`high`), basketball and gym fans (`medium`), couples (`medium`),
+  fridge magnets (`low`), and name swaps (`low`). Raised the hobby claim to
+  `medium`. Added segments for the three new trends. Removed no claim.
+- 2026-11-24 (02:05Z): Re-scored huss-town-except-me-tee after the
+  designer restored the blue outfit. The brief didn't change. Added a note to
+  the Huss Town recognition claim. No confidence changed. Removed no claim.
+- 2026-11-24 (02:15Z): Wrote marketing pages for the six GO pitches. No
   brief or report changed since the last update, so no claim changed.
   Removed no claim.
