@@ -33,14 +33,18 @@ sources:
     platform: knowyourmeme
     published: 2026-11-02
     accessed: 2026-11-02T22:13:00Z
+  - url: https://www.theuncdaily.com/articles/scientists-have-revealed-the-hi
+    platform: news
+    published: 2026-11-02
+    accessed: 2026-11-24T00:39:00Z
 references:
   - path: trends/refs/scientists-reveal-the-hi.jpg
     source_url: https://i.kym-cdn.com/entries/icons/original/000/057/623/srth.jpg
     shows: The orange cat staring head-on with huge black pupils, with "Scientists reveal the" in white serif and the white "Hi" box at the bottom right.
 platforms: [reddit, instagram, tiktok]
 lifecycle:
-  stage: peaking
-  confidence: medium
+  stage: saturated
+  confidence: low
   history:
     - stage: emerging
       date: 2026-05-28
@@ -48,7 +52,10 @@ lifecycle:
     - stage: peaking
       date: 2026-10-15
       evidence: Instagram recaptions spread in October ("bye" edit 2026-10-12, over 35,000 likes in three days; seal-face edit 2026-10-14). KYM added an entry on 2026-10-15, Pop Creep ran an explainer on 2026-10-18, and the KYM weekly roundup covered it on 2026-10-23. Seen on Reddit, Instagram, and TikTok.
-last_verified: 2026-11-02T22:16:00Z
+    - stage: saturated
+      date: 2026-11-24
+      evidence: The newest dated spread is still the 2026-10-14 seal edit (KYM, unchanged since 2026-10-19). Coverage since then is retrospective (The Unc Daily, 2026-11-02, "the internet's most baffling meme of the autumn"), and search now returns mostly template, generator, and dictionary sites (lul-forge, memish, kickclap, viralmeme.ai). I found no new dated examples in five weeks, no Reddit results, and no "overdone" posts.
+last_verified: 2026-11-24T00:42:00Z
 audience: Broad. Mostly ages 13–30 on Instagram Reels and TikTok, plus cat-meme fans on Reddit.
 tone: Deadpan and wholesome. The humor comes from the gap between a science headline and "Hi".
 remix_guidance:
@@ -68,6 +75,7 @@ risk:
 
 ## Notes
 
+- **Re-verification (2026-11-24T00:42Z).** The stage moves to `saturated`, and confidence drops to `low`. The call rests on missing evidence: no dated spread after 2026-10-14, retrospective coverage, and template-site uptake. No source states the stage, and I couldn't search Instagram or TikTok directly, where the October spike happened. It may be closer to `dead`. The Unc Daily cites KYM, so it doesn't add an independent source. Treat existing designs as evergreen cat humor, not as a current trend. Risk fields are unchanged; I found nothing new in this run's sources.
 - **Re-verification (2026-11-02T22:16Z).** The stage stays `peaking`. KYM's October 2026 Meme of the Month results (2026-11-02) put it second with about 13% of the vote. The KYM entry hasn't changed since 2026-10-19, and I found no dated spread after 2026-10-14, no brand use, and no "overdone" posts. Search now returns several explainer and template sites (BrainrotHub, mendoi-apps, meme.com, YouTube explainers), but they cite or restate KYM, so they don't add independent sources. Confidence stays `medium`: KYM and Pop Creep are the two independent sources, and the recent poll is KYM's. Volume may be past its high point, so recheck before a large print run.
 - **Origin is confused.** KYM dates a dog version ("Scientists reveal the secret") to Instagram user cheemsitz on 2025-07-16. It also lists an orange-cat edit on r/Wunkus dated 2025-07-05, which is earlier than the dog version. The "Hi" edit dates to 2026-05-28 on Reddit. `origin.date` uses the "Hi" edit, because that is the sellable meme. I couldn't confirm its post URL, so `first_seen_url` is `unknown`.
 - **Confidence.** Two independent publishers agree: KYM and Pop Creep. Pop Creep doesn't cite KYM. The KYM roundup (2026-10-23) is recent, but it's the same publisher as the entry. Rule 2 needs three independent sources, so confidence is `medium`.

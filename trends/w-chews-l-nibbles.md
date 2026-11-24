@@ -27,13 +27,25 @@ sources:
     platform: knowyourmeme
     published: 2026-10-28
     accessed: 2026-11-02T22:15:00Z
+  - url: https://www.yahoo.com/entertainment/articles/does-w-chews-l-nibbles-214500544.html
+    platform: knowyourmeme
+    published: 2026-11-05
+    accessed: 2026-11-24T00:38:00Z
+  - url: https://trending.knowyourmeme.com/editorials/meme-review/the-weekly-meme-roundup-anakin-skywalker-w-chews-liberty-biberty-and-more
+    platform: knowyourmeme
+    published: 2026-11-06
+    accessed: 2026-11-24T00:37:00Z
+  - url: https://x.com/ssc_globa1/status/2120294460341014606
+    platform: x
+    published: 2026-11-10
+    accessed: 2026-11-24T00:36:00Z
 references:
   - path: trends/refs/w-chews-l-nibbles.jpg
     source_url: https://i.kym-cdn.com/photos/images/original/003/340/184/b61.jpg
     shows: An X post screenshot with the caption "Is this W chews or L nibbles" above a photo of a bowl of glazed, sesame-topped chicken over rice.
-platforms: [x, instagram, tiktok]
+platforms: [x, instagram, tiktok, youtube]
 lifecycle:
-  stage: emerging
+  stage: peaking
   confidence: medium
   history:
     - stage: emerging
@@ -42,7 +54,10 @@ lifecycle:
     - stage: emerging
       date: 2026-11-02
       evidence: Rechecked at 22:28 UTC. The KYM entry is still a submission under research, with no new spread data. Web search found no news explainers yet. TikTok search pages now show a "W Chews Emote" tag, where people copy a hand gesture while eating.
-last_verified: 2026-11-02T22:28:00Z
+    - stage: peaking
+      date: 2026-11-06
+      evidence: KYM published a "What does W chews mean" explainer on 2026-11-05 (republished by Yahoo), which called the terms "inescapable" on TikTok and Instagram Reels, and its 2026-11-06 weekly roundup covered them. X account @ssc_globa1 posted a standalone explainer around 2026-11-10. A "W sips" drink spin-off, YouTube Shorts explainers, and several AI "W chews generator" sites followed. Seen on X, Instagram, TikTok, and YouTube. Recorded on 2026-11-24.
+last_verified: 2026-11-24T00:42:00Z
 audience: Ages 13–25 on TikTok, Instagram Reels, and X who already use W and L slang. Food posters and fast-food fans.
 tone: Ironic. People use the phrases sincerely and to mock "new lingo" at the same time.
 remix_guidance:
@@ -63,6 +78,8 @@ risk:
 
 ## Notes
 
+- **Re-verification (2026-11-24T00:42Z).** The stage moves to `peaking`, dated 2026-11-06, when explainer coverage started. Confidence stays `medium`: three independent dated sources agree (KYM, the @jbexte post, and the @ssc_globa1 post), but none is recent (2026-11-21 or later). The KYM entry is unchanged since 2026-11-02 and still a submission. Its newest dated example is from 2026-10-30. I found no dated use after about 2026-11-10, no brand use, and no "overdone" posts. Volume may be cooling, so recheck before a large print run. I dated the @ssc_globa1 post from its X ID and read its text from a search result, because X returned HTTP 402. Risk fields are unchanged; I found nothing new in this run's sources.
+- **"W sips".** The KYM explainer says Mini Producer AI clips use "W sips" for a drink he likes. It could suit a mug, but it comes from the AI clips of him, so it carries the same likeness concern as the rest of the meme. Use the text only.
 - **Two related KYM entries.** KYM has `w-chews` (origin tweet) and `w-chews-l-nibbles` (full entry, still marked as under research). Both are one publisher.
 - **Confidence is medium.** Two independent dated sources agree: KYM (2026-11-02, recent) and the @jbexte X post. I couldn't open X directly (HTTP 402). Search results show the post text, and KYM confirms its date. The Mini Producer KYM entry is the same publisher as the main entry.
 - **Stage.** Emerging. It's under ten days old and coverage is just starting with the KYM entry. It already shows on three platforms, so it may reach `peaking` within days.

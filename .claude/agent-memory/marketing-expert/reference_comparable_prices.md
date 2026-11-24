@@ -1,6 +1,6 @@
 ---
 name: reference-comparable-prices
-description: Comparable Etsy prices (incl. buttons, magnets), Printify base costs, Etsy fees, and which marketplace pages block WebFetch (as of 2026-10-18)
+description: Comparable Etsy prices (incl. buttons, magnets), Printify base costs, Etsy fees, and which marketplace pages block WebFetch (2026-10-18, re-checked through 2026-11-24)
 metadata:
   type: reference
 ---
@@ -30,6 +30,7 @@ Collected 2026-10-18. All figures come from third-party sources. Confirm them in
 
 - Re-check 2026-11-02 (WebSearch summaries): Gildan 18500 $19.95-22.50 Free size M; mug 11 oz $6.45-8.25 Free; 3x3 kiss-cut $1.20-1.27; die-cut $2.80 (4x4) to from $3.78, so die-cut stickers at $4.99 + shipping clear under $1. Printify Premium reportedly rose to $39/mo. Still no Printify 2.25 in button price or shipping; Teelaunch 2.25 in pins ship $4.50-12.90 first item. Etsy fees unchanged.
 - Later 2026-11-02 check: 2026 guides put the Printify 11 oz mug at $4.69-6.45 Free / $3.50-5.16 Premium; the catalog shows "from $5.75". A two-sticker kiss-cut set at $5.99 + $3.99 shipping nets about $1.05-1.69, a workable replacement for button pairs.
+- Re-check 2026-11-24 (WebSearch summaries): BC3001 $10.98 Free / $8.77 Premium (Printify blog), 2026 range $9.85-11.40. 11 oz mug $4.69 Free / $3.75 Premium (Sensaria), some variants $8.64. Die-cut magnet from EUR 4.20 (Printify catalog); Printify magnet shipping still not found; Printful magnets ship from $4.69. No new sticker price. Etsy fees unchanged. Magnet at $7.99 + $3.99 shipping nets about $1.55. Real UTC was 00:48Z while specs said 01:00Z.
 
 Access: etsy.com search, etsy.com/legal/fees, redbubble.com, and teepublic.com return 403 to WebFetch. Amazon search returns 503. The Printify product pages load without prices (JS). Use WebSearch summaries and state the gap.
 
